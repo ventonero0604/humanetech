@@ -1,0 +1,60 @@
+@value values: "../variables/_variables.css";
+@value colors: "../colors/_colors.css";
+
+@value col-text-common, col-text-placeholder-common from colors;
+@value hover-time-transition-common from values;
+
+html {
+  font-size: 62.5%; /* 1remを10pxにして計算しやすくする */
+  line-height: 1.6;
+}
+
+body {
+  color: col-text-common;
+  font-size: 1.6rem;
+}
+
+em {
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover img {
+    transition: hover-time-transition-common;
+  }
+}
+
+button {
+  > span {
+    pointer-events: none;
+  }
+}
+
+/* placeholder */
+/* Webkit */
+::-webkit-input-placeholder {
+  color: col-text-placeholder-common;
+  opacity: 1;
+}
+
+/* Firefox 18 以前 */
+:-moz-placeholder {
+  color: col-text-placeholder-common;
+}
+
+/* Firefox 19 以降 */
+::-moz-placeholder {
+  color: col-text-placeholder-common;
+  opacity: 1;
+}
+
+/* IE 10 以降 */
+:-ms-input-placeholder {
+  color: col-text-placeholder-common;
+}

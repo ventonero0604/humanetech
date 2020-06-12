@@ -1,0 +1,125 @@
+/* 主要色 */
+@value col-primary-navy: #003173;
+@value col-primary-red: #a52224;
+@value col-bg-navy: rgba(0,49,115,.13);
+@value col-bg-red: #f8f2f3;
+@value col-bg-blue: rgba(0,49,115,.05);
+@value col-primary-green: #0A7A9E;
+@value col-primary-blue: #006DB9;
+@value col-primary-red-common: #ff6673;
+@value col-secondary-blue-common: #1a75ff;
+@value col-pale-blue-bg-pc: #f1f4f6;
+
+/* SNS */
+@value col-line-common: #00b901;
+
+/* 文字色 */
+@value col-text-common: #4d4d4d; /* 通常 */
+@value col-gray-common: #666; /* ちょっと薄め */
+@value col-text-sub-common: #999; /* 補足テキスト */
+@value col-text-blue-common: #019dff; /* タグテキストなど */
+@value col-text-white-common: #fff;
+@value col-text-green-common: #158a40;
+@value col-text-red-common: #ff6673;
+@value col-text-orange-common: #ffa073;
+@value col-text-placeholder-common: #aaa;
+@value col-text-disabled-common: #bbb;
+@value col-text-darkgray: #4d4d4d;
+
+/* リンク色 */
+@value col-link-blue-pc: #4c7df1;
+@value col-link-blue-hover-pc: #a5bef8;
+@value col-link-blue-visited-pc: #941d55;
+@value col-link-gray-visited-pc: #949aa4;
+@value col-link-blue-sp: #4c7df1;
+@value col-link-blue-visited-sp: #941d55;
+@value col-link-gray-visited-sp: #949aa4;
+
+/* リンクその他 */
+@value col-link-cell-border-pc: #dfdfdf;
+
+/* 天気 */
+@value col-temperature-high-common: #ff7474;
+@value col-temperature-low-common: #2994ff;
+
+/* アイコン色 */
+@value col-icon-strong-common: #a9adb2;
+@value col-icon-gray-common: #d8d8d8;
+@value col-icon-dark-common: #444;
+@value col-icon-blue-common: #1a75ff;
+@value col-icon-green-common: #158a40;
+@value col-icon-red-common: #ff6673;
+@value col-icon-orange-common: #ffa073;
+
+/* 罫線 */
+@value col-bor-lv1-common: #f0f0f0; /* コンテンツ内の区切りなど */
+@value col-bor-lv2-common: #e3e3e3; /* 一番よく使うコンテンツの区切り線 */
+@value col-bor-emergency: #e60013; /* 緊急メッセージ */
+
+/* 背景色 */
+@value col-bg-lv1-common: #fff;
+@value col-bg-content-pc: #eee;
+@value col-bg-content-sp: #eee;
+@value col-bg-modal-pc: rgba(0, 0, 0, 0.5);
+@value col-bg-modal-sp: rgba(0, 0, 0, 0.5);
+
+/* ボタン */
+@value col-button-normal-bg-common: #fff;
+@value col-button-normal-ie-border-common: #d8d8d8;
+
+/* サムネイル */
+@value col-thumbnail-bg-movie-common: #000;
+
+/* ローカルEMG系 */
+@value col-localEmg-bg-main-common: #141751;
+@value col-localEmg-text-alert-common: #dc0000;
+@value col-localEmg-text-label-black-common: #000;
+@value col-localEmg-label-DarkPurple-common: #503a87;
+@value col-localEmg-label-LightPurple-common: #9a67bf;
+@value col-localEmg-label-Red-common: #dc0000;
+@value col-localEmg-label-Orange-common: #f9a459;
+@value col-localEmg-label-Yellow-common: #f9ce00;
+
+/* パンくず */
+@value col-breadCrumb-arrow-pc: #666;
+
+/* タブ */
+@value col-tab-current-bg-common: #fff;
+@value col-tab-notCurrent-bg-common: #f2f4f6;
+@value col-tab-notCurrent-text-common: #acacac;
+
+/* エリアリストナビ（50音ナビ） */
+@value col-areaListNav-bg-common: #f2f4f6;
+
+/* スケルトンスクリーン */
+@value col-skeleton-bg-common: #eee;
+
+/* 手続き */
+@value col-procedureAnswer-notCorrespond-common: #eee;
+@value col-procedureQuestion-tooltip-underline-common: #aaa;
+@value col-procedureHelp-content-common: #f5f5f5;
+@value col-procedureHelp-header-common: #d8d8d8;
+@value col-procedureResult-block-common: #eee;
+
+/* モーダル */
+@value col-modal-content-common: #f5f5f5;
+@value col-modal-header-common: #d8d8d8;
+
+/* 手続きまとめ */
+@value col-procedureAction-tips-bg-common: #f2f4f6;
+@value col-procedureAction-green-text-common: #2dcf93;
+@value col-procedureAction-red-text-common: #ff6573;
+
+/* フッター */
+@value col-footer-bg-sp: #efefef;
+
+/* 地図 */
+@value col-map-tips-bg-common: rgba(255, 255, 255, 0.95);
+
+/* 防災カード */
+@value col-bousaimapcard-bg-common: #f2f4f6;
+
+/* riff */
+@value riff-setting-check-border-color: #ddd;
+@value riff-setting-check-background-color: #fff;
+@value riff-setting-check-background-color-active: #1a75ff;

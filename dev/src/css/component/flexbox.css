@@ -1,0 +1,48 @@
+.FlexBox {
+  display: flex;
+  width: 100%;
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--left {
+    justify-content: flex-start;
+  }
+
+  &--right {
+    justify-content: flex-end;
+  }
+
+  &--justify {
+    justify-content: space-between;
+  }
+
+  &--middle {
+    align-items: center;
+  }
+
+  &--bottom {
+    align-items: baseline;
+  }
+
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+
+  &--column {
+    flex-direction: column;
+  }
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: block;
+
+    &--fill {
+      flex: 1;
+    }
+  }
+}

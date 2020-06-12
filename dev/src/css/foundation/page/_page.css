@@ -1,0 +1,36 @@
+/* ---------------------------------- *\
+   #PAGE
+\* ---------------------------------- */
+@import "../variables/_variables.css";
+@import "../colors/_colors.css";
+
+body {
+  font-family: -apple-system-subset, Helvetica, Hiragino Kaku Gothic ProN,
+    sans-serif;
+}
+
+a {
+  color: col-text-common;
+}
+
+a,
+button {
+  transition: hover-time-transition-common;
+}
+
+.Page {
+  &_wrapper {
+    background-color: col-bg-lv1-common;
+    position: relative; 
+  }
+
+  &_separatedSection {
+    &::before {
+      display: block;
+      width: 100%;
+      height: 10px;
+      background-color: col-bg-content-sp;
+      content: "";
+    }
+  }
+}

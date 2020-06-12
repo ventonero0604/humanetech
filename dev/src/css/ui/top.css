@@ -1,0 +1,661 @@
+.Top {
+
+  &__main {
+    position: relative;
+    height: 1050px;
+    width: 100%;
+    background-image: url(../../asset/top/img-main.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @mixin notPC {
+      height: 850px;
+    }
+    @mixin sp {
+      height: 525px;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: #003173;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: .69;;
+    }
+  }
+
+  &__mainTitle {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+
+    @mixin notPC {
+      padding: 0 50px;
+    }
+  }
+
+  &__lead {
+    height: 458px;
+    background-color: col-primary-navy;
+    color: #fff;
+
+    @mixin notPC {
+      height: auto;
+      padding: 60px 0;
+    }
+  }
+
+  &__leadWrapper {
+    height: 100%;
+
+    @mixin notPC {
+      flex-direction: column;
+      padding: 0 10px;
+    }
+  }
+
+  &__leadLogo {
+    margin-right: 80px;
+
+    @mixin notPC {
+      margin: 0 0 60px 0;
+    }
+  }
+
+  &__leadTitle {
+    margin-bottom: 20px;
+
+    @mixin notPC {
+      text-align: center;
+    }
+  }
+
+  &__leadText {
+    max-width: 600px;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+
+  &__job {
+    padding: 80px 0;
+
+    @mixin notPC {
+      padding: 80px 10px;
+    }
+  }
+
+  &__jobTitle {
+    margin-bottom: 30px;
+  }
+
+  &__jobText {
+    margin-bottom: 40px;
+  }
+
+  &__jobLogoWrapper {
+    margin-bottom: 60px;
+    margin-left: -60px;
+
+    @mixin notPC {
+      flex-wrap: wrap;
+      margin-left: -10px;
+    }
+  }
+
+  &__jobLogo {
+      margin-left: 60px;
+      margin-bottom: 10px;
+
+      @mixin notPC {
+        margin-left: 10px;
+      }
+      @mixin sp {
+        max-width: 100px;
+      }
+  }
+
+  &__engineer {
+    height: 765px;
+    position: relative;
+    display: flex;
+    justify-content: end;
+
+    @mixin notPC {
+      height: auto;
+      overflow: hidden; 
+    }
+    
+
+    &:before {
+      content: "";
+      display: block;
+      background-color: col-primary-navy;
+      opacity: .13;
+      height: 530px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    &--future {
+      &:before {
+        background-color: col-primary-red;
+      }
+    }
+  }
+
+  &__engineerWrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 1920px;
+
+    @mixin notPC {
+      flex-direction: column;
+    }
+
+    &--future {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__engineerTitle {
+    margin-top: 20px;
+    margin-bottom: 100px;
+
+    @mixin notPC {
+      margin-bottom: 20px;
+      padding: 0 20px;
+    }
+
+    &--future {
+      margin-left: 100px;
+
+      @mixin notPC {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__engineerImage {
+    @mixin notPC {
+      display: none;
+    }
+    
+    &--sp {
+      display: none;
+
+      @mixin notPC {
+        display: block;
+      }
+    }
+  }
+
+  &__engineerInfo {
+    margin-right: -100px;
+    z-index: 2;
+
+    @mixin notPC {
+      margin-right: 0;
+    }
+
+    &--future {
+      margin-right: 0;
+    }
+  }
+
+  &__engineerInfoTitle {
+    color: col-primary-navy;
+    font-weight: bold;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+
+    @mixin notPC {
+      margin-bottom: 0;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      position: relative;
+
+      &:before {
+        content: "";
+        display: block;
+        background-color: col-primary-navy;
+        opacity: .13;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    &--future {
+      margin-left: 100px;
+      color: col-primary-red;
+
+      @mixin notPC {
+        margin-left: 0;
+
+        &:before {
+          background-color: col-primary-red;
+        }
+      }
+    }
+  }
+
+  &__engineerCard {
+    padding: 30px 32px 0;
+    background-color: #fff;
+    max-width: 615px;
+    height: 350px;
+    position: relative;
+
+    @mixin notPC {
+      padding: 30px 10px 0;
+      margin: -30px auto 100px;
+    }
+
+    &--future {
+      margin-left: -100px;
+
+      @mixin notPC {
+        margin-left: auto; 
+      }
+    }
+
+    .Button {
+      position: absolute;
+      bottom: -28px;
+    }
+  }
+
+  &__engineerCardTitle {
+    margin-top: 20px;
+    font-size: 2.2rem;
+  }
+
+  &__engineerCardText {
+    margin-top: 20px;
+    font-size: 1.4rem;
+  }
+
+  &__engineerList {
+    width: 1090px;
+    margin: 0 auto 100px;
+    padding: 30px 0 30px 30px;
+    border-left: 1px solid #DEE4ED;
+
+    @mixin notPC {
+      width: auto;
+      padding: 0;
+      border: none;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__engineerListItems {
+    margin-left: -60px;
+    
+    @mixin notPC {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: -30px;
+      margin-top: 40px;
+    }
+  }
+
+  &__engineerListItem {
+    min-width: 120px;
+    margin-left: 60px;
+
+    &:nth-of-type(3) {
+      @mixin notPC {
+        min-width: 100%;
+      }
+    }
+
+    @mixin notPC {
+      margin-bottom: 30px;
+      max-width: 100px;
+      min-width: 80px;
+    }
+  }
+
+  &__engineerListTitle {
+    margin-bottom: 30px;
+
+    @mixin notPC {
+      margin-left: 20px;
+      padding-top: 40px;
+      padding-left: 20px;
+      border-left: 2px solid #DEE4ED;
+    }
+  }
+
+  &__engineerListIcon {
+    height: 38px;
+    margin-bottom: 30px;
+  }
+
+  &__engineerListText {
+    color: col-primary-navy;
+
+    &--future {
+      color: col-primary-red;
+    }
+  }
+
+  &__infoTextWrapper {
+    padding-top: 30px;
+    margin-right: 40px;
+
+    @mixin notPC {
+      margin-right: 0;
+      padding: 30px 10px 0;
+    }
+  }
+  
+  &__infoTitle {
+    font-size: 1.8rem;
+    color: col-primary-navy;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    b {
+      color: col-primary-red;
+    }
+  }
+
+  &__infoText {
+    font-size: 1.4rem;
+    width: 340px;
+    margin-bottom: 30px;
+
+    @mixin notPC {
+      width: auto;
+    }
+  }
+
+  &__info {
+    margin-bottom: 140px;
+
+    .Button {
+      @mixin notPC {
+        display: none;
+      }
+    }
+
+    .Button--sp {
+      display: none;
+    }
+
+    .Button--sp {
+      @mixin notPC {
+        display: block;
+      }
+    }
+  }
+
+  &__infoWrapper {
+    @mixin notPC {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__infoImageWrapper {
+    padding-top: 30px;
+    max-width: 640px;
+
+    @mixin notPC {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 0;
+    }
+  }
+
+  &__infoImage {
+    max-width: 400px;
+    border-radius: 50%;
+    background-color: col-primary-red;
+    width: 400px;
+    height: 360px;
+
+    @mixin notPC {
+      width: 320px;
+      height: 320px;
+    }
+
+    &--navy {
+      background-color: col-primary-navy;
+      margin-left: -80px;
+
+      @mixin notPC {
+        margin-left: 0;
+        margin-top: -60px;
+      }
+    }
+  }
+
+  &__infoImageText {
+    width: 230px;
+    color: #fff;
+    font-size: 1.4rem;
+    margin-top: 110px;
+    margin-left: 40px;
+    line-height: 1.8;
+    text-align: center;
+
+    @mixin notPC {
+      margin: 90px auto 0;
+    }
+
+    p {
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    &--right {
+      margin-left: 60px;
+
+      @mixin notPC {
+        margin-left: auto;
+      }
+    }
+  }
+
+  &__solutionTitle {
+    margin-bottom: 30px;
+  }
+
+  &__solutionText {
+    margin-bottom: 50px;
+
+    @mixin notPC {
+      padding: 0 20px;
+    }
+  }
+
+  &__solutionItem {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: .82
+    }
+
+    &--human {
+      height: 700px;
+      width: 100%;
+      background-image: url(../../asset/top/img-human.png);
+
+      &:before {
+        background-color: col-primary-navy;
+        opacity: .82
+      }
+
+      @mixin sp {
+        height: 525px;
+      }
+    }
+
+    &--base {
+      height: 520px;
+      flex-basis: 50%;
+      background-image: url(../../asset/top/img-base.png);
+
+      @mixin notPC {
+        flex-basis: 100%;
+      }
+      @mixin sp {
+        height: 310px;
+      }
+
+      &:before {
+        background-color: col-primary-green;
+        opacity: .61
+      }
+    }
+
+    &--system {
+      height: 520px;
+      flex-basis: 50%;
+      background-image: url(../../asset/top/img-system.png);
+
+      @mixin notPC {
+        flex-basis: 100%;
+      }
+      @mixin sp {
+        height: 310px;
+      }
+
+      &:before {
+        background-color: col-primary-blue;
+        opacity: .61
+      }
+    }
+  }
+
+  &__solutionItemLink {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+  }
+
+  &__solutionItemTexts {
+    height: 100%;
+  }
+
+  &__solutionItemIcon {
+    margin-bottom: 50px;
+
+    @mixin sp { 
+      max-width: 100px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  &__solutionItemTitle {
+    font-size: 3rem;
+    margin-bottom: 40px;
+
+    @mixin notPC {
+      padding: 0 10px;
+    }
+    @mixin sp {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__solutionItemBold {
+    font-size: 9rem;
+    margin-bottom: 50px;
+
+    @mixin notPC {
+      font-size: 5rem;
+    }
+    @mixin sp {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__solutionItemText {
+    text-align: center;
+
+    @mixin notPC {
+      padding: 0 30px;
+    }
+
+    &--2col {
+      margin-top: -1rem;
+    }
+  }
+
+  &__news {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 120px 0 180px;
+
+    @mixin notPC {
+      padding: 60px 10px 80px;
+    }
+  }
+
+  &__newsTitle {
+    text-align: center;
+    border-bottom: 3px solid col-primary-navy;
+    padding-bottom: 20px;
+    margin-bottom: 80px;
+
+    @mixin notPC {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__newsTable {
+    display: table;
+    margin-bottom: 100px;
+  }
+
+  &__newsTableColumn {
+    & + & {
+      margin-top: 24px;
+    }
+  }
+  
+  &__newsTableItem {
+    min-width: 140px;
+    font-size: 1.8rem;
+    display: table-cell;
+    vertical-align: middle;
+
+    @mixin notPC {
+      vertical-align: text-top;
+      display: block;
+    }
+
+    & + & {
+      padding-left: 30px;
+
+      @mixin notPC {
+        padding-left: 0;
+      }
+    }
+  }
+}

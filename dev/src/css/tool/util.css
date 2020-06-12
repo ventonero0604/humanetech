@@ -1,0 +1,21 @@
+/* UTIL */
+
+.Util {
+  &-displayHiddenVisually {
+    position: absolute!important;
+    overflow: hidden!important;
+    clip: rect(1px, 1px, 1px, 1px)!important;
+    padding: 0!important;
+    width: 1px!important;
+    height: 1px!important;
+    border: 0!important; 
+  }
+
+  &-textCenter {
+    text-align: center;
+  }
+
+  &-marginB20 {
+    margin-bottom: 20px;
+  }
+}

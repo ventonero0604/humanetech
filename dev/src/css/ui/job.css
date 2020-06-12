@@ -1,0 +1,718 @@
+.Job {
+
+  .is-sp {
+    display: none;
+
+    @mixin sp {
+      display: block;
+    }
+  }
+
+  .is-notSP {
+    display: block;
+
+    @mixin sp {
+      display: none;
+    }
+  }
+
+  .is-notPC {
+    display: none;
+
+    @mixin notPC {
+      display: inline-block;
+    }
+  }
+
+  .is-pc {
+    display: block;
+
+    @mixin sp {
+      display: none;
+    }
+    @mixin notPC {
+      display: none;
+    }
+  }
+
+  &__main {
+    position: relative;
+    height: 363px;
+    background-image: url(../../asset/job/main.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden; 
+    
+    @mixin notPC {
+      height: auto;
+      padding: 60px 0;
+    }
+  }
+
+  &__mainWrapper {
+    height: 100%;
+
+    @mixin notPC {
+      flex-direction: column;
+    }
+  }
+
+  &__mainTitle {
+    margin-right: 80px;
+
+    @mixin notPC {
+      margin-right: 0;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    img {
+      @mixin notPC {
+        width: 70%;
+      }
+    }
+  }
+
+  &__form {
+    @mixin notPC {
+      width: 100%;
+    }
+
+    input[type="text"] {
+      background-color: #fff;
+      width: 532px;
+      height: 60px;
+      border-radius: 8px 0 0 8px;
+      font-size: 1.8rem;
+      padding-left: 20px;
+
+      @mixin notPC {
+        width: 100%;
+        border-radius: 8px;
+      }
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      height: 100%;
+      text-indent: 100%;
+    }
+
+    select {
+      width: 100%;
+      height: 100%;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__formItem {
+    @mixin notPC {
+      flex-direction: column;
+      padding: 0 20px;
+    }
+  }
+
+  &__formSubmit {
+    background-color: col-primary-red;
+    min-width: 116px;
+    height: 60px;
+    border-radius: 0 8px 8px 0;
+    position: relative;
+
+    @mixin notPC {
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    &--round {
+      border-radius: 8px;
+    }
+
+    &:before {
+      position: absolute;
+      width: 32px;
+      height: 30px;
+      background-image: url(../../asset/job/ico-search.png);
+      content: "";
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__formText {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 22px;
+    margin-bottom: 12px;
+
+    @mixin notPC {
+      font-size: 2rem;
+      padding-left: 20px;
+      border-top: 2px solid rgba(242,244,248,.35);
+      margin-top: 40px;
+      padding-top: 30px;
+    }
+  }
+
+  &__formSelectWrapper {
+    margin-right: 10px;
+
+    @mixin notPC {
+      margin-right: 0;
+    }
+  }
+
+  &__formSelect {
+    background-color: #fff;
+    width: 151px;
+    height: 60px;
+    border-radius: 8px;
+    padding-left: 20px;
+    position: relative;
+
+    @mixin notPC {
+      width: inherit;
+      padding-left: 10px;
+    }
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 7px 0 7px 7px;
+      border-color: transparent transparent transparent col-primary-navy;
+      right: 20px;
+      top: 50%;
+      transform: translate(0, -50%);
+
+      @mixin notPC {
+        right: 10px;
+      }
+    }
+  }
+
+  &__formSeparator {
+    font-size: 2.8rem;
+    color: #fff;
+    padding: 0 6px;
+
+    @mixin notPC {
+      font-size: 1.6rem;
+      padding: 0 3px;
+    }
+  }
+
+  &__wrapper {
+    background-color: col-bg-blue;
+    padding: 60px 0 0;
+    overflow: hidden; 
+
+    &--line {
+      border-top: 1px solid col-primary-navy;
+    }
+  }
+
+  &__container {
+    max-width: 1055px;
+    min-width: 1024px;
+    margin: 0 auto 80px;
+
+    @mixin notPC{
+      flex-direction: column-reverse;
+      min-width: auto;
+      margin-bottom: 0;
+    }
+
+    &--full {
+      max-width: 1300px;
+      padding: 0 10px;
+
+      @mixin notPC {
+        padding: 0;
+      }
+    }
+  }
+
+  &__menu {
+    min-width: 290px;
+    margin-right: 20px;
+
+    @mixin notPC {
+      margin-right: 0;
+    }
+  }
+
+  &__menuHeader {
+    background-color: col-primary-navy;
+    color: #fff;
+    height: 70px;
+    padding: 0 20px;
+    border-radius: 14px 14px 0 0;
+
+    @mixin notPC {
+      border-radius: 0;
+      justify-content: center;
+    }
+
+    p {
+      border-left: 2px solid #fff;
+      padding-left: 10px;
+      line-height: 1;
+    }
+  }
+
+  &__menuItem {
+    display: block;
+    padding: 20px 10px 20px 8px;
+    border-bottom: 1px solid #f2f4f8;
+
+    @mixin notPC {
+      padding: 20px;
+    }
+  }
+
+  &__icoWrapper {
+    width: 34px;
+  }
+
+  &__menuText {
+    margin-left: 4px;
+    flex: 1;
+  }
+
+  &__menuBody {
+    background-color: #fff;
+    border-radius: 0 0 14px 14px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+
+  &__menuLogoWrapper {
+    margin-top: 30px;
+  }
+
+  &__contents {
+    flex: 1;
+
+    @mixin notPC {
+      margin-bottom: 40px;
+      padding: 0 10px;
+    }
+  }
+
+  &__item {
+    & + & {
+      margin-top: 40px;
+    }
+  }
+
+  &__itemHeader {
+    height: 70px;
+    padding: 0 30px;
+    color: #fff;
+    border-radius: 14px 14px 0 0;
+
+    @mixin notPC {
+      flex-direction: column;
+      height: auto;
+      align-items: baseline;
+      padding: 20px 20px 10px;
+    }
+
+    &--network {
+      background-color: #23b1e8;
+    }
+    &--dev {
+      background-color: #006bb7;
+    }
+    &--server {
+      background-color: #85c26e;
+    }
+    &--maintain {
+      background-color: #009b42;
+    }
+    &--support {
+      background-color: #6968ae;
+    }
+    &--translate {
+      background-color: #f08712;
+    }
+    &--other {
+      background-color: #868687;
+    }
+
+    &--full {
+      padding: 0 200px;
+
+      @mixin notPC {
+        padding: 20px 20px 10px;
+      }
+    }
+  }
+
+  &__itemCategory {
+    @mixin notPC {
+      margin-bottom: 14px;
+    }
+
+    img {
+      @mixin notPC {
+        margin-top: 7px;
+      }
+    }
+  }
+
+  &__itemCategoryTitle {
+    padding-top: 2px;
+    margin-left: 10px;
+    
+    @mixin notPC {
+      font-size: 2.2rem;
+    }
+  }
+
+  &__itemDate {
+    white-space: nowrap;
+
+    @mixin notPC {
+      white-space: unset;
+    }
+  }
+
+  &__itemBody {
+    background-color: #fff;
+    border-radius: 0 0 14px 14px;
+    padding-bottom: 80px;
+
+    &--full {
+      padding: 0 200px 80px;
+
+      @mixin notPC {
+        padding: 0 0 40px;
+      }
+    }
+  }
+
+  &__itemTitle {
+    padding: 40px 20px 20px;
+    border-bottom: 1px solid #f2f4f8; 
+
+    &--full {
+      text-align: center;
+      border-bottom: 2px solid rgba(0,49,139,.21);
+
+      @mixin notPC {
+        text-align: left;
+      }
+    }
+
+    a {
+      display: block;
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: col-primary-navy;
+    }
+  }
+
+  &__itemInfo {
+    padding: 40px 40px 50px 30px;
+
+    @mixin notPC {
+      padding: 40px 20px 50px 20px;
+    }
+  }
+
+  &__itemInfoTitle {
+    & + & {
+      margin-top: 20px;
+    }
+  }
+
+  &__itemInfoText {
+    line-height: 1.8;
+  }
+  
+  &__itemInfoTitleText {
+    white-space: nowrap;
+    margin-right: 40px;
+    padding-left: 28px;
+    background-position: 0 3px;
+    background-repeat: no-repeat;
+
+    @mixin notPC {
+      margin-right: 20px;
+      padding-left: 28px;
+    }
+
+    &--salary {
+      background-image: url(../../asset/job/ico-yen.png);
+    }
+    &--period {
+      background-image: url(../../asset/job/ico-callender.png);
+      background-position: 1px 3px;
+    }
+    &--place {
+      background-image: url(../../asset/job/ico-pin.png);
+      background-position: 3px 1px;
+    }
+  }
+
+  &__itemBtnWrapper {
+    @mixin notPC {
+      flex-direction: column;
+      padding: 0 40px;
+    }
+  }
+
+  &__itemBtn {
+    @mixin notPC {
+      width: 100%;
+    }
+
+    & + & {
+      margin-left: 12px;
+
+      @mixin notPC {
+        margin-left: 0;
+      }
+    }
+    
+    a {
+      display: block;
+      height: 58px;
+      line-height: 58px;
+      text-align: center;
+    }
+
+    &--detail {
+      a {
+        width: 303px;
+        background-color: col-primary-navy;
+        color: #fff;
+
+        @mixin notPC {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    &--detailFull {
+      a {
+        width: 418px;
+        background-color: col-primary-navy;
+        color: #fff;
+
+        @mixin notPC {
+          width: 100%;
+        }
+      }
+    }
+
+    &--entry {
+      a {
+        width: 200px;
+        color: col-primary-navy;
+        border: 1px solid col-primary-navy;
+
+        @mixin notPC {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__pager {
+    margin: 60px 0 0 -10px;
+
+    a,
+    p {
+      display: block;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 2rem;
+      color: col-primary-navy;
+      border: 1px solid col-primary-navy;
+      background-color: #fff;
+      text-align: center;
+      margin-left: 10px;
+    }
+
+    .prev,
+    .next {
+      width: 160px;
+      font-size: 1.6rem;
+    }
+
+    .is-current {
+      background-color: col-primary-navy;
+      color: #fff;
+    }
+  }
+
+  &__bnrWrapper {
+    margin: 60px 0;
+
+    @mixin notPC {
+      align-items: center;
+      flex-direction: column;
+      padding: 0 20px;
+    }
+
+    a + a {
+      margin-left: 10px;
+
+      @mixin notPC {
+        margin-left: 0;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__searchResult {
+    margin-bottom: 30px;
+
+    select {
+      width: 100%;
+      height: 100%;
+      padding-left: 10px;
+    }
+    .SelectWrapper {
+      background-color: #fff;
+      height: 30px;
+      min-width: 176px;
+      position: relative;
+      border: 1px solid #e5e5e5;
+      margin-right: 5px;
+
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 11px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 6px 5px 0 5px;
+        border-color: #000000 transparent transparent transparent;
+      }
+    }
+    .PrevButton,
+    .NextButton {
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 30px;
+      height: 30px;
+      background-color: col-primary-navy;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .PrevButton {
+      background-image: url(../../asset/job/ico-arrow-l.png);
+      margin-right: 1px;
+      border-radius: 4px 0 0 4px;
+    }
+    .NextButton {
+      background-image: url(../../asset/job/ico-arrow-r.png);
+      border-radius: 0 4px 4px 0;
+    }
+    .ItemWrapper {
+      width: auto;
+    }
+  }
+
+  &__searchResultWrapper {
+    @mixin notPC {
+      flex-direction: column;
+      align-items: baseline;
+      padding-left: 20px;
+    }
+  }
+
+  &__searchResultTitle {
+    color: col-primary-navy;
+    font-size: 4.1rem;
+    padding-left: 20px;
+    margin-bottom: 40px;
+
+    @mixin notPC {
+      margin-bottom: 20px;
+      font-size: 3.4rem;
+    }
+  }
+
+  &__searchResultItems {
+    white-space: nowrap; 
+    flex: 1;
+
+    @mixin notPC {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__itemDetail {
+    margin: 40px 0 60px;
+
+    @mixin notPC {
+      display: none;
+    }
+  }
+
+  &__itemDetailText {
+    padding: 0 40px;
+    line-height: 1.8;
+  }
+
+  &__list {
+    @mixin notPC {
+      padding: 0 20px;
+      margin-top: 40px;
+    }
+  }
+
+  &__listItem {
+    padding: 18px 20px;
+    
+    &:nth-child(odd) {
+      background-color: rgba(0,49,115,.05);
+    }
+
+    & > .FlexBox {
+      @mixin notPC {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__listTitle {
+    font-weight: bold;
+    min-width: 140px;
+  }
+
+  &__listText {
+    line-height: 1.8;
+  }
+
+  &__detailBtnWrapper {
+    margin-top: 60px; 
+
+    @mixin notPC {
+      padding: 0 40px;
+    }
+  }
+
+  &__hideTitleSp {
+    @mixin notPC {
+      display: none;
+    }
+  }
+} 

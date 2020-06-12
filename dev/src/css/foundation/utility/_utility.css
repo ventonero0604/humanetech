@@ -1,0 +1,9 @@
+/* 読み上げブラウザなどで読み上げて欲しいけど、表示したくない時に使う */
+/* 単純に display:none すると読み上げられなくなることがあるので注意 */
+.readOnly {
+  position: absolute !important;
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}

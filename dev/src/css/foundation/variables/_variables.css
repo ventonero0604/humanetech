@@ -1,0 +1,80 @@
+/* サイズ */
+@value size-width-page-pc: 990px;
+@value size-width-content-pc: 800px;
+@value size-width-procedure-pc: 500px;
+@value size-width-modal-pc: 500px;
+@value size-width-column-main-pc: 230px;
+
+/* サムネイル */
+@value size-thumbnail-small-pc: 80px;
+@value size-thumbnail-middle-pc: 96px;
+@value size-thumbnail-wide-width-pc: 148px;
+@value size-thumbnail-wide-height-pc: 84px;
+@value size-thumbnail-small-sp: 80px;
+@value size-thumbnail-middle-sp: 96px;
+@value size-thumbnail-wide-width-sp: 148px;
+@value size-thumbnail-wide-height-sp: 84px;
+
+/**********
+レイヤー（z-index） layer
+変数名や階層数などは運用しながら調整予定
+**********/
+@value layer-under-common: -1; /* 背景的に使いたい場合など */
+@value layer-base-common: 1; /* 通常 */
+@value layer-middle-common: 100; /* ちょっと上げたい場合、absoluteにして被せたいときなど */
+@value layer-high-common: 200; /* fixedな要素など */
+/* 全社マストヘッド:5000000 */
+@value layer-overlay-common: 5000100; /* 要素全体に被せるoverlayなど */
+@value layer-modal-common: 5000200; /* overlayの上で用いるモーダルなど */
+
+/**********
+角丸 radius
+**********/
+@value radius-common: 4px;
+@value radius-small-common: 3px; /* オブジェクトのサイズが44px*44px未満のものは3pxを利用 */
+@value radius-btn-normal: 4px;
+
+/**********
+影 box-shadow
+**********/
+@value shadow-card-normal-common: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+@value shadow-card-bottom-common: 0 3px 3px -3px rgba(0, 0, 0, 0.3);
+@value shadow-button-normal-common: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+
+/**********
+余白 space
+**********/
+@value space-content-inner-pc: 16px;
+@value space-content-inner-pc-lv1: 8px;
+@value space-content-inner-pc-lv2: 12px;
+@value space-content-inner-pc-lv3: 16px;
+@value space-content-inner-pc-lv4: 20px;
+@value space-content-inner-pc-lv5: 24px;
+@value space-content-inner-sp: 12px;
+@value space-content-inner-sp-lv1: 8px;
+@value space-content-inner-sp-lv2: 12px;
+@value space-content-inner-sp-lv3: 16px;
+@value space-content-inner-sp-lv4: 20px;
+@value space-content-inner-sp-lv5: 24px;
+
+/**********
+マウスオーバー時
+**********/
+@value hover-img-opacity-common: 0.5;
+@value hover-button-opacity-common: 0.5;
+@value hover-time-transition-common: 0.2s;
+
+/**********
+フォントサイズ
+**********/
+@value fontsize-lv1: 12px;
+@value fontsize-lv2: 14px;
+@value fontsize-lv3: 16px;
+@value fontsize-lv4: 18px;
+@value fontsize-lv5: 20px;
+@value fontsize-lv6: 22px;
+
+/**********
+フォントサイズ
+**********/
+@value expand-transition: opacity 0.35s ease-in-out, max-height 0.25s ease-in-out;

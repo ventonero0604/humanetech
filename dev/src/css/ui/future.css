@@ -1,0 +1,349 @@
+.Future {
+
+  &__main {
+    position: relative;
+    height: 720px;
+    background-image: url(../../asset/future/img-main.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden; 
+
+    &--staff {
+      height: 600px;
+      background-image: url(../../asset/future/img-main-staff.png);
+
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: col-primary-red;
+        opacity: .3;
+        z-index: 1;
+      }
+    }
+
+    &--staffDetail {
+      background-image: url(../../asset/future/img-main-staff1.png);
+      background-position: 50% 50%;
+    }
+  }
+
+  &__mainTitle {
+    position: relative;
+    top: 220px;
+    left: 20%;
+
+    &--staff {
+      z-index: 2;
+    }
+    &--staffDetail {
+      top: 180px;
+      left: 54%;
+      color: #fff;
+    }
+  }
+
+  &__lead {
+    background-color: #a72225;
+    padding: 80px 0 0;
+  }
+
+  &__leadTitle {
+    margin-bottom: 40px;
+  }
+
+  &__leadText {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 60px;
+    width: 900px;
+
+    &--center {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+  }
+
+  &__contents {
+    background-color: col-bg-red;
+    padding: 60px 0 0;
+  }
+
+  &__textBox {
+    border: 1px solid col-primary-red;
+
+    & + & {
+      margin-left: 10px;
+    }
+  }
+
+  &__textBoxTitle {
+    color: col-primary-red;
+    background-color: #e9d4d3;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 1.7rem;
+  }
+
+  &__textBoxText {
+    width: 300px;
+    padding: 30px 20px;
+    font-size: 1.4rem;
+    line-height: 1.8;
+
+    p + p {
+      margin-top: 20px;
+    }
+  }
+
+  &__flow {
+    background-image: url(../../../src/asset/future/img-flow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1713px;
+    position: relative;
+  }
+
+  &__flowItem {
+    width: 409px;
+    position: absolute;
+
+    &--1st {
+      top: 260px;
+      right: 200px;
+    }
+    &--2nd {
+      text-align: right;
+      top: 550px;
+      left: 200px;
+    }
+    &--3rd {
+      top: 850px;
+      right: 200px;
+    }
+    &--4th {
+      text-align: right;
+      top: 1190px;
+      left: 200px;
+    }
+    &--last {
+      bottom: 16px;
+      width: 100%;;
+      text-align: center;
+
+      .Future__flowItemTitle {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &__flowItemTitle {
+    font-weight: bold;
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+  }
+
+  &__flowItemText {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  &__flowItemInfo {
+    font-size: 1.4rem;
+    background-color: #F2F2F2;
+    padding: 16px 10px;
+    overflow: hidden;
+  }
+
+  &__flowItemInfoTitle {
+    text-align: justify;
+    color: col-primary-red;
+    font-weight: bold;
+    margin-right: 10px;
+    width: 6rem;
+  }
+
+  &__flowItemInfoText {
+    text-align: left;
+  }
+
+  &__flowItemInfoLine {
+    overflow: hidden;
+
+    & + & {
+      margin-top: 6px;
+    }
+  }
+
+  &__program {
+    background-color: #e6e6e6;
+    border-radius: 0 0 14px 14px;
+    padding: 30px 0 60px;
+  }
+
+  &__programItem {
+    width: 292px;
+    background-color: #fff;
+
+    & + & {
+      margin-left: 10px;
+    }
+  }
+
+  &__programTextWrapper {
+    padding: 20px 20px 40px;
+  }
+
+  &__programTitle {
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin-bottom: 14px;
+    text-align: center;
+  }
+
+  &__programText {
+    font-size: 1.4rem;
+    line-height: 1.8;
+  }
+
+  &__bnrWrapper {
+    padding: 60px 0;
+
+    a + a {
+      margin-left: 12px;
+    }
+  }
+  
+  &__bnrContainer {
+    background-color: col-primary-red;
+    padding: 50px 0 80px;
+  }
+
+  &__bnrContainerTitle {
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+}
+
+.Staff {
+  padding-bottom: 60px;
+  .RoundWrapper {
+    padding: 0;
+  }
+
+  &__textWrapper {
+    background-color: col-primary-red;
+    color: #fff;
+    border-radius: 14px 0 0 14px;
+    flex-basis: 50%;
+    padding-left: 200px;
+  }
+  
+  &__job {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    font-size: 4.8rem;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+
+  &__join {
+    margin-bottom: 20px;
+  }
+
+  &__separator {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    line-height: 2;
+  }
+}
+
+.StaffDetail {
+  &__job {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    font-size: 7.4rem;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+
+  &__kana {
+    font-size: 2.6rem;
+    margin-bottom: 60px;
+  }
+
+  &__join {
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+
+  &__message {
+    font-size: 2.4rem;
+  }
+
+  &__flow {
+    margin-bottom: 80px;
+  }
+
+  &__container {
+    width: 900px;
+  }
+
+  &__titleSmall {
+    color: #999;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    color: col-primary-red;
+    font-weight: bold;
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+  }
+  
+  &__text {
+    line-height: 2;
+    margin-bottom: 80px;
+  }
+
+  &__image {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  &__imageContainer {
+    margin-bottom: 100px;
+  }
+
+  &__messageContainer {
+    &.RoundWrapper {
+      padding: 0;
+    }
+  }
+
+  &__messageText {
+    padding: 100px 0 0 200px;
+    flex: 1;
+
+    .StaffDetail__text {
+      width: 487px;
+    }
+  }
+}
+

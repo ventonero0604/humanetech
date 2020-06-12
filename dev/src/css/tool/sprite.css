@@ -1,0 +1,94 @@
+.Icon {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../image/all.png);
+    background-size: 216px 191px;
+    background-repeat: no-repeat;
+    content: '';
+  }
+}
+
+.Icon--buttonAndroid {
+  width: 170px;
+  height: 51px;
+
+  &::before {
+    width: 170px;
+    height: 51px;
+    background-position: 0px 0px;
+  }
+}
+.Icon--buttonIos {
+  width: 170px;
+  height: 51px;
+
+  &::before {
+    width: 170px;
+    height: 51px;
+    background-position: 0px -53px;
+  }
+}
+.Icon--kurashi {
+  width: 90px;
+  height: 22px;
+
+  &::before {
+    width: 90px;
+    height: 22px;
+    background-position: 0px -142px;
+  }
+}
+.Icon--scrollTop {
+  width: 44px;
+  height: 44px;
+
+  &::before {
+    width: 44px;
+    height: 44px;
+    background-position: -172px 0px;
+  }
+}
+.Icon--snsFb {
+  width: 68px;
+  height: 25px;
+
+  &::before {
+    width: 68px;
+    height: 25px;
+    background-position: 0px -166px;
+  }
+}
+.Icon--snsLn {
+  width: 68px;
+  height: 25px;
+
+  &::before {
+    width: 68px;
+    height: 25px;
+    background-position: -70px -166px;
+  }
+}
+.Icon--snsTw {
+  width: 68px;
+  height: 25px;
+
+  &::before {
+    width: 68px;
+    height: 25px;
+    background-position: -140px -166px;
+  }
+}
+.Icon--yahooJapanLogo {
+  width: 104px;
+  height: 34px;
+
+  &::before {
+    width: 104px;
+    height: 34px;
+    background-position: 0px -106px;
+  }
+}

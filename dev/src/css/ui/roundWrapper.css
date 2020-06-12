@@ -1,0 +1,92 @@
+.RoundWrapper {
+  background-color: #fff;
+  max-width: 1300px;
+  margin: 0 auto;
+  border-radius: 14px;
+  padding: 60px 0;
+  position: relative;
+
+  @mixin notPC {
+    width: auto;
+    padding: 60px 10px;
+  }
+
+  &--0padding {
+    padding-bottom: 0;
+  }
+
+  &__title {
+    color: col-text-darkgray;
+    font-weight: bold;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 40px;
+
+    &--row {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    line-height: 2;
+    color: col-text-darkgray;
+
+    &--center {
+      text-align: center;
+    }
+
+    &--row {
+      width: auto;
+      margin: 0;
+    }
+
+    &--mt {
+      margin-top: 40px;
+    }
+  }
+
+  & + & {
+    margin-top: 60px;
+  }
+
+  &__contents {
+    width: 900px;
+    margin: 0 auto;
+
+    @mixin notPC {
+      width: auto;
+    }
+
+    &--spColumn {
+      @mixin sp {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &--header {
+    border-radius: 14px 14px 0 0;
+  }
+
+  &--footer {
+    border-radius: 0 0 14px 14px;
+  }
+
+  &--body {
+    border-radius: 0;
+
+    .RoundWrapper--header + &,
+    & + &,
+    & + .RoundWrapper--footer {
+      margin-top: 10px;
+    }
+
+    & + & {
+      margin-top: 10px;
+    }
+
+  }
+}

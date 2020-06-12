@@ -1,0 +1,78 @@
+{
+  "name": "hoge",
+  "version": "1.0.0",
+  "description": "hoge",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "directories": {
+    "src": "src",
+    "contents": "cnoetnts"
+  },
+  "engines": {
+    "node": ">10.0.0"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/register": "^7.9.0",
+    "autoprefixer": "^9.7.6",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "es6-promise": "^4.2.8",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0-beta.2",
+    "gulp-base64": "^0.1.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-connect-php": "^1.0.3",
+    "gulp-css-spriter": "^0.4.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-load-plugins": "^2.0.3",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-rsync": "^0.0.8",
+    "gulp-uglify": "^3.0.2",
+    "gulp.spritesmith": "^6.11.0",
+    "imagemin-pngquant": "^8.0.0",
+    "postcss": "^7.0.27",
+    "postcss-comment": "^2.0.0",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-cssstats": "^1.0.0",
+    "postcss-each": "^0.10.0",
+    "postcss-import": "^12.0.1",
+    "postcss-mixins": "^6.2.3",
+    "postcss-modules-values": "^3.0.0",
+    "postcss-nested": "^4.2.1",
+    "postcss-partial-import": "^4.1.0",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-reporter": "^6.0.1",
+    "postcss-size": "^3.0.0",
+    "postcss-sorting": "^5.0.1",
+    "postcss-sprites": "^4.2.1",
+    "postcss-style-guide": "^0.14.0",
+    "prettier": "^2.0.4",
+    "prettier-stylelint": "^0.4.2",
+    "require-dir": "^1.2.0",
+    "run-sequence": "^2.2.1",
+    "stylelint": "^13.3.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.0.0"
+  },
+  "scripts": {
+    "watch": "gulp watch",
+    "watch:local": "gulp watch:local",
+    "sprite:dev": "NODE_ENV=development gulp sprite",
+    "sprite:prod": "NODE_ENV=production gulp sprite",
+    "build": "gulp build",
+    "deploy": "gulp build deploy"
+  },
+  "dependencies": {
+    "jquery": "3.4.1"
+  }
+}

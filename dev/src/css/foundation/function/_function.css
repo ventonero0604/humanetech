@@ -1,0 +1,99 @@
+/* 関数みたいなものを */
+
+@define-mixin thumbnailLine $width, $height {
+  position: relative;
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    box-sizing: border-box;
+    width: $width;
+    height: $height;
+    content: "";
+    border: 1px solid rgba(0, 0, 0, 0.06);
+  }
+}
+
+@define-mixin thumbnailTimeLabel $padding: 4px, $fontSize: 11px {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: inline-flex;
+  padding: calc($padding / 2) $padding;
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: $fontSize;
+  line-height: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* テキストを複数行で３点リーダーにする時に使う（PC向け）
+● 引数
+line-height：任意（デフォルトは1.4）
+font-size：任意（デフォルトは14px）
+行数：任意（デフォルトは3行）
+背景色：任意（デフォルトは#fff）
+● 注意点
+・リンクの中で使ってhover時に背景色が変わる場合などは、それ用の記述が必要
+*/
+@define-mixin textEllipsisMulitLinePC $lineHeight: 1.4, $fontSize: 14px,
+  $numberOfLine: 3, $bgColor: #fff {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  max-height: calc(
+    $fontSize * $lineHeight * $numberOfLine
+  ); /* テキスト領域の高さを計算 */
+  text-align: justify;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+
+  &::before,
+  &::after {
+    position: absolute;
+    background: $bgColor;
+  }
+
+  /* 三点リーダー */
+  &::before {
+    top: calc($fontSize * $lineHeight * ($numberOfLine - 1));
+    right: 0;
+    width: 1.2em;
+    content: "...";
+    text-align: center;
+  }
+
+  /* 最終行の末尾までいかないときに三点リーダーを隠す要素 */
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* テキストを複数行で３点リーダーにする時に使う（SP向け）
+● 引数
+行数：任意（デフォルトは3行）
+*/
+@define-mixin textEllipsisMulitLineSP $numberOfLine: 3 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $numberOfLine;
+}
+
+/* --- アニメーション --- */
+/* スケルトンスクリーン フェードイン */
+@define-mixin animationFadeInSkeletonScreen $animationName: fadeIn {
+  opacity: 0;
+  animation: $animationName 1.5s ease-in;
+  animation-fill-mode: forwards;
+}
+
+/*  モーダル フェードイン */
+@define-mixin animationFadeInModal $animationName: fadeIn {
+  opacity: 0;
+  animation: $animationName 0.2s 1 linear;
+  animation-fill-mode: forwards;
+}

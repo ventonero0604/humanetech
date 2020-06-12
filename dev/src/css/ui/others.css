@@ -1,0 +1,353 @@
+.Others {
+
+  &__main {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    background-image: url(../../asset/img-main-others.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @mixin sp {
+      height: 350px;
+    }
+
+    h1 {
+      @mixin sp {
+        width: 70%;
+      }
+    }
+  }
+
+  &__wrapper {
+    background-color: rgba(0,49,115,.05);
+    padding: 60px 0 100px;
+  }
+
+}
+
+.Privacy {
+  &__list {
+    margin-bottom: 40px;
+  }
+
+  &__listTitle {
+    font-weight: bold;
+    color: col-primary-navy;
+    font-size: 1.8rem;
+    border-bottom: 1px solid col-primary-navy;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+
+    &--small {
+      font-weight: bold;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__listText {
+    line-height: 2;
+
+    &--right {
+      margin-top: 20px;
+      text-align: right;
+    }
+
+    &--indent {
+      text-indent: -1.3em;
+      padding-left: 1em;
+    }
+
+    &--column {
+      flex-direction: column;
+
+      .ml20 {
+        margin-left: 20px;
+
+        @mixin notPC {
+          margin-left: 0;
+        }
+      }
+    }
+
+    & + .Privacy__listTitle {
+      margin-top: 50px;
+    }
+
+    & + .Privacy__info {
+      margin-top: 30px;
+    }
+
+    &--margin {
+      margin-top: 30px;
+    }
+
+    a {
+      color: col-primary-navy;
+      text-decoration: underline;
+    }
+
+    b {
+      color: col-primary-red;
+      font-weight: normal;
+    }
+  }
+
+  &__info {
+    background-color: rgba(0,49,115,.05);
+    padding: 30px 110px 50px;
+
+    @mixin notPC {
+      padding: 30px 30px 50px;
+    }
+
+    & + .Privacy__listTitle {
+      margin-top: 50px;
+    }
+  }
+
+  &__infoTitle {
+    text-align: center;
+
+    @mixin notPC {
+      flex-direction: column;
+      align-items: baseline;
+      padding-left: 10px;
+      padding-bottom: 20px;
+    }
+
+    p + p {
+      margin-left: 14px;
+
+      @mixin notPC {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.News {
+
+  &__list {
+    margin-top: -10px;
+  }
+
+  &__listItem {
+    border-bottom: 2px solid rgba(0,49,115,.21); 
+  }
+
+  &__listLink {
+    padding: 30px;
+
+    @mixin notPC {
+      flex-wrap: wrap;
+      padding: 30px 10px;
+    }
+  }
+
+  &__category {
+    margin-left: 18px;
+    background-color: rgba(0,49,115,.43);
+    color: #fff;
+    height: 24px;
+    font-size: 1.1rem;
+    line-height: 24px;
+    padding: 0 12px;
+  }
+
+  &__text {
+    margin-left: 18px;
+
+    @mixin notPC {
+      margin-left: 0;
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+
+  &__pager {
+    margin: 60px 0 20px;
+  }
+
+  &__pagerLink {
+    height: 50px;
+    line-height: 50px;
+    color: col-primary-navy;
+    border: 1px solid col-primary-navy;
+    flex-basis: 100px;
+    text-align: center;
+    font-size: 2rem;
+
+    &.is-current {
+      background-color: rgba(0,49,115,.43); 
+      border: none;
+      color: #fff;
+    }
+
+    & + & {
+      margin-left: 10px;
+    }
+  }
+}
+
+.Sitemap {
+
+  &__list {
+    &--fixed {
+      height: 280px;
+
+      @mixin sp {
+        height: auto;
+      }
+    }
+
+    a {
+      display: block;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__listTitle {
+    font-weight: bold;
+    color: col-primary-navy;
+    font-size: 2rem;
+    border-left: 3px solid col-primary-navy;
+    padding-left: 10px;
+    display: inline-block;
+    line-height: 1.1;
+
+    @mixin sp {
+      margin-top: 30px;
+    }
+
+    & + .Sitemap__listLink {
+      margin-top: 30px;
+
+      @mixin sp {
+        margin-top: 14px;
+      }
+    }
+  }
+
+  &__listLink {
+    & + & {
+      margin-top: 14px;
+
+      @mixin sp {
+        margin-top: 7px;
+      }
+    }
+  }
+
+  &__column {
+    flex-basis: 33.3%;
+
+    &--1st {
+      flex-basis: 40%;
+
+      @mixin sp {
+        margin-top: -30px;
+      }
+    }
+    &--2nd {
+      flex-basis: 48%;
+    }
+  }
+
+  &__jobInfo {
+    margin-top: 60px;
+
+    @mixin sp {
+      margin-top: 30px;
+    }
+  }
+
+  &__jobInfoItemWrapper {
+    @mixin sp {
+      flex-direction: column;
+    }
+  }
+
+  &__jobInfoItem {
+
+    a {
+      display: block;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    a + a {
+      margin-top: 14px;
+
+      @mixin sp {
+        margin-top: 7px;
+      }
+    }
+
+    & + & {
+      margin-top: 40px;
+
+      @mixin sp {
+        margin-top: 0;
+      }
+    }
+
+    & + .Sitemap__jobInfoTitle {
+      margin-top: 60px;
+
+      @mixin sp {
+        margin-top: 30px;
+      }
+    }
+  }
+  
+  &__jobInfoTitle {
+    padding-bottom: 14px;
+    border-bottom: 2px solid rgba(0,49,115,.21); 
+    margin-bottom: 40px;
+
+    @mixin sp {
+      margin-bottom: 0;
+    }
+  }
+
+  &__jobInfoTitleText {
+    flex-basis: 230px;
+
+    @mixin sp {
+      flex-basis: auto;
+      margin-bottom: 14px;
+    }
+  }
+}
+
+.Contact {
+
+  &__text {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__image {
+    margin-bottom: 20px;
+  }
+
+  &__xsmall {
+    font-size: 1.4rem;
+    margin-bottom: 50px;
+  }
+
+  &__small {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+  }
+}

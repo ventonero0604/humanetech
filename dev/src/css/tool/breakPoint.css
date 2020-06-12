@@ -1,0 +1,39 @@
+/**
+ * @mixin breakpoints
+ */
+
+ @define-mixin LargePC $breakpoint {
+  @media screen and (min-width: 1920px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin MidPC $breakpoint {
+  @media screen and (max-width: 1230px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin PC $breakpoint {
+  @media screen and (min-width: 1024px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin notPC $breakpoint {
+  @media screen and (max-width: 1023px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin tab $breakpoint {
+  @media screen and (max-width: 1023px) and (min-width: 768px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin sp $breakpoint {
+  @media screen and (max-width: 767px) {
+    @mixin-content;
+  }
+}

@@ -1,0 +1,377 @@
+.Dispatch {
+
+  &__main {
+    position: relative;
+    height: 720px;
+    background-image: url(../../asset/engineer_dispatch/main.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden; 
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: col-primary-navy;
+      opacity: 0;
+      z-index: 1;
+    }
+
+    &--consulting {
+      height: 600px;
+      background-image: url(../../asset/engineer_dispatch/main-consulting.png);
+
+      &:before {
+        opacity: .4;
+      }
+    }
+
+    &--about {
+      height: 600px;
+      background-image: url(../../asset/engineer_dispatch/main-about.png);
+
+      &:before {
+        opacity: .4;
+      }
+    }
+
+    &--faq {
+      height: 600px;
+      background-image: url(../../asset/engineer_dispatch/main-faq.png);
+    }
+  }
+
+  &__mainTitle {
+    position: relative;
+    height: 100%;
+    z-index: 1;
+
+    &--about,
+    &--faq,
+    &--consulting {
+      left: 10%;
+    }
+  }
+
+  &__lead {
+    background-color: col-primary-navy;
+    padding: 80px 0 0;
+  }
+
+  &__leadTitle {
+    margin-bottom: 40px;
+  }
+
+  &__leadText {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 60px;
+    width: 900px;
+
+    &--center {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+  }
+
+  &__contents {
+    background-color: col-bg-blue;
+    padding: 60px 0 0;
+  }
+
+  &__logoWrapper {
+    margin-bottom: 40px;
+
+    img + img {
+      margin-left: 40px;
+    } 
+  }
+
+  &__jobWrapper {
+    & + & {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__jobItem {
+    margin-bottom: 30px;
+  }
+
+  &__jobItemText {
+    margin-left: 12px;
+  }
+
+  &__personImage {
+    margin-bottom: 60px
+  }
+
+  &__backupItems {
+    margin-bottom: 40px;
+  }
+  
+  &__backupItem {
+    p,
+    ul {
+      padding-left: 20px;
+    }
+
+    & + & {
+      margin-left: 20px;
+    }
+
+    li {
+      line-height: 1.8;
+    }
+  }
+
+  &__backupItemTitle {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__flowItemText {
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    &--adjust {
+      margin-top: 40px;
+    }
+
+    p {
+      line-height: 2;
+      margin-right: 20px;
+    }
+  }
+
+  &__btnWrapper {
+    .Button + .Button {
+      margin-left: 20px;
+    }
+  }
+
+  &__bnrWrapper {
+    padding: 120px 0;
+
+    a + a {
+      margin-left: 12px;
+    }
+  }
+}
+
+.Consultant {
+  &__textWrapper {
+    margin-left: 40px;
+
+    &--reverse {
+      margin-left: 0;
+      margin-right: 40px;
+    }
+  }
+
+  &__titleWrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-size: 4.8rem;
+    line-height: 1;
+  }
+
+  &__titleSmall {
+    margin-left: 20px;
+    color: #b2b2b2;
+  }
+
+  &__textBold {
+    font-weight: bold;
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    line-height: 2;
+    width: 460px;
+  }
+
+  &__itemFooterWrapper {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: col-primary-navy;
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 6px, rgba(33, 68, 124, 1) 6px, rgba(33, 68, 124, 1) 8px );
+    color: #fff;
+  }
+
+  &__itemFooter {
+    & + & {
+      margin-left: 40px;
+      padding-left: 40px;
+      border-left: 1px solid #fff;
+    }
+  }
+
+  &__itemFooterTitle {
+    margin-bottom: 10px;
+  }
+
+  &__itemFooterText {
+    font-size: 1.4rem;
+    line-height: 1.8;
+
+    &--large {
+      font-size: 4rem;
+
+      b {
+        font-size: 6.7rem;
+        line-height: 1;
+      }
+    }
+
+    &--fixed {
+      width: 380px;
+    }
+  }
+}
+
+.About {
+
+  &__text {
+    &--red {
+      color: col-primary-red;
+    }
+  }
+
+  &__table {
+    margin: 20px 0;
+  }
+
+  &__tableColumn {
+    color: col-primary-navy;
+    padding: 4px 0;
+
+    &:nth-child(odd) {
+      background-color: rgba(0, 49, 115, .05)
+    }
+  }
+
+  &__tableTitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 360px;
+    flex: 1;
+    padding-left: 200px;
+
+    i {
+      font-style: normal;
+      font-weight: normal;
+      color: col-primary-red;
+    }
+  }
+
+  &__tableText {
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding-right: 220px;
+
+    b {
+      font-size: 3.8rem;
+      font-weight: normal;
+    }
+  }
+
+  &__infoText {
+    margin-right: 30px;
+    line-height: 2;
+    width: 450px;
+  }
+
+  &__infoTextBlock {
+    margin-bottom: 40px;
+  }
+
+  &__fieldText {
+    margin: 30px 0;
+    color: col-primary-navy;
+    font-weight: bold;
+    line-height: 2;
+  }
+}
+
+.Faq {
+
+  &__wrapper {
+    width: 1310px;
+    margin: 0 auto;
+  }
+
+  &__items {
+    margin-left: -10px;
+    overflow: hidden;
+
+    & + & {
+      margin-top: 10px;
+    }
+  }
+
+  &__item {
+    width: 645px;
+    margin-left: 10px;
+    border-radius: 14px;
+    background-color: #fff;
+  }
+
+  &__itemHeader {
+    border-radius: 14px 14px 0 0;
+    font-size: 2rem;
+    color: col-primary-navy;
+    font-weight: bold;
+    padding: 30px 10px 10px 80px;
+    position: relative;
+    border-bottom: 3px solid col-bg-blue;
+
+    &:before {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 19px;
+      height: 24px;
+      background-image: url(../../../src/asset/engineer_dispatch/ico-q.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 34px;
+      left: 60px;
+    }
+  }
+
+  &__itemBody {
+    margin-bottom: 10px;
+    padding: 20px 40px 50px 98px;
+    position: relative;
+    line-height: 2;
+    height: 100%;
+
+    &:before {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 17px;
+      height: 23px;
+      background-image: url(../../../src/asset/engineer_dispatch/ico-a.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 24px;
+      left: 60px;
+    }
+  }
+
+  &__itemTitle {
+    margin-left: 20px;
+    padding-top: 3px;
+  }
+}
+

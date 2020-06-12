@@ -1,0 +1,51 @@
+.LocalNavi {
+  display: flex;
+  justify-content: center;
+
+  @mixin notPC {
+    overflow-x: auto;
+    justify-content: left;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 1024px;
+
+    @mixin notPC {
+      min-width: 700px;
+      max-width: 2000px;
+    }
+
+    &--future {
+      @mixin notPC {
+        min-width: 860px;
+      }
+    }
+
+    &--dispatch {
+      @mixin notPC {
+        min-width: 1060px;
+      }
+    }
+  }
+
+  &__listItem--small {
+    & + & {
+      margin-left: 180px;
+    }
+  }
+
+  &__listLink {
+    display: block;
+    height: 75px;
+    line-height: 75px;
+    font-size: 1.5rem;
+
+    &.is-current {
+      color: col-primary-red;
+      border-bottom: 9px solid col-primary-red;
+    }
+  }
+}
