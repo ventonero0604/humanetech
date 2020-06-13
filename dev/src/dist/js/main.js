@@ -33,8 +33,8 @@ $(function () {
     var position = localNaviCurrent.offset().left;
     var windowWidth = $(window).width();
 
-    if (position > windowWidth - 50) {
-      localNavi.scrollLeft(position);
+    if (position > windowWidth - 100) {
+      localNavi.scrollLeft(position - (windowWidth - position));
     }
   }
 });

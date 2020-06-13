@@ -31,10 +31,10 @@ $staticPath = '../../../src/dist/';
       </div>
 
       <div class="LocalNavi">
-        <ul class="LocalNavi__list LocalNavi__list--3items">
-          <li class="LocalNavi__listItem--small"><a class="LocalNavi__listLink" href="./">人材ソリューション</a></li>
-          <li class="LocalNavi__listItem--small"><a class="LocalNavi__listLink" href="./base.php">基盤ソリューション</a></li>
-          <li class="LocalNavi__listItem--small"><p class="LocalNavi__listLink is-current">システムソリューション</p></li>
+        <ul class="LocalNavi__list LocalNavi__list--solution">
+          <li class="LocalNavi__listItem"><a class="LocalNavi__listLink" href="./">人材ソリューション</a></li>
+          <li class="LocalNavi__listItem"><a class="LocalNavi__listLink" href="./base.php">基盤ソリューション</a></li>
+          <li class="LocalNavi__listItem"><p class="LocalNavi__listLink is-current">システムソリューション</p></li>
         </ul>
       </div>
 
@@ -48,7 +48,7 @@ $staticPath = '../../../src/dist/';
         </div>
       </div>
 
-      <div class="Solution__person FlexBox FlexBox--center">
+      <div class="Solution__person Solution__person--system FlexBox FlexBox--center">
         <div class="Solution__personItem FlexBox">
           <div class="Solution__personTextWrapper">
             <img src="/src/asset/solution/title-system-engineer.png" alt="エンジニア紹介" />
@@ -59,7 +59,7 @@ $staticPath = '../../../src/dist/';
               システムに関するコンサルティングやシステム開発の上流から下流まで、時にコーディングもこなす自称なんでも屋です。プロジェクトにおける問題となりそうな点の勘所は、 多くのプロジェクトで成功と失敗を経験してきたからこそ養えたとものと自負しております。またお客様に寄り添うことを常に意識してコンサルティングしております。
             </p>
           </div>
-          <img src="/src/asset/solution/img-system-person.png" alt="ENGINEER PRIDE" />
+          <div><img src="/src/asset/solution/img-system-person.png" alt="ENGINEER PRIDE" /></div>
         </div>
       </div>
 
@@ -159,9 +159,9 @@ $staticPath = '../../../src/dist/';
                   大手金融機関ソフト資産分析
                 </div>
                 <div class="System__listText">
-                  ・ソフトウェア全体構造の可視化
-                  ・標準コストの把握
-                  ・保守作業効率阻害要因の把握
+                  <p>・ソフトウェア全体構造の可視化</p>
+                  <p>・標準コストの把握</p>
+                  <p>・保守作業効率阻害要因の把握</p>
                 </div>
               </div>
               <div class="System__listItem FlexBox">
@@ -170,9 +170,9 @@ $staticPath = '../../../src/dist/';
                   資産分析
                 </div>
                 <div class="System__listText">
-                  ・案件別の保守コスト把握
-                  ・案件別保守コスト算定の指標づくり
-                  ・保守プロセスの改善提案
+                  <p>・案件別の保守コスト把握</p>
+                  <p>・案件別保守コスト算定の指標づくり</p>
+                  <p>・保守プロセスの改善提案</p>
                 </div>
               </div>
             </div>
@@ -270,17 +270,18 @@ $staticPath = '../../../src/dist/';
           <p class="Solution__contactImage"><img src="/src/asset/solution/img-tel.png" alt="03-3254-1330" /></p>
           <p class="Solution__contactText">受付時間　9:30〜18:00（土・日・祝及び弊社休業日を除く）</p>
         </div>
+      </div>
 
-        <div class="Solution__bottomBnr FlexBox FlexBox--center">
-          <a class="Solution__bottomBnrItem Solution__bottomBnrItem--base" href="./base.php">
-            <img src="/src/asset/solution/bnr-img-base.png" class="Solution__bottomBnrImage" />
-            <img src="/src/asset/solution/bnr-text-base.png" class="Solution__bottomBnrTitle" alt="基盤ソリューション" />
-          </a>
-          <a class="Solution__bottomBnrItem Solution__bottomBnrItem--human" href="./">
-            <img src="/src/asset/solution/bnr-img-human.png" class="Solution__bottomBnrImage" />
-            <img src="/src/asset/solution/bnr-text-human.png" class="Solution__bottomBnrTitle" alt="人材ソリューション" />
-          </a>
-        </div>
+
+      <div class="Solution__bottomBnr Solution__bottomBnr--spReverse FlexBox FlexBox--center">
+        <a class="Solution__bottomBnrItem Solution__bottomBnrItem--base" href="./base.php">
+          <img class="is-pc" src="/src/asset/solution/bnr-img-base.png" class="Solution__bottomBnrTitle" alt="基盤ソリューション" />
+          <img class="is-sp" src="/src/asset/solution/bnr-img-base-sp.png" class="Solution__bottomBnrTitle" alt="基盤ソリューション" />
+        </a>
+        <a class="Solution__bottomBnrItem Solution__bottomBnrItem--human" href="./">
+          <img class="is-pc" src="/src/asset/solution/bnr-img-human.png" class="Solution__bottomBnrTitle" alt="人材ソリューション" />
+          <img class="is-sp" src="/src/asset/solution/bnr-img-human-sp.png" class="Solution__bottomBnrTitle" alt="人材ソリューション" />
+        </a>
       </div>
     </section>
   </main>

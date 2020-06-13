@@ -1,5 +1,21 @@
 .Solution {
 
+  .is-sp {
+    display: none;
+
+    @mixin sp {
+      display: inline-block;
+    }
+  }
+
+  .is-pc {
+    display: block;
+
+    @mixin sp {
+      display: none;
+    }
+  }
+
   &__main {
     position: relative;
     height: 720px;
@@ -19,6 +35,14 @@
       background-color: col-primary-navy;
       opacity: .4;
       z-index: 1;
+
+      @mixin notPC {
+        opacity: .76;
+      }
+    }
+
+    @mixin notPC {
+      height: 500px;
     }
 
     &--base {
@@ -46,6 +70,18 @@
     color: #fff;
     text-align: center;
 
+    img {
+      @mixin notPC {
+        height: 50%;
+      }
+    }
+
+    @mixin notPC {
+      top: auto;
+      right: auto;
+      padding: 0 10px;
+    }
+
     &--system,
     &--base {
       top: 0%;
@@ -56,6 +92,12 @@
     font-size: 5.2rem;
     margin-top: 40px;
     margin-bottom: 40px;
+
+    @mixin notPC {
+      margin-top: -20px;
+      margin-bottom: 10px;
+      font-size: 3rem;
+    }
   }
 
   &__titleText {
@@ -65,6 +107,10 @@
   &__lead {
     background-color: col-primary-navy;
     padding: 80px 0 0;
+
+    @mixin sp {
+      padding: 80px 10px 0;
+    }
 
     &--base {
       background-color: col-primary-green;
@@ -76,13 +122,21 @@
 
   &__leadTitle {
     margin-bottom: 40px;
+
+    @mixin sp {
+      width: 70%;
+    }
   }
 
   &__leadText {
     color: #fff;
     font-size: 1.4rem;
     margin-bottom: 60px;
-    width: 900px;
+    max-width: 900px;
+
+    @mixin sp {
+      margin-bottom: 40px;
+    }
 
     &--center {
       text-align: center;
@@ -90,34 +144,128 @@
     }
   }
 
+  &__leadFlowWrapper {
+    overflow-x: auto;
+    width: 100%;
+    text-align: center;
+  }
+
   &__leadFlow {
     margin-bottom: 60px;
+
+    @mixin sp {
+      width: 952px;
+      max-width: inherit;
+      margin-bottom: 10px;
+    }
+  }
+  
+  &__leadFlowSmall {
+    display: none;
+
+    @mixin sp {
+      color: #fff;
+      font-size: 1.2rem;
+      margin-top: 20px;
+      margin-bottom: 60px;
+      text-align: left;
+      display: block;
+      width: 100%;
+    }
   }
 
   &__contents {
     background-color: col-bg-blue;
-    padding: 60px 0 0;
+    padding: 60px 10px 80px;
   }
   
   &__iconWrapper {
     margin-bottom: 30px;
+    width: 100%;
   }
 
   &__iconWrapperText {
     margin-left: 10px;
+
+    @mixin sp {
+      margin-top: 20px;
+      margin-left: 0;
+    }
+  }
+
+  &__iconItem {
+    flex-basis: 33.3%;
+    margin-bottom: 30px;
+
+    @mixin sp {
+      flex-direction: column;
+      flex-basis: 50%;
+    }
   }
 
   &__item {
-    padding: 0 160px 0 80px;
+    padding: 0 20px 0 120px;
+
+    @mixin notPC {
+      padding-left: 20px;
+    }
+    @mixin sp {
+      padding: 0;
+    }
   }
 
   &__itemTextWrapper {
     margin-left: 40px;
+    max-width: 450px;
+
+    @mixin sp {
+      margin-left: 0;
+      max-width: inherit;
+      text-align: center;
+    }
+    
+    .RoundWrapper__title {
+      @mixin sp {
+        margin-bottom: 40px;
+        text-align: center;
+      }
+    }
+
+    .RoundWrapper__text {
+      @mixin sp {
+        text-align: left;
+        margin-top: 30px;
+      }
+    }
+  }
+
+  &__bnrContainer {
+    @mixin sp {
+      flex-direction: column;
+    }
+  }
+
+  &__bnrWrapper {
+    flex-basis: 50%;
+
+    & + & {
+      @mixin sp {
+        margin-top: 30px;
+        flex-basis: auto;
+      }
+    }
   }
 
   &__bnrTextWrapper {
     margin-top: 30px;
-    width: 400px;
+    padding: 0 60px;
+
+    @mixin notPC {
+      padding: 0 30px;
+    }
+    @mixin sp {
+      padding: 0;
+    }
 
     & + & {
       margin-left: 80px;
@@ -153,61 +301,47 @@
   }
 
   &__bottomBnr {
-    margin-top: 80px;
     max-width: 1920px;
-  }
+    margin: 0 auto;
 
-  &__bottomBnrItem {
-    position: relative;
-    overflow: hidden;
-
-    &:before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      opacity: .61;
-    }
-
-    &--human {
-      &:before {
-        background-color: col-primary-navy;
+    &--spReverse {
+      @mixin sp {
+        flex-direction: column-reverse;
       }
     }
-    &--base {
-      &:before {
-        background-color: col-primary-green;
-      }
-    }
-    &--system {
-      &:before {
-        background-color: col-primary-blue;
-      }
-    }
-  }
 
-  &__bottomBnrTitle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    @mixin sp {
+      flex-direction: column;
+    }
   }
 
   &__person {
-    background-color: rgba(10,122,158,.13);
-    padding: 80px 0;
+    padding: 60px 10px;
+
+    &--base {
+      background-color: rgba(10,122,158,.13);
+    }
+
+    &--system {
+      background-color: rgba(0,109,185,.13);
+    }
   }
 
   &__personItem {
-    width: 900px;
+    max-width: 900px;
     font-size: 1.4rem;
+
+    @mixin sp {
+      flex-direction: column;
+    }
   }
 
   &__personTextWrapper {
     margin-right: 50px;
+
+    @mixin sp {
+      margin-right: 0;
+    }
   }
 
   &__personJob {
@@ -237,8 +371,13 @@
   }
 
   &__personText {
-    width: 416px;
+    max-width: 416px;
     line-height: 2;
+
+    @mixin sp {
+      max-width: inherit;
+      margin-bottom: 20px;
+    }
   }
 
   &__baseListItem {
@@ -247,16 +386,33 @@
       margin-bottom: 40px;
       padding-bottom: 40px;
     }
+
+    & > .FlexBox {
+      @mixin sp {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
   }
 
   &__baseItemTextWrapper {
     margin-left: 30px;
+
+    @mixin sp {
+      margin-left: 0;
+    }
   }
   
   &__baseItemTitle {
     font-weight: bold;
     font-size: 1.8rem;
     margin-bottom: 10px;
+
+    @mixin sp {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
   }
 
   &__baseItemText {
@@ -288,7 +444,7 @@
 .System {
 
   &__wrapper {
-    width: 1300px;
+    max-width: 1300px;
     margin: 0 auto;
 
     & + & {
@@ -299,22 +455,45 @@
   &__header {
     background-color: rgba(0,109,185,.13);
     border-radius: 14px 14px 0 0;
-    height: 252px;
+    min-height: 252px;
+
+    @mixin sp {
+      flex-direction: column;
+      padding: 60px 20px;
+    }
   }
 
   &__headerTextWrapper {
     margin-left: 30px;
+
+    @mixin sp {
+      margin-left: 0;
+      margin-top: 30px;
+    }
   }
 
   &__headerTitle {
     font-size: 2.4rem;
     font-weight: bold;
     margin-bottom: 10px;
+
+    @mixin sp {
+      color: col-primary-blue;
+      font-size: 2rem;
+      text-align: center;
+    }
   }
 
   &__headerText {
     width: 760px;
     line-height: 2;
+
+    @mixin notPC {
+      width: 620px;
+    }
+    @mixin sp {
+      width: auto;
+    }
   }
 
   &__body {
@@ -326,10 +505,22 @@
   &__list {
     .RoundWrapper__title {
       margin-bottom: 60px;
+
+      @mixin sp {
+        margin-bottom: 30px;
+      }
     }
 
     & + & {
       margin-top: 120px;
+
+      @mixin sp {
+        margin-top: 60px;
+      }
+    }
+
+    @mixin notPC {
+      padding: 0 10px;
     }
   }
 
@@ -339,14 +530,37 @@
       margin-bottom: 40px;
       padding-bottom: 40px;
     }
+
+    @mixin sp {
+      flex-direction: column;
+    }
   }
 
   &__listTitle {
     font-weight: bold;
+
+    br {
+      @mixin sp {
+        display: none;
+      }
+    }
+
+    @mixin sp {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
   }
 
   &__listText{
     width: 600px;
     line-height: 2;
+
+    @mixin notPC {
+      width: 500px;
+    }
+    @mixin sp {
+      width: auto;
+    }
   }
 }

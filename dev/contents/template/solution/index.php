@@ -33,20 +33,26 @@ $staticPath = '../../../src/dist/';
       </div>
 
       <div class="LocalNavi">
-        <ul class="LocalNavi__list LocalNavi__list--3items">
-          <li class="LocalNavi__listItem--small"><p class="LocalNavi__listLink is-current">人材ソリューション</p></li>
-          <li class="LocalNavi__listItem--small"><a class="LocalNavi__listLink" href="./base.php">基盤ソリューション</a></li>
-          <li class="LocalNavi__listItem--small"><a class="LocalNavi__listLink" href="./system.php">システムソリューション</a></li>
+        <ul class="LocalNavi__list LocalNavi__list--solution">
+          <li class="LocalNavi__listItem"><p class="LocalNavi__listLink is-current">人材ソリューション</p></li>
+          <li class="LocalNavi__listItem"><a class="LocalNavi__listLink" href="./base.php">基盤ソリューション</a></li>
+          <li class="LocalNavi__listItem"><a class="LocalNavi__listLink" href="./system.php">システムソリューション</a></li>
         </ul>
       </div>
 
       <div class="Solution__lead">
         <div class="FlexBox FlexBox--column FlexBox--middle">
-          <h2 class="Solution__leadTitle"><img src="/src/asset/solution/lead-human.png" alt="Humanetechだからスペシャリストとして活躍できる場所がある。エンジニアとして更なる高みを目指す環境がある。" /></h2>
+          <h2 class="Solution__leadTitle">
+            <img class="is-pc" src="/src/asset/solution/lead-human.png" alt="Humanetechだからスペシャリストとして活躍できる場所がある。エンジニアとして更なる高みを目指す環境がある。" />
+            <img class="is-sp" src="/src/asset/solution/lead-human-sp.png" alt="Humanetechだからスペシャリストとして活躍できる場所がある。エンジニアとして更なる高みを目指す環境がある。" />
+          </h2>
           <p class="Solution__leadText">
             ヒューマネテックは正社員または正社員登用を前提とした有期雇用の技術者集団。請負型、常駐型業務委託（SES）契約から派遣契約（一般派遣免許 （派）13-301980）まで、プロジェクトに応じて対応し、技術部門の人的リソースBPOサービスとしてお手伝いします。また各専門分野のプロフェッショナルを派遣する登録型派遣（一般派遣）にも対応していますので、高品質なエンジニアの迅速なご提案が可能です。
           </p>
-          <div class="Solution__leadImage"><img src="/src/asset/solution/text-human.png" alt="ENGINEER PRIDE" /></div>
+          <div class="Solution__leadImage">
+            <img class="is-pc" src="/src/asset/solution/text-human.png" alt="ENGINEER PRIDE" />
+            <img class="is-sp" src="/src/asset/solution/text-human-sp.png" alt="ENGINEER PRIDE" />
+          </div>
         </div>
       </div>
 
@@ -59,7 +65,7 @@ $staticPath = '../../../src/dist/';
             登録エンジニア数は2500名を越えています（平成31年11月現在ヒューマネテック株式会社への派遣登録）。平成17年からの活動以来、15年間で延べ2000件以上の案件へ技術者を派遣しています。
           </div>
           <div class="RoundWrapper__contents">
-            <div class="Solution__iconWrapper FlexBox">
+            <div class="Solution__iconWrapper FlexBox FlexBox--wrap">
               <div class="Solution__iconItem FlexBox FlexBox--middle">
                 <img src="/src/asset/solution/ico-human1.png" alt="CONSULTANT" />
                 <p class="Solution__iconWrapperText">
@@ -83,8 +89,6 @@ $staticPath = '../../../src/dist/';
                   設計構築運用保守管理
                 </p>
               </div>
-            </div>
-            <div class="Solution__iconWrapper FlexBox">
               <div class="Solution__iconItem FlexBox FlexBox--middle">
                 <img src="/src/asset/solution/ico-human4.png" alt="CONSULTANT" />
                 <p class="Solution__iconWrapperText">
@@ -106,8 +110,6 @@ $staticPath = '../../../src/dist/';
                   バイリンガルSE
                 </p>
               </div>
-            </div>
-            <div class="Solution__iconWrapper FlexBox">
               <div class="Solution__iconItem FlexBox FlexBox--middle">
                 <img src="/src/asset/solution/ico-human7.png" alt="CONSULTANT" />
                 <p class="Solution__iconWrapperText">
@@ -135,11 +137,12 @@ $staticPath = '../../../src/dist/';
 
         <div class="RoundWrapper">
           <div class="Solution__item FlexBox FlexBox--middle">
-            <img src="/src/asset/solution/img-human1.png" />
+            <div><img class="is-pc" src="/src/asset/solution/img-human1.png" /></div>
             <div class="Solution__itemTextWrapper">
               <div class="RoundWrapper__title RoundWrapper__title--row">
                 登録エンジニアの構成
               </div>
+              <img class="is-sp" src="/src/asset/solution/img-human1.png" />
               <div class="RoundWrapper__text RoundWrapper__text--row">
                 上流工程から下流工程まで様々な経験を持ったエンジニアが在籍しています。<br/>
                 業務内容やご希望のスキルセットに応じて、お仕事にみあった人材のご提案が可能です。<br/>
@@ -151,11 +154,12 @@ $staticPath = '../../../src/dist/';
 
         <div class="RoundWrapper">
           <div class="Solution__item FlexBox FlexBox--middle">
-            <img src="/src/asset/solution/img-human2.png" />
+            <div><img class="is-pc" src="/src/asset/solution/img-human2.png" /></div>
             <div class="Solution__itemTextWrapper">
               <div class="RoundWrapper__title RoundWrapper__title--row">
                 エンジニアが担当する業務分布
               </div>
+              <img class="is-sp" src="/src/asset/solution/img-human2.png" />
               <div class="RoundWrapper__text RoundWrapper__text--row">
                 弊社に登録しているエンジニアは、上流工程経験者が半数います。また経験の少ないエンジニアには、徹底した社内教育、研修を行い、派遣先を選定します。貴社の要望にマッチした人材を弊社コンサルタントがアサインします。
               </div>
@@ -168,7 +172,8 @@ $staticPath = '../../../src/dist/';
             平均年齢と派遣継続期間
           </div>
           <div class="FlexBox FlexBox--center">
-            <img src="/src/asset/solution/img-human3.png" />
+            <img class="is-pc" src="/src/asset/solution/img-human3.png" />
+            <img class="is-sp" src="/src/asset/solution/img-human3-sp.png" />
           </div>
           <div class="RoundWrapper__text RoundWrapper__text--mt">
             弊社に登録しているエンジニアは、上流工程経験者が半数います。また経験の少ないエンジニアには、徹底した社内教育、研修を行い、派遣先を選定します。貴社の要望にマッチした人材を弊社コンサルタントがアサインします。
@@ -182,27 +187,29 @@ $staticPath = '../../../src/dist/';
           <div class="RoundWrapper__text">
             長年ITエンジニアとして第一線で活躍してきた方や、異業種からエンジニアへ転身をしたばかりの方も含め、ヒューマンテックでは一貫してエンジニアの育成に注力しています。ハイスキルエンジニアは、よりスキルを磨くため、経験の浅いエンジニアはスキルアップの上ハイスキルエンジニアになるための支援をおしみません。入社時に個別の経験と技術志向に合わせて行う教育プログラム（カリキュラム）を作成し、確実に技術をスキルアップさせる資格取得支援制度で、スペシャリストとしての独り立ちを応援します。
           </div>
-          <div class="FlexBox">
-            <a href="../engineer_dispatch/"><img src="/src/asset/solution/bnr-pride.png" alt="ENGINEER PRIDE" /></a>
-            <a href="../future_engineer/"><img src="/src/asset/solution/bnr-future.png" alt="FUTURE ENGINEER" /></a>
-          </div>
-          <div class="FlexBox FlexBox--center">
-            <div class="Solution__bnrTextWrapper">
-              <p class="Solution__bnrTitle">
-                企業様が安心して一緒に働くための<br/>
-                派遣エンジニアのサポート
-              </p>
-              <p class="Solution__bnrText">
-                ヒューマネテックは、実践的な技術や知識の指導と共に、他業種のコンサルタントによるコミュニケーション力やメンタルへルスを高める人材教育、福利厚生面の充実化などに取り組んでいます。技術面だけでなく、トータルで活躍できる派遣エンジニアを育成しています。
-              </p>
+          <div class="Solution__bnrContainer FlexBox">
+            <div class="Solution__bnrWrapper">
+              <a href="../engineer_dispatch/"><img src="/src/asset/solution/bnr-pride.png" alt="ENGINEER PRIDE" /></a>
+              <div class="Solution__bnrTextWrapper">
+                <p class="Solution__bnrTitle">
+                  企業様が安心して一緒に働くための<br/>
+                  派遣エンジニアのサポート
+                </p>
+                <p class="Solution__bnrText">
+                  ヒューマネテックは、実践的な技術や知識の指導と共に、他業種のコンサルタントによるコミュニケーション力やメンタルへルスを高める人材教育、福利厚生面の充実化などに取り組んでいます。技術面だけでなく、トータルで活躍できる派遣エンジニアを育成しています。
+                </p>
+              </div>
             </div>
-            <div class="Solution__bnrTextWrapper">
-              <p class="Solution__bnrTitle">
-                未来のエンジニア育成の取り組み
-              </p>
-              <p class="Solution__bnrText">
-                居酒屋のアルバイトや営業職、一般事務職…いまは異業種に従事されている方でもエンジニアとして成功することは十分可能です。5年後、10年後も、企業様に変わらずスキルの高い人材を派遣できるよう、未経験者の採用・育成にも力を入れています。
-              </p>
+            <div class="Solution__bnrWrapper">
+              <a href="../future_engineer/"><img src="/src/asset/solution/bnr-future.png" alt="FUTURE ENGINEER" /></a>
+              <div class="Solution__bnrTextWrapper">
+                <p class="Solution__bnrTitle">
+                  未来のエンジニア育成の取り組み
+                </p>
+                <p class="Solution__bnrText">
+                  居酒屋のアルバイトや営業職、一般事務職…いまは異業種に従事されている方でもエンジニアとして成功することは十分可能です。5年後、10年後も、企業様に変わらずスキルの高い人材を派遣できるよう、未経験者の採用・育成にも力を入れています。
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -214,17 +221,17 @@ $staticPath = '../../../src/dist/';
           <p class="Solution__contactImage"><img src="/src/asset/solution/img-tel.png" alt="03-3254-1330" /></p>
           <p class="Solution__contactText">受付時間　9:30〜18:00（土・日・祝及び弊社休業日を除く）</p>
         </div>
+      </div>
 
-        <div class="Solution__bottomBnr FlexBox FlexBox--center">
-          <a class="Solution__bottomBnrItem Solution__bottomBnrItem--base" href="./base.php">
-            <img src="/src/asset/solution/bnr-img-base.png" class="Solution__bottomBnrImage" />
-            <img src="/src/asset/solution/bnr-text-base.png" class="Solution__bottomBnrTitle" alt="基盤ソリューション" />
-          </a>
-          <a class="Solution__bottomBnrItem Solution__bottomBnrItem--system" href="./system.php">
-            <img src="/src/asset/solution/bnr-img-system.png" class="Solution__bottomBnrImage" />
-            <img src="/src/asset/solution/bnr-text-system.png" class="Solution__bottomBnrTitle" alt="システムソリューション" />
-          </a>
-        </div>
+      <div class="Solution__bottomBnr FlexBox FlexBox--center">
+        <a class="" href="./base.php">
+          <img class="is-pc" src="/src/asset/solution/bnr-img-base.png" class="Solution__bottomBnrTitle" alt="基盤ソリューション" />
+          <img class="is-sp" src="/src/asset/solution/bnr-img-base-sp.png" class="Solution__bottomBnrTitle" alt="基盤ソリューション" />
+        </a>
+        <a class="" href="./system.php">
+          <img class="is-pc" src="/src/asset/solution/bnr-img-system.png" class="Solution__bottomBnrTitle" alt="システムソリューション" />
+          <img class="is-sp" src="/src/asset/solution/bnr-img-system-sp.png" class="Solution__bottomBnrTitle" alt="システムソリューション" />
+        </a>
       </div>
     </section>
   </main>

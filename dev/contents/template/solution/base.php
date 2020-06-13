@@ -30,25 +30,36 @@ $staticPath = '../../../src/dist/';
       </div>
 
       <div class="LocalNavi">
-        <ul class="LocalNavi__list LocalNavi__list--3items">
-          <li class="LocalNavi__listItem--small"><a class="LocalNavi__listLink" href="./">人材ソリューション</a></li>
-          <li class="LocalNavi__listItem--small"><p class="LocalNavi__listLink is-current">基盤ソリューション</p></li>
-          <li class="LocalNavi__listItem--small"><a class="LocalNavi__listLink" href="./system.php">システムソリューション</a></li>
+        <ul class="LocalNavi__list LocalNavi__list--solution">
+          <li class="LocalNavi__listItem"><a class="LocalNavi__listLink" href="./">人材ソリューション</a></li>
+          <li class="LocalNavi__listItem"><p class="LocalNavi__listLink is-current">基盤ソリューション</p></li>
+          <li class="LocalNavi__listItem"><a class="LocalNavi__listLink" href="./system.php">システムソリューション</a></li>
         </ul>
       </div>
 
       <div class="Solution__lead Solution__lead--base">
         <div class="FlexBox FlexBox--column FlexBox--middle">
-          <h2 class="Solution__leadTitle"><img src="/src/asset/solution/lead-base.png" alt="ヒューマネテックなら導入計画から運用までワンストップで対応" /></h2>
+          <h2 class="Solution__leadTitle">
+            <img class="is-pc" src="/src/asset/solution/lead-base.png" alt="ヒューマネテックなら導入計画から運用までワンストップで対応" />
+            <img class="is-sp" src="/src/asset/solution/lead-base-sp.png" alt="ヒューマネテックなら導入計画から運用までワンストップで対応" />
+          </h2>
           <p class="Solution__leadText">
             法人様向けITインフラ基盤の導入コンサルティング、構築、設計、運用、そして運用改善までをサポートしています。またニーズが高まるAWSやAzureへの移行をご検討中の企業様向けのCloud Integration（クラウドインテグレーション）事業に力を入れています。
           </p>
-          <img class="Solution__leadFlow" src="/src/asset/solution/img-flow.png" />
-          <div class="Solution__leadImage"><img src="/src/asset/solution/text-base.png" alt="BASE SOLUTION" /></div>
+          <div class="Solution__leadFlowWrapper">
+            <img class="Solution__leadFlow" src="/src/asset/solution/img-flow.png" />
+          </div>
+          <p class="Solution__leadFlowSmall">
+            ※横へスクロールしてください。
+          </p>
+          <div class="Solution__leadImage">
+            <img class="is-pc" src="/src/asset/solution/text-base.png" alt="BASE SOLUTION" />
+            <img class="is-sp" src="/src/asset/solution/text-base-sp.png" alt="BASE SOLUTION" />
+          </div>
         </div>
       </div>
 
-      <div class="Solution__person FlexBox FlexBox--center">
+      <div class="Solution__person Solution__person--base FlexBox FlexBox--center">
         <div class="Solution__personItem FlexBox">
           <div class="Solution__personTextWrapper">
             <img src="/src/asset/solution/title-system-engineer.png" alt="エンジニア紹介" />
@@ -59,7 +70,7 @@ $staticPath = '../../../src/dist/';
               データセンターネットワークの設計・構築に携わり、セキュリティ製品導入やISMS取得などに携わってきました。分野としてはNW・情報セキュリティを得意としています。豊富な経験を活かし、ITインフラの最適化をご提案いたします。
             </p>
           </div>
-          <img src="/src/asset/solution/img-base-person.png" alt="ENGINEER PRIDE" />
+          <div><img src="/src/asset/solution/img-base-person.png" alt="ENGINEER PRIDE" /></div>
         </div>
       </div>
 
@@ -190,17 +201,17 @@ $staticPath = '../../../src/dist/';
           <p class="Solution__contactImage"><img src="/src/asset/solution/img-tel.png" alt="03-3254-1330" /></p>
           <p class="Solution__contactText">受付時間　9:30〜18:00（土・日・祝及び弊社休業日を除く）</p>
         </div>
+      </div>
 
-        <div class="Solution__bottomBnr FlexBox FlexBox--center">
-          <a class="Solution__bottomBnrItem Solution__bottomBnrItem--human" href="./">
-            <img src="/src/asset/solution/bnr-img-human.png" class="Solution__bottomBnrImage" />
-            <img src="/src/asset/solution/bnr-text-human.png" class="Solution__bottomBnrTitle" alt="人材ソリューション" />
-          </a>
-          <a class="Solution__bottomBnrItem Solution__bottomBnrItem--system" href="./system.php">
-            <img src="/src/asset/solution/bnr-img-system.png" class="Solution__bottomBnrImage" />
-            <img src="/src/asset/solution/bnr-text-system.png" class="Solution__bottomBnrTitle" alt="システムソリューション" />
-          </a>
-        </div>
+      <div class="Solution__bottomBnr FlexBox FlexBox--center">
+        <a class="Solution__bottomBnrItem Solution__bottomBnrItem--human" href="./">
+          <img class="is-pc" src="/src/asset/solution/bnr-img-human.png" class="Solution__bottomBnrTitle" alt="人材ソリューション" />
+          <img class="is-sp" src="/src/asset/solution/bnr-img-human-sp.png" class="Solution__bottomBnrTitle" alt="人材ソリューション" />
+        </a>
+        <a class="Solution__bottomBnrItem Solution__bottomBnrItem--system" href="./system.php">
+          <img class="is-pc" src="/src/asset/solution/bnr-img-system.png" class="Solution__bottomBnrTitle" alt="システムソリューション" />
+          <img class="is-sp" src="/src/asset/solution/bnr-img-system-sp.png" class="Solution__bottomBnrTitle" alt="システムソリューション" />
+        </a>
       </div>
     </section>
   </main>
