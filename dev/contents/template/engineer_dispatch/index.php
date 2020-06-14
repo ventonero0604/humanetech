@@ -18,11 +18,19 @@ $staticPath = '../../../src/dist/';
   <main>
     <section class="Dispatch">
       <div class="Dispatch__main">
-        <h1 class="Dispatch__mainTitle FlexBox FlexBox--center FlexBox--middle"><img src="/src/asset/engineer_dispatch/title.png" alt="ENGINEER PRIDE" /></h1>
+        <h1 class="Dispatch__mainTitle FlexBox FlexBox--center FlexBox--middle">
+          <div class="Dispatch__mainSeparateTitle">
+            <div><img class="is-pc" src="/src/asset/engineer_dispatch/title.png" alt="ENGINEER PRIDE" /></div>
+            <div><img class="is-sp" src="/src/asset/engineer_dispatch/title-sp.png" alt="ENGINEER PRIDE" /></div>
+          </div>
+          <div class="Dispatch__mainBadge">
+            <div><img src="/src/asset/engineer_dispatch/img-main-badge.png" /></div>
+          </div>
+        </h1>
       </div>
 
       <div class="LocalNavi">
-        <ul class="LocalNavi__list">
+        <ul class="LocalNavi__list LocalNavi__list--dispatch">
           <li class="LocalNavi__listItem"><p class="LocalNavi__listLink is-current">エンジニア専門派遣の強み</p></li>
           <li class="LocalNavi__listItem"><a class="LocalNavi__listLink" href="./consulting.php">キャリアコンサルティング</a></li>
           <li class="LocalNavi__listItem"><a class="LocalNavi__listLink" href="../corporate/welfare.php">教育制度・福利厚生</a></li>
@@ -34,11 +42,15 @@ $staticPath = '../../../src/dist/';
 
       <div class="Dispatch__lead">
         <div class="FlexBox FlexBox--column FlexBox--middle">
-          <h2 class="Dispatch__leadTitle"><img src="/src/asset/engineer_dispatch/text-lead.png" alt="Humanetechだからスペシャリストとして活躍できる場所がある。エンジニアとして更なる高みを目指す環境がある。" /></h2>
+          <h2 class="Dispatch__leadTitle">
+            <img class="is-pc" src="/src/asset/engineer_dispatch/text-lead.png" alt="Humanetechだからスペシャリストとして活躍できる場所がある。エンジニアとして更なる高みを目指す環境がある。" />
+            <img class="is-sp" src="/src/asset/engineer_dispatch/text-lead-sp.png" alt="Humanetechだからスペシャリストとして活躍できる場所がある。エンジニアとして更なる高みを目指す環境がある。" />
+          </h2>
           <p class="Dispatch__leadText">
             ヒューマネテックは、2005年の設立以来、 IT専門の派遣会社としてエンジニアのスペシャリストを派遣することで地道に実績を積み重ねてまいりました。市場のグローバル化が進む中、スタッフの中には世界進出している企業様のネットワークの提案・設計・構築の全てを任せられ、自ら提案・設計したシステムの導入を構築するため、英国まで赴くような人材も数多く存在します。エンジニアとしてやりがいを感じられる仕事に挑戦してみませんか。
           </p>
-          <div class="Dispatch__leadImage"><img src="/src/asset/engineer_dispatch/text-pride.png" alt="ENGINEER PRIDE" /></div>
+          <div class="Dispatch__leadImage is-pc"><img src="/src/asset/engineer_dispatch/text-pride.png" alt="ENGINEER PRIDE" /></div>
+          <div class="Dispatch__leadImage is-sp"><img src="/src/asset/engineer_dispatch/text-pride-sp.png" alt="ENGINEER PRIDE" /></div>
         </div>
       </div>
 
@@ -51,15 +63,13 @@ $staticPath = '../../../src/dist/';
             ヒューマネテックが有する派遣先は、国内大手企業やグローバル展開する外資系企業など、多数。最先端の技術フィールドであなたのスキルを活かしてみませんか？エンジニアとして更なる高みを目指し、エンジニアとして誇りをもてる優良プロジェクトをご紹介します。
           </div>
           <div class="Dispatch__logoWrapper FlexBox FlexBox--center">
-            <img src="/src/asset/engineer_dispatch/img-bnr.png" alt="ロゴ" />
-            <img src="/src/asset/engineer_dispatch/img-bnr.png" alt="ロゴ" />
-            <img src="/src/asset/engineer_dispatch/img-bnr.png" alt="ロゴ" />
-            <img src="/src/asset/engineer_dispatch/img-bnr.png" alt="ロゴ" />
-          </div>
-          <div class="Dispatch__logoWrapper FlexBox FlexBox--center">
-            <img src="/src/asset/engineer_dispatch/img-bnr.png" alt="ロゴ" />
-            <img src="/src/asset/engineer_dispatch/img-bnr.png" alt="ロゴ" />
-            <img src="/src/asset/engineer_dispatch/img-bnr.png" alt="ロゴ" />
+            <div><img src="/src/asset/engineer_dispatch/img-bnr.png" alt="ロゴ" /></div>
+            <div><img src="/src/asset/engineer_dispatch/img-bnr.png" alt="ロゴ" /></div>
+            <div><img src="/src/asset/engineer_dispatch/img-bnr.png" alt="ロゴ" /></div>
+            <div><img src="/src/asset/engineer_dispatch/img-bnr.png" alt="ロゴ" /></div>
+            <div><img src="/src/asset/engineer_dispatch/img-bnr.png" alt="ロゴ" /></div>
+            <div><img src="/src/asset/engineer_dispatch/img-bnr.png" alt="ロゴ" /></div>
+            <div><img src="/src/asset/engineer_dispatch/img-bnr.png" alt="ロゴ" /></div>
           </div>
           <div class="FlexBox FlexBox--center">
             <div class="Button">
@@ -75,7 +85,7 @@ $staticPath = '../../../src/dist/';
           <div class="RoundWrapper__text">
             職種は、インフラ50%、開発系30%。金融、自動車、家電、医療分野など様々な業界のプロジェクトに加わっていただきます。プリセールス・企画・調査分析、基本設計、運用保守管理など、ご自身が今までに身につけたスキルや得意分野を活かして、スペシャリストとして活躍していただく場所をご提供します。
           </div>
-          <div class="Dispatch__jobWrapper FlexBox FlexBox--center RoundWrapper__contents">
+          <div class="Dispatch__jobWrapper FlexBox RoundWrapper__contents">
             <div class="Dispatch__jobItem FlexBox FlexBox--middle">
               <img src="/src/asset/engineer_dispatch/img-consultunt.png" alt="CONSULTUNT" />
               <p class="Dispatch__jobItemText">
@@ -83,7 +93,7 @@ $staticPath = '../../../src/dist/';
               </p>
             </div>
             <div class="Dispatch__jobItem FlexBox FlexBox--middle">
-              <img src="/src/asset/engineer_dispatch/img-consultunt.png" alt="CONSULTUNT" />
+              <img src="/src/asset/engineer_dispatch/img-pm.png" alt="CONSULTUNT" />
               <p class="Dispatch__jobItemText">
                 銀行、証券、物流、<br/>
                 各業務に特化した<br/>
@@ -91,7 +101,7 @@ $staticPath = '../../../src/dist/';
               </p>
             </div>
             <div class="Dispatch__jobItem FlexBox FlexBox--middle">
-              <img src="/src/asset/engineer_dispatch/img-consultunt.png" alt="CONSULTUNT" />
+              <img src="/src/asset/engineer_dispatch/img-dev.png" alt="CONSULTUNT" />
               <p class="Dispatch__jobItemText">
                 UNIX, Linux,<br/>
                 Windows基盤<br/>
@@ -99,29 +109,26 @@ $staticPath = '../../../src/dist/';
                 設計構築運用保守管理
               </p>
             </div>
-          </div>
-          <div class="Dispatch__jobWrapper FlexBox FlexBox--center RoundWrapper__contents">
             <div class="Dispatch__jobItem FlexBox FlexBox--middle">
-              <img src="/src/asset/engineer_dispatch/img-consultunt.png" alt="CONSULTUNT" />
+              <img src="/src/asset/engineer_dispatch/img-engineer.png" alt="CONSULTUNT" />
               <p class="Dispatch__jobItemText">
-                ITコンサルタント
+                Java, VB, .Net,<br/>
+                DB設計<br/>
+                (Oracle, SQLserver)<br/>
+                開発エンジニア
               </p>
             </div>
             <div class="Dispatch__jobItem FlexBox FlexBox--middle">
-              <img src="/src/asset/engineer_dispatch/img-consultunt.png" alt="CONSULTUNT" />
+              <img src="/src/asset/engineer_dispatch/img-data.png" alt="CONSULTUNT" />
               <p class="Dispatch__jobItemText">
-                銀行、証券、物流、<br/>
-                各業務に特化した<br/>
-                PM、PL
+                データサイエンティスト/<br/>
+                データアナリスト
               </p>
             </div>
             <div class="Dispatch__jobItem FlexBox FlexBox--middle">
-              <img src="/src/asset/engineer_dispatch/img-consultunt.png" alt="CONSULTUNT" />
+              <img src="/src/asset/engineer_dispatch/img-bilingual.png" alt="CONSULTUNT" />
               <p class="Dispatch__jobItemText">
-                UNIX, Linux,<br/>
-                Windows基盤<br/>
-                （ネットワーク/サーバ）<br/>
-                設計構築運用保守管理
+                バイリンガルSE
               </p>
             </div>
           </div>
@@ -134,13 +141,13 @@ $staticPath = '../../../src/dist/';
 
         <div class="RoundWrapper">
           <div class="RoundWrapper__title">
-            スキルを活かせる幅広いエンジニア職種
+            経験豊富なコンサルタントがあなたのキャリア設計をお手伝い。
           </div>
           <div class="Dispatch__personImage FlexBox">
-            <img src="/src/asset/engineer_dispatch/img-person1.png" />
-            <img src="/src/asset/engineer_dispatch/img-person2.png" />
-            <img src="/src/asset/engineer_dispatch/img-person3.png" />
-            <img src="/src/asset/engineer_dispatch/img-person4.png" />
+            <div><img src="/src/asset/engineer_dispatch/img-person1.png" /></div>
+            <div><img src="/src/asset/engineer_dispatch/img-person2.png" /></div>
+            <div><img src="/src/asset/engineer_dispatch/img-person3.png" /></div>
+            <div><img src="/src/asset/engineer_dispatch/img-person4.png" /></div>
           </div>
           <div class="RoundWrapper__text">
             短い文章に変更
@@ -171,7 +178,7 @@ $staticPath = '../../../src/dist/';
               </ul>
             </div>
             <div class="Dispatch__backupItem">
-              <img src="/src/asset/engineer_dispatch/img1.png" />
+              <img src="/src/asset/engineer_dispatch/img2.png" />
               <p class="Dispatch__backupItemTitle">
                 安心して働ける福利厚生制度
               </p>
@@ -195,9 +202,12 @@ $staticPath = '../../../src/dist/';
             エントリーから就業までの流れ
           </div>
 
-          <div class="FlexBox FlexBox--center">
-            <img src="/src/asset/engineer_dispatch/img-flow.png" />
+          <div class="Dispatch__leadFlowWrapper">
+            <img class="Dispatch__leadFlow" src="/src/asset/engineer_dispatch/img-flow.png" />
           </div>
+          <p class="Dispatch__leadFlowSmall">
+            ※横へスクロールしてください。
+          </p>
 
           <div class="Dispatch__flowItemText FlexBox FlexBox--middle RoundWrapper__contents">
             <p>

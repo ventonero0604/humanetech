@@ -18,12 +18,14 @@ $staticPath = '../../../src/dist/';
   <main>
     <section class="Dispatch">
       <div class="Dispatch__main Dispatch__main--about">
-        <h1 class="Dispatch__mainTitle Dispatch__mainTitle--about FlexBox FlexBox--middle"><img
-            src="/src/asset/engineer_dispatch/title-about.png" alt="当社の派遣について" /></h1>
+        <h1 class="Dispatch__mainTitle Dispatch__mainTitle--about FlexBox FlexBox--middle">
+          <img class="is-pc" src="/src/asset/engineer_dispatch/title-about.png" alt="当社の派遣について" />
+          <img class="is-sp" src="/src/asset/engineer_dispatch/title-about-sp.png" alt="当社の派遣について" />
+        </h1>
       </div>
   
       <div class="LocalNavi">
-        <ul class="LocalNavi__list">
+        <ul class="LocalNavi__list LocalNavi__list--dispatch">
           <li class="LocalNavi__listItem"><a class="LocalNavi__listLink" href="./">エンジニア専門派遣の強み</a></li>
           <li class="LocalNavi__listItem"><a class="LocalNavi__listLink" href="./consulting.php">キャリアコンサルティング</a></li>
           <li class="LocalNavi__listItem"><a class="LocalNavi__listLink" href="../corporate/welfare.php">教育制度・福利厚生</a></li>
@@ -38,14 +40,17 @@ $staticPath = '../../../src/dist/';
           <div class="RoundWrapper__title">
             エントリーから就業までの流れ
           </div>
-          <div class="FlexBox FlexBox--center">
-            <img src="/src/asset/engineer_dispatch/img-flow.png" />
+          <div class="Dispatch__leadFlowWrapper">
+            <img class="Dispatch__leadFlow" src="/src/asset/engineer_dispatch/img-flow.png" />
           </div>
+          <p class="Dispatch__leadFlowSmall">
+            ※横へスクロールしてください。
+          </p>
           <div class="Dispatch__flowItemText Dispatch__flowItemText--adjust FlexBox FlexBox--middle RoundWrapper__contents">
             <p>
               お仕事を探す方法は２つ。自分にあったアプローチでエントリーできます。気になる仕事がみつかったら各詳細ページの「エントリー」から、またお仕事探しに迷ったりキャリア相談や非公開案件をご紹介希望の方は「登録エントリー」からエントリーしてください。一人ひとり、時間をかけてキャリア相談を行っています。経歴書の書き方から面接のテクニックまで、基本的な事項から、将来どのようなキャリアパスを目指すか？マイルストンの設定まで、フォローをさせて頂きます。
             </p>
-            <img src="/src/asset/engineer_dispatch/img-badge.png" alt="来社不要" />
+            <img src="/src/asset/engineer_dispatch/img-main-badge.png" alt="来社不要" />
           </div>
         </div>
 
@@ -114,6 +119,18 @@ $staticPath = '../../../src/dist/';
             <p class="About__text About__text--red">
               ※通勤費、会社負担保険料はマージン率に含みます。
             </p>
+
+            <p class="About__text is-sp">
+              他　通勤費＝2.39％　（弊社負担）<br/>
+              　　保険料負担＝8.82％　（弊社負担）<br/>
+              　　（内訳　弊社募集費用、教育費用、<br/>
+              　　福利厚生費用等を含む事業運営費）
+            </p>
+
+            <p class="About__text is-sp">
+              ※マージン率は厚生労働省指定の計算式です。<br/>
+              通勤費、会社負担保険はマージン率に含みます。
+            </p>
           </div>
         </div>
 
@@ -122,7 +139,7 @@ $staticPath = '../../../src/dist/';
             派遣（労働者派遣事業）とは
           </div>
           <div class="RoundWrapper__contents">
-            <div class="FlexBox FlexBox--middle">
+            <div class="About__itemWrapper FlexBox FlexBox--middle">
               <div class="About__infoText">
                 <p class="About__infoTextBlock">派遣会社（ヒューマネテック株式会社）が、自社の社員（契約社員・正社員）を派遣先企業で、その企業の社員から直接「指揮命令」を受けて、その企業のために仕事をする業態です。請負とは、注文主と労働者の間に「指揮命令」の関係が生じない場合を言います。</p>
                 <p>・派遣元（ヒューマネテック株式会社）と派遣労働者との関には雇用関係があります。</p>
@@ -154,7 +171,7 @@ $staticPath = '../../../src/dist/';
         </div>
 
         <div class="Dispatch__bnrWrapper FlexBox FlexBox--center">
-          <a href="./about_dispatch.php"><img src="/src/asset/engineer_dispatch/bnr-about.png" alt="当社の派遣について" /></a>
+          <a href="./consulting.php"><img src="/src/asset/engineer_dispatch/bnr-counseller.png" alt="キャリアコンサルティング" /></a>
           <a href="./faq.php"><img src="/src/asset/engineer_dispatch/bnr-faq.png" alt="よくある質問" /></a>
           <a href="../corporate/recruit/entry_engineer_dispatch.php"><img src="/src/asset/engineer_dispatch/bnr-entry.png" alt="エンジニア派遣エントリー" /></a>
         </div>

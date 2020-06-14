@@ -22,7 +22,7 @@ $staticPath = '../../../src/dist/';
       </div>
 
       <div class="LocalNavi">
-        <ul class="LocalNavi__list">
+        <ul class="LocalNavi__list LocalNavi__list--future">
           <li class="LocalNavi__listItem"><a class="LocalNavi__listLink" href="./">未来のエンジニア採用</a></li>
           <li class="LocalNavi__listItem"><p class="LocalNavi__listLink is-current">社員紹介</p></li>
           <li class="LocalNavi__listItem"><a class="LocalNavi__listLink" href="../corporate/welfare.php">教育制度・福利厚生</a></li>
@@ -34,7 +34,10 @@ $staticPath = '../../../src/dist/';
 
       <div class="Future__lead">
         <div class="FlexBox FlexBox--column FlexBox--middle">
-          <h2 class="Future__leadTitle"><img src="/src/asset/future/title-lead-staff.png" alt="未来のエンジニア採用で入社した社員の紹介" /></h2>
+          <h2 class="Future__leadTitle Future__leadTitle--spMargin">
+            <img class="is-pc" src="/src/asset/future/title-lead-staff.png" alt="未来のエンジニア採用で入社した社員の紹介" />
+            <img class="is-notPC" src="/src/asset/future/title-lead-staff-sp.png" alt="未来のエンジニア採用で入社した社員の紹介" />
+          </h2>
           <p class="Future__leadText Future__leadText--center">
             未来のエンジニア採用では、異業種からのキャリアチェンジの成功を支援します。
           </p>
@@ -44,53 +47,63 @@ $staticPath = '../../../src/dist/';
       <div class="Future__contents">
         <div class="Staff">
           <div class="RoundWrapper">
-            <a class="FlexBox" href="staff_01.php">
+            <a class="Staff__wrapper FlexBox" href="staff_01.php">
               <div class="Staff__textWrapper FlexBox FlexBox--column FlexBox--center">
-                <p class="Staff__job">ネットワークエンジニア</p>
-                <p class="Staff__name">松ケ谷 昌功</p>
-                <p class="Staff__join">2012年入社</p>
-                <p class="Staff__separator"><img src="/src/asset/future/img-separator.png" /></p>
-                <p class="Staff__text">
-                  IT業界のこれからを担い、<br/>
-                  次の世代のエンジニアにつないでゆきたい
-                </p>
+                <div class="Staff__items">
+                  <p class="Staff__job">ネットワークエンジニア</p>
+                  <p class="Staff__name">松ケ谷 昌功</p>
+                  <p class="Staff__join">2012年入社</p>
+                  <p class="Staff__separator"><img src="/src/asset/future/img-separator.png" /></p>
+                  <p class="Staff__text">
+                    IT業界のこれからを担い、<br />
+                    次の世代のエンジニアにつないでゆきたい
+                  </p>
+                </div>
+              
               </div>
               <div>
-                <img src="/src/asset/future/img-staff1.png" alt="営業職 家電量販店" />
+                <img class="is-pc" src="/src/asset/future/img-staff1.png" alt="営業職 家電量販店" />
+                <img class="is-notPC" src="/src/asset/future/img-staff1-sp.png" alt="営業職 家電量販店" />
               </div>
             </a>
           </div>
           <div class="RoundWrapper">
-            <a class="FlexBox" href="staff_01.php">
+            <a class="Staff__wrapper FlexBox" href="staff_01.php">
               <div class="Staff__textWrapper FlexBox FlexBox--column FlexBox--center">
-                <p class="Staff__job">ネットワークエンジニア</p>
-                <p class="Staff__name">松ケ谷 昌功</p>
-                <p class="Staff__join">2012年入社</p>
-                <p class="Staff__separator"><img src="/src/asset/future/img-separator.png" /></p>
-                <p class="Staff__text">
-                  IT業界のこれからを担い、<br/>
-                  次の世代のエンジニアにつないでゆきたい
-                </p>
+                <div class="Staff__items">
+                  <p class="Staff__job">ネットワークエンジニア</p>
+                  <p class="Staff__name">松ケ谷 昌功</p>
+                  <p class="Staff__join">2012年入社</p>
+                  <p class="Staff__separator"><img src="/src/asset/future/img-separator.png" /></p>
+                  <p class="Staff__text">
+                    IT業界のこれからを担い、<br />
+                    次の世代のエンジニアにつないでゆきたい
+                  </p>
+                </div>
               </div>
               <div>
-                <img src="/src/asset/future/img-staff2.png" alt="営業職 家電量販店" />
+                <img class="is-pc" src="/src/asset/future/img-staff2.png" alt="パチンコ店スタッフ" />
+                <img class="is-notPC" src="/src/asset/future/img-staff2-sp.png" alt="パチンコ店スタッフ" />
               </div>
             </a>
           </div>
           <div class="RoundWrapper">
-            <a class="FlexBox" href="staff_01.php">
+            <a class="Staff__wrapper FlexBox" href="staff_01.php">
               <div class="Staff__textWrapper FlexBox FlexBox--column FlexBox--center">
-                <p class="Staff__job">ネットワークエンジニア</p>
-                <p class="Staff__name">松ケ谷 昌功</p>
-                <p class="Staff__join">2012年入社</p>
-                <p class="Staff__separator"><img src="/src/asset/future/img-separator.png" /></p>
-                <p class="Staff__text">
-                  IT業界のこれからを担い、<br/>
-                  次の世代のエンジニアにつないでゆきたい
-                </p>
+                <div class="Staff__items">
+                  <p class="Staff__job">ネットワークエンジニア</p>
+                  <p class="Staff__name">松ケ谷 昌功</p>
+                  <p class="Staff__join">2012年入社</p>
+                  <p class="Staff__separator"><img src="/src/asset/future/img-separator.png" /></p>
+                  <p class="Staff__text">
+                    IT業界のこれからを担い、<br />
+                    次の世代のエンジニアにつないでゆきたい
+                  </p>
+                </div>
               </div>
               <div>
-                <img src="/src/asset/future/img-staff3.png" alt="営業職 家電量販店" />
+                <img class="is-pc" src="/src/asset/future/img-staff3.png" alt="大工" />
+                <img class="is-notPC" src="/src/asset/future/img-staff3-sp.png" alt="大工" />
               </div>
             </a>
           </div>

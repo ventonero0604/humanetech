@@ -50,6 +50,10 @@
 
   & + & {
     margin-top: 60px;
+
+    @mixin sp {
+      margin-top: 30px;
+    }
   }
 
   &__contents {

@@ -17,12 +17,16 @@ $staticPath = '../../../src/dist/';
 
   <main>
     <section class="Future">
-      <div class="Future__main Future__main--staffDetail">
-        <div class="Future__mainTitle Future__mainTitle--staffDetail">
+      <div class="Future__main Future__main--staffDetail FlexBox">
+        <div class="Future__mainImage">
+        </div>
+
+        <div class="Future__mainText">
           <p class="StaffDetail__job">ネットワークエンジニア</p>
           <h1 class="StaffDetail__name">松ケ谷 昌功</h1>
           <p class="StaffDetail__kana">AKINORI MATSUGAYA</p>
           <p class="StaffDetail__join">2012年入社</p>
+          <p class="StaffDetail__separator is-notPC"><img src="/src/asset/future/img-separator.png" />
           <p class="StaffDetail__message">
             IT業界のこれからを担い、<br />
             次の世代のエンジニアにつないでゆきたい
@@ -31,7 +35,7 @@ $staticPath = '../../../src/dist/';
       </div>
   
       <div class="LocalNavi">
-        <ul class="LocalNavi__list">
+        <ul class="LocalNavi__list LocalNavi__list--future">
           <li class="LocalNavi__listItem"><a class="LocalNavi__listLink" href="./">未来のエンジニア採用</a></li>
           <li class="LocalNavi__listItem"><p class="LocalNavi__listLink is-current">社員紹介</p></li>
           <li class="LocalNavi__listItem"><a class="LocalNavi__listLink" href="../corporate/welfare.php">教育制度・福利厚生</a></li>
@@ -45,7 +49,12 @@ $staticPath = '../../../src/dist/';
         <div class="StaffDetail">
           <div class="RoundWrapper">
             <div class="FlexBox FlexBox--column FlexBox--middle">
-              <div class="StaffDetail__flow"><img src="/src/asset/future/img-career.png" alt="これまでのキャリア" /></div>
+              <div class="Dispatch__leadFlowWrapper">
+                <img class="Dispatch__leadFlow" src="/src/asset/future/img-career.png" alt="これまでのキャリア" />
+              </div>
+              <p class="Dispatch__leadFlowSmall">
+                ※横へスクロールしてください。
+              </p>
               <div class="StaffDetail__container">
                 <p class="StaffDetail__titleSmall">
                   Q.シューマネテックに入社を決めた理由は何ですか？
@@ -88,7 +97,8 @@ $staticPath = '../../../src/dist/';
   
           <div class="RoundWrapper StaffDetail__messageContainer">
             <div class="StaffDetail__messageWrapper FlexBox">
-              <div class="StaffDetail__messageText">
+              <div class="StaffDetail__messageTextWrapper">
+                <div class="StaffDetail__messageText">
                 <p class="StaffDetail__title">
                   エントリーを検討中の方にメッセージ
                 </p>
@@ -96,6 +106,7 @@ $staticPath = '../../../src/dist/';
                   弊社で働いているエンジニアは、非常に技術レベルが高く、そして社長を筆頭に人間性もすばらしい方ばかりです。<br />
                   そして知識ゼロからでも、ITエンジニアとしてしっかりと成長できる教育プランも用意されていますので、安心して挑戦できます。ぜひ、あなたも社会的に貢献できるITエンジニアという道で活躍してみませんか？
                 </p>
+              </div>
               </div>
               <div class="StaffDetail__messageImage">
                 <img src="/src/asset/future/img-staff1-3.png" />

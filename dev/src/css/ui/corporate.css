@@ -164,7 +164,7 @@
     padding: 60px 10px 100px;
 
     @mixin sp {
-      padding: 60px 10px 60px;
+      padding: 30px 10px 30px;
     }
 
     &--red {

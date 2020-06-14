@@ -23,7 +23,7 @@ $staticPath = '../../../src/dist/';
       </div>
   
       <div class="LocalNavi">
-        <ul class="LocalNavi__list">
+        <ul class="LocalNavi__list LocalNavi__list--dispatch">
           <li class="LocalNavi__listItem"><a class="LocalNavi__listLink" href="./">エンジニア専門派遣の強み</a></li>
           <li class="LocalNavi__listItem"><a class="LocalNavi__listLink" href="./consulting.php">キャリアコンサルティング</a></li>
           <li class="LocalNavi__listItem"><a class="LocalNavi__listLink" href="../corporate/welfare.php">教育制度・福利厚生</a></li>
@@ -169,7 +169,7 @@ $staticPath = '../../../src/dist/';
 
         <div class="Dispatch__bnrWrapper FlexBox FlexBox--center">
           <a href="./"><img src="/src/asset/engineer_dispatch/bnr-about.png" alt="当社の派遣について" /></a>
-          <a href="#"><img src="/src/asset/engineer_dispatch/bnr-faq.png" alt="よくある質問" /></a>
+          <a href="./consulting.php"><img src="/src/asset/engineer_dispatch/bnr-counseller.png" alt="キャリアコンサルティング" /></a>
           <a href="../corporate/recruit/entry_engineer_dispatch.php"><img src="/src/asset/engineer_dispatch/bnr-entry.png" alt="エンジニア派遣エントリー" /></a>
         </div>
       </div>

@@ -1,5 +1,32 @@
 .Future {
 
+  .is-sp {
+    display: none;
+
+    @mixin sp {
+      display: inline-block;
+    }
+  }
+
+  .is-notPC {
+    display: none;
+
+    @mixin notPC {
+      display: inline-block;
+    }
+  }
+
+  .is-pc {
+    display: block;
+
+    @mixin sp {
+      display: none;
+    }
+    @mixin notPC {
+      display: none;
+    }
+  }
+
   &__main {
     position: relative;
     height: 720px;
@@ -7,10 +34,22 @@
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden; 
+    background-position: center center;
+    padding: 0 20px;
+
+    @mixin sp {
+      height: 500px;
+      background-image: url(../../asset/future/img-main-sp.png);
+    }
 
     &--staff {
       height: 600px;
       background-image: url(../../asset/future/img-main-staff.png);
+
+      @mixin sp {
+        height: 350px;
+        background-image: url(../../asset/future/img-main-staff-sp.png);
+      }
 
       &:before {
         content: "";
@@ -27,50 +66,130 @@
     }
 
     &--staffDetail {
-      background-image: url(../../asset/future/img-main-staff1.png);
-      background-position: 50% 50%;
+      background-image: none;
+      background-color: col-primary-red;
+      padding: 0;
+
+      @mixin notPC {
+        flex-direction: column;
+        height: auto;
+      }
+    }
+  }
+
+  &__mainImage {
+    background-image: url(../../asset/future/img-main-staff1.png);
+    background-position: top right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+
+    @mixin notPC {
+      width: 100%;
+      height: 242px;
+      padding-bottom: calc(484 / 759  * 100%);
+      background-image: url(../../asset/future/img-main-staff1-sp.png);
+      background-position: top center;
     }
   }
 
   &__mainTitle {
     position: relative;
-    top: 220px;
-    left: 20%;
+    top: 120px;
+    text-align: right;
+    margin-right: 5%;
+
+    @mixin sp {
+      transform: scale(0.7);
+      transform-origin: top left;
+      top: 20px;
+      margin-right: 0;
+    }
 
     &--staff {
       z-index: 2;
-    }
-    &--staffDetail {
-      top: 180px;
-      left: 54%;
-      color: #fff;
+
+      @mixin sp {
+        text-align: left;
+        top: 60px;
+      }
     }
   }
 
+  &__mainText { 
+    width: 50%;
+    color: #fff;
+    padding-top: 160px;
+    padding-left: 40px;
+    background-image: url(../../asset/future/text-staff-lead.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 20px 160px;
+
+    @mixin notPC {
+      width: 100%;
+      padding: 30px 60px 30px;
+      background-position: 0 bottom;
+    }
+    @mixin sp {
+      padding: 20px 30px 40px;
+    }
+  }
+  
   &__lead {
     background-color: #a72225;
     padding: 80px 0 0;
+
+    @mixin sp {
+      padding: 80px 10px 0;
+    }
   }
 
   &__leadTitle {
     margin-bottom: 40px;
+
+    &--spMargin {
+      @mixin notPC {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__leadText {
     color: #fff;
     font-size: 1.4rem;
     margin-bottom: 60px;
-    width: 900px;
+    max-width: 900px;
+
+    @mixin sp {
+      line-height: 1.8;
+      margin-bottom: 60px;
+    }
 
     &--center {
       text-align: center;
       margin-bottom: 80px;
+
+      @mixin sp {
+        text-align: left;
+      }
     }
   }
 
   &__contents {
     background-color: col-bg-red;
-    padding: 60px 0 0;
+    padding: 60px 10px 0;
+
+    @mixin sp {
+      padding: 30px 10px 0;
+    }
+  }
+
+  &__spColumn {
+    @mixin sp {
+      flex-direction: column;
+    }
   }
 
   &__textBox {
@@ -78,6 +197,11 @@
 
     & + & {
       margin-left: 10px;
+
+      @mixin sp {
+        margin-left: 0;
+        margin-top: 14px;
+      }
     }
   }
 
@@ -85,59 +209,160 @@
     color: col-primary-red;
     background-color: #e9d4d3;
     text-align: center;
-    padding: 14px 0;
+    padding: 14px 10px;
     font-size: 1.7rem;
   }
 
   &__textBoxText {
-    width: 300px;
+    max-width: 300px;
     padding: 30px 20px;
     font-size: 1.4rem;
     line-height: 1.8;
+
+    @mixin sp {
+      max-width: inherit;
+    }
 
     p + p {
       margin-top: 20px;
     }
   }
 
-  &__flow {
-    background-image: url(../../../src/asset/future/img-flow.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 1713px;
+  &__flowHeader {
+    margin-left: -62px;
+
+    @mixin sp {
+      margin-left: 10px;
+      padding-right: 30px;
+    }
+  }
+
+  &__flowBody {
     position: relative;
+    padding: 40px 10px 40px;
+    z-index: 1;
+
+    @mixin sp {
+      padding: 40px 10px 20px;
+    }
+    
+    &:before {
+      width: 5px;
+      background-color: col-primary-red;
+      display: block;
+      content: '';
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+
+      @mixin sp {
+        transform: translate(0);
+        left: 10px;
+        width: 3px;
+      }
+    }
   }
 
   &__flowItem {
-    width: 409px;
-    position: absolute;
+    position: relative;
+    margin-bottom: 40px;
 
-    &--1st {
-      top: 260px;
-      right: 200px;
+    @mixin sp {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: -11px;
     }
-    &--2nd {
-      text-align: right;
-      top: 550px;
-      left: 200px;
+
+    &:before {
+      content: "";
+      display: block;
+      background-image: url(../../asset/future/img-flow-point.png);
+      background-repeat: no-repeat;
+      background-position: center 14px;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+
+      @mixin sp {
+        background-position: left 14px;
+      } 
     }
+
+    &--1st,
     &--3rd {
-      top: 850px;
-      right: 200px;
-    }
-    &--4th {
-      text-align: right;
-      top: 1190px;
-      left: 200px;
-    }
-    &--last {
-      bottom: 16px;
-      width: 100%;;
-      text-align: center;
-
-      .Future__flowItemTitle {
-        font-size: 2rem;
+      @mixin sp {
+        flex-direction: column-reverse;
       }
+
+      .Future__flowTextWrapper {
+        margin-left: 80px;
+
+        @mixin sp {
+          margin-left: 50px;
+        }
+      }
+    }
+    &--2nd, 
+    &--4th {
+      flex-direction: row-reverse;
+      text-align: right;
+
+      @mixin sp {
+        flex-direction: column-reverse;
+        text-align: left;
+      }
+
+      .Future__flowTextWrapper {
+        margin-right: 80px;
+
+        @mixin sp {
+          margin-left: 50px;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &__flowItemFooter {
+    text-align: center;
+    border: 5px solid col-primary-red;
+    max-width: 750px;
+    padding: 30px 10px;
+    margin: 0 auto;
+
+    @mixin sp {
+      border-width: 3px;
+      padding: 30px 20px;
+    }
+
+    .Future__flowItemTitle {
+      font-size: 2rem;
+      
+      @mixin sp {
+        text-align: left;
+      }
+    }
+    .Future__flowItemText {
+      @mixin sp {
+        text-align: left;
+      }
+    }
+  }
+
+  &__flowTextWrapper {
+    max-width: 409px;
+  }
+
+  &__flowImageWrapper {
+    width: 409px;
+    text-align: center;
+
+    @mixin sp {
+      max-width: 175px;
+      margin-left: 90px;
+      margin-top: 10px;
     }
   }
 
@@ -158,6 +383,10 @@
     background-color: #F2F2F2;
     padding: 16px 10px;
     overflow: hidden;
+
+    @mixin sp {
+      flex-direction: column;
+    }
   }
 
   &__flowItemInfoTitle {
@@ -175,6 +404,10 @@
   &__flowItemInfoLine {
     overflow: hidden;
 
+    @mixin sp {
+      flex-direction: column;
+    }
+
     & + & {
       margin-top: 6px;
     }
@@ -184,14 +417,30 @@
     background-color: #e6e6e6;
     border-radius: 0 0 14px 14px;
     padding: 30px 0 60px;
+
+    @mixin sp {
+      padding: 30px 10px;
+    }
+
+    & > .FlexBox {
+      @mixin sp {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
   }
 
   &__programItem {
-    width: 292px;
+    max-width: 292px;
     background-color: #fff;
 
     & + & {
       margin-left: 10px;
+
+      @mixin sp {
+        margin-left: 0;
+        margin-top: 20px;
+      }
     }
   }
 
@@ -214,19 +463,51 @@
   &__bnrWrapper {
     padding: 60px 0;
 
+    @mixin sp {
+      flex-direction: column;
+      align-items: center;
+    }
+
     a + a {
       margin-left: 12px;
+      
+      @mixin sp {
+        margin-left: 0;
+        margin-top: 20px;
+      }
     }
   }
   
   &__bnrContainer {
     background-color: col-primary-red;
     padding: 50px 0 80px;
+
+    @mixin sp {
+      padding: 30px 0 50px;
+    }
+  }
+
+  &__bnrContainerItem {
+    @mixin sp {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    img {
+      @mixin sp {
+        margin-top: 20px;
+      }
+    }
   }
 
   &__bnrContainerTitle {
     color: #fff;
     margin-bottom: 30px;
+    padding: 0 10px;
+
+    @mixin sp {
+      display: none;
+    }
   }
 
 }
@@ -235,6 +516,16 @@
   padding-bottom: 60px;
   .RoundWrapper {
     padding: 0;
+
+    @mixin notPC {
+      max-width: 700px;
+    }
+  }
+
+  &__wrapper {
+    @mixin notPC {
+      flex-direction: column-reverse;
+    }
   }
 
   &__textWrapper {
@@ -242,7 +533,26 @@
     color: #fff;
     border-radius: 14px 0 0 14px;
     flex-basis: 50%;
-    padding-left: 200px;
+    position: relative;
+
+    @mixin notPC {
+      border-radius: 0 0 14px 14px;
+      padding: 30px 60px;
+    }
+    @mixin sp {
+      padding: 30px 20px;
+    }
+  }
+
+  &__items {
+    position: relative;
+    left: 50%;
+    transform: translate(-25%, 0);
+
+    @mixin notPC {
+      left: 0;
+      transform: translate(0);
+    }
   }
   
   &__job {
@@ -273,26 +583,58 @@
   &__job {
     font-size: 2rem;
     margin-bottom: 20px;
+
+    @mixin sp {
+      font-size: 1.8rem;
+    }
   }
 
   &__name {
     font-size: 7.4rem;
     line-height: 1;
     margin-bottom: 10px;
+    
+    @mixin notPC {
+      margin-bottom: 20px;
+    }
+    @mixin sp {
+      font-size: 3.7rem;
+    }
   }
 
   &__kana {
     font-size: 2.6rem;
     margin-bottom: 60px;
+
+    @mixin notPC {
+      display: none;
+    }
   }
 
   &__join {
     font-size: 2rem;
     margin-bottom: 50px;
+
+    @mixin notPC {
+      margin-bottom: 10px;
+    }
+    @mixin sp {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__separator {
+    @mixin notPC {
+      margin-bottom: 20px;
+    }
   }
 
   &__message {
     font-size: 2.4rem;
+
+    @mixin sp {
+      font-size: 1.6rem;
+    }
   }
 
   &__flow {
@@ -300,7 +642,7 @@
   }
 
   &__container {
-    width: 900px;
+    max-width: 900px;
   }
 
   &__titleSmall {
@@ -320,6 +662,10 @@
   &__text {
     line-height: 2;
     margin-bottom: 80px;
+
+    @mixin sp {
+      margin-bottom: 20px;
+    }
   }
 
   &__image {
@@ -337,12 +683,42 @@
     }
   }
 
-  &__messageText {
-    padding: 100px 0 0 200px;
-    flex: 1;
+  &__messageWrapper {
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    
+    @mixin sp {
+      flex-direction: column;
+    }
+  }
+
+  &__messageTextWrapper {
+    position: relative;
+    padding-top: 100px;
+    margin-right: 100px;
+
+    @mixin notPC {
+      margin-right: 50px;
+    }
+
+    @mixin sp {
+      padding: 30px 10px;
+    }
 
     .StaffDetail__text {
-      width: 487px;
+      max-width: 487px;
+    }
+  }
+
+  &__messageText {
+    float: right;
+    padding-left: 10px;
+  }
+
+  &__messageImage {
+    @mixin sp {
+      margin-bottom: 60px;
     }
   }
 }

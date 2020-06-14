@@ -35,10 +35,13 @@ $(function () {
   // ローカルナビ（スマホ）
   if (localNavi.length && smp) {
     var position = localNaviCurrent.offset().left;
+    var contentWidth = localNaviCurrent.width();
     var windowWidth = $(window).width();
+    var isScrollable = (position + contentWidth) > windowWidth 
+    var positionMiddle = position + (windowWidth / 2) - (contentWidth / 2);
 
-    if ( position > windowWidth - 100) {
-      localNavi.scrollLeft(position - (windowWidth - position));
+    if (isScrollable) {
+      localNavi.scrollLeft(positionMiddle);
     }
   }
 })

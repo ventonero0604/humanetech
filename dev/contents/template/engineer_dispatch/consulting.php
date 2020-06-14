@@ -18,12 +18,14 @@ $staticPath = '../../../src/dist/';
   <main>
     <section class="Dispatch">
       <div class="Dispatch__main Dispatch__main--consulting">
-        <h1 class="Dispatch__mainTitle Dispatch__mainTitle--consulting FlexBox FlexBox--middle"><img
-            src="/src/asset/engineer_dispatch/title-consulting.png" alt="キャリアコンサルティング" /></h1>
+        <h1 class="Dispatch__mainTitle Dispatch__mainTitle--consulting FlexBox FlexBox--middle">
+          <img class="is-pc" src="/src/asset/engineer_dispatch/title-consulting.png" alt="キャリアコンサルティング" />
+          <img class="is-sp" src="/src/asset/engineer_dispatch/title-consulting-sp.png" alt="キャリアコンサルティング" />
+        </h1>
       </div>
   
       <div class="LocalNavi">
-        <ul class="LocalNavi__list">
+        <ul class="LocalNavi__list LocalNavi__list--dispatch">
           <li class="LocalNavi__listItem"><a class="LocalNavi__listLink" href="./">エンジニア専門派遣の強み</a></li>
           <li class="LocalNavi__listItem"><p class="LocalNavi__listLink is-current">キャリアコンサルティング</p></li>
           <li class="LocalNavi__listItem"><a class="LocalNavi__listLink" href="../corporate/welfare.php">教育制度・福利厚生</a></li>
@@ -39,12 +41,12 @@ $staticPath = '../../../src/dist/';
             経験豊富なコンサルタントがあなたのキャリア設計をお手伝い。
           </h2>
           <div class="Dispatch__personImage FlexBox">
-            <img src="/src/asset/engineer_dispatch/img-person1.png" />
-            <img src="/src/asset/engineer_dispatch/img-person2.png" />
-            <img src="/src/asset/engineer_dispatch/img-person3.png" />
-            <img src="/src/asset/engineer_dispatch/img-person4.png" />
+            <div><img src="/src/asset/engineer_dispatch/img-person1.png" /></div>
+            <div><img src="/src/asset/engineer_dispatch/img-person2.png" /></div>
+            <div><img src="/src/asset/engineer_dispatch/img-person3.png" /></div>
+            <div><img src="/src/asset/engineer_dispatch/img-person4.png" /></div>
           </div>
-          <div class="RoundWrapper__text">
+          <div class="RoundWrapper__text Consultant__mt-30">
             あなたのキャリア設計をサポートするために、経験豊富なコンサルタントがエンジニアひとり一人に寄り添ってアドバイスします。ご本人のスキルや得意分野を活かしたミスマッチの少ない仕事へのアサイン、プロの視点による技術面の実践的なアドバイスはもとより、現場常駐時には定期的なキャリアカウンセリングを行います。また他業種でも活躍する優秀なコンサルタントや、独自のメンタルヘルス制度と連携することで、あらゆる問題に対して万全な支援体制を構築しています。
           </div>
         </div>
@@ -53,8 +55,8 @@ $staticPath = '../../../src/dist/';
           <h2 class="RoundWrapper__title">
             コンサルタント紹介
           </h2>
-          <div class="FlexBox">
-            <img src="/src/asset/engineer_dispatch/img-person1-l.png" />
+          <div class="Consultant__item FlexBox">
+            <div><img src="/src/asset/engineer_dispatch/img-person1-l.png" /></div>
             <div class="Consultant__textWrapper">
               <div class="Consultant__titleWrapper FlexBox FlexBox--bottom">
                 <h3 class="Consultant__title">
@@ -105,8 +107,8 @@ $staticPath = '../../../src/dist/';
         </div>
   
         <div class="RoundWrapper RoundWrapper--body">
-          <div class="FlexBox FlexBox--reverse">
-            <img src="/src/asset/engineer_dispatch/img-person2-l.png" />
+          <div class="Consultant__item FlexBox FlexBox--reverse">
+            <div><img src="/src/asset/engineer_dispatch/img-person2-l.png" /></div>
             <div class="Consultant__textWrapper Consultant__textWrapper--reverse">
               <div class="Consultant__titleWrapper FlexBox FlexBox--bottom">
                 <h3 class="Consultant__title">
@@ -157,8 +159,8 @@ $staticPath = '../../../src/dist/';
         </div>
 
         <div class="RoundWrapper RoundWrapper--body">
-          <div class="FlexBox">
-            <img src="/src/asset/engineer_dispatch/img-person3-l.png" />
+          <div class="Consultant__item FlexBox">
+            <div><img src="/src/asset/engineer_dispatch/img-person3-l.png" /></div>
             <div class="Consultant__textWrapper">
               <div class="Consultant__titleWrapper FlexBox FlexBox--bottom">
                 <h3 class="Consultant__title">
@@ -209,8 +211,8 @@ $staticPath = '../../../src/dist/';
         </div>
 
         <div class="RoundWrapper RoundWrapper--footer">
-          <div class="FlexBox FlexBox--reverse">
-            <img src="/src/asset/engineer_dispatch/img-person4-l.png" />
+          <div class="Consultant__item FlexBox FlexBox--reverse">
+            <div><img src="/src/asset/engineer_dispatch/img-person4-l.png" /></div>
             <div class="Consultant__textWrapper Consultant__textWrapper--reverse">
               <div class="Consultant__titleWrapper FlexBox FlexBox--bottom">
                 <h3 class="Consultant__title">
