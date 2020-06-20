@@ -1,9 +1,9 @@
 :import("../colors/_colors.css"){
-  i__const_col_text_common_81: col-text-common;
-  i__const_col_text_placeholder_common_82: col-text-placeholder-common;
+  i__const_col_text_common_147: col-text-common;
+  i__const_col_text_placeholder_common_148: col-text-placeholder-common;
 }
 :import("../variables/_variables.css"){
-  i__const_hover_time_transition_common_83: hover-time-transition-common;
+  i__const_hover_time_transition_common_149: hover-time-transition-common;
 }
 :export{
   values: "../variables/_variables.css";
@@ -2570,7 +2570,7 @@ button {
       }
 .Future__main--staffDetail {
       background-image: none;
-      background-color: #a52224;
+      background-color: #aa5c5a;
       padding: 0;
     }
 @media screen and (max-width: 1023px) {
@@ -2649,7 +2649,7 @@ button {
   }
 }
 .Future__lead {
-    background-color: #a72225;
+    background-color: #aa5c5a;
     padding: 80px 0 0;
   }
 @media screen and (max-width: 767px) {
@@ -2749,6 +2749,7 @@ button {
     position: relative;
     padding: 40px 10px 40px;
     z-index: 1;
+    margin-top: -1px;
   }
 @media screen and (max-width: 767px) {
   .Future__flowBody {
@@ -2985,6 +2986,19 @@ button {
     font-size: 1.4rem;
     line-height: 1.8;
   }
+@media screen and (max-width: 767px) {
+  .Future__infoGr {}
+}
+.Future__infoGr img {
+      margin-bottom: 40px;
+      display: block;
+    }
+@media screen and (max-width: 767px) {
+  .Future__infoGr img {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+}
 .Future__bnrWrapper {
     padding: 60px 0;
   }
@@ -3009,7 +3023,7 @@ button {
   }
 }
 .Future__bnrContainer {
-    background-color: #a52224;
+    background-color: #aa5c5a;
     padding: 50px 0 80px;
   }
 @media screen and (max-width: 767px) {
@@ -3063,7 +3077,7 @@ button {
   }
 }
 .Staff__textWrapper {
-    background-color: #a52224;
+    background-color: #aa5c5a;
     color: #fff;
     border-radius: 14px 0 0 14px;
     -webkit-flex-basis: 50%;

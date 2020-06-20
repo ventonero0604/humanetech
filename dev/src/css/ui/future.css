@@ -67,7 +67,7 @@
 
     &--staffDetail {
       background-image: none;
-      background-color: col-primary-red;
+      background-color: #aa5c5a;
       padding: 0;
 
       @mixin notPC {
@@ -138,7 +138,7 @@
   }
   
   &__lead {
-    background-color: #a72225;
+    background-color: #aa5c5a;
     padding: 80px 0 0;
 
     @mixin sp {
@@ -241,6 +241,7 @@
     position: relative;
     padding: 40px 10px 40px;
     z-index: 1;
+    margin-top: -1px;
 
     @mixin sp {
       padding: 40px 10px 20px;
@@ -460,6 +461,21 @@
     line-height: 1.8;
   }
 
+  &__infoGr {
+    @mixin sp {
+    }
+
+    img {
+      margin-bottom: 40px;
+      display: block;
+
+      @mixin sp {
+        width: 48%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
   &__bnrWrapper {
     padding: 60px 0;
 
@@ -479,7 +495,7 @@
   }
   
   &__bnrContainer {
-    background-color: col-primary-red;
+    background-color: #aa5c5a;
     padding: 50px 0 80px;
 
     @mixin sp {
@@ -529,7 +545,7 @@
   }
 
   &__textWrapper {
-    background-color: col-primary-red;
+    background-color: #aa5c5a;
     color: #fff;
     border-radius: 14px 0 0 14px;
     flex-basis: 50%;

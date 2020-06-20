@@ -281,6 +281,20 @@ $staticPath = '../../../src/dist/';
           <div class="RoundWrapper__title">
             ひとめでわかるヒューマネテック
           </div>
+          <div class="Future__infoGr RoundWrapper__contents FlexBox FlexBox--wrap FlexBox--justify">
+            <img src="../../../src/asset/future/img-infogf1.png" alt="社員数 45人" />
+            <img src="../../../src/asset/future/img-infogf2.png" alt="売上・業績 4.3億" />
+            <img src="../../../src/asset/future/img-infogf3.png" alt="取引先企業数 約50社" />
+            <img src="../../../src/asset/future/img-infogf4.png" alt="未経験者の採用 10人" />
+            <img src="../../../src/asset/future/img-infogf5.png" alt="男女比 7:3" />
+            <img src="../../../src/asset/future/img-infogf6.png" alt="平均年齢 38.5歳" />
+            <img src="../../../src/asset/future/img-infogf7.png" alt="平均残業時間 20.7" />
+            <img src="../../../src/asset/future/img-infogf8.png" alt="有給消化率 ほぼ100%" />
+            <img src="../../../src/asset/future/img-infogf9.png" alt="設立 2005年" />
+            <img src="../../../src/asset/future/img-infogf10.png" alt="本社所在地 神田" />
+            <img src="../../../src/asset/future/img-infogf11.png" alt="平均勤続年数 6.5年" />
+            <img src="../../../src/asset/future/img-infogf12.png" alt="社員同士の懇親会の回数 計測不能" />
+          </div>
         </div>
 
         <div class="Future__bnrWrapper FlexBox FlexBox--center">
