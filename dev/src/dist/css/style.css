@@ -1,9 +1,9 @@
 :import("../colors/_colors.css"){
-  i__const_col_text_common_147: col-text-common;
-  i__const_col_text_placeholder_common_148: col-text-placeholder-common;
+  i__const_col_text_common_171: col-text-common;
+  i__const_col_text_placeholder_common_172: col-text-placeholder-common;
 }
 :import("../variables/_variables.css"){
-  i__const_hover_time_transition_common_149: hover-time-transition-common;
+  i__const_hover_time_transition_common_173: hover-time-transition-common;
 }
 :export{
   values: "../variables/_variables.css";
@@ -4555,8 +4555,8 @@ button {
 .Corporate__main {
     position: relative;
     height: 600px;
-    -webkit-background-size: contain;
-            background-size: contain;
+    -webkit-background-size: cover;
+            background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
@@ -4579,51 +4579,36 @@ button {
     }
 .Corporate__main--corporate {
       background-image: url(../../asset/corporate/main-corporate.png);
-      background-color: #003173;
     }
-@media screen and (max-width: 767px) {
-  .Corporate__main--corporate {
-    background-image: url(../../asset/corporate/main-corporate-sp.png);
-    -webkit-background-size: 320px 288px;
-            background-size: 320px 288px;
-  }
-}
+.Corporate__main--corporate:before {
+        background-color: rgba(0, 49, 115, .07)
+      }
 .Corporate__main--philosophy {
       background-image: url(../../asset/corporate/main-philosophy.png);
-      -webkit-background-size: cover;
-              background-size: cover;
     }
 .Corporate__main--philosophy:before {
         background-color: rgba(0, 49, 115, .07)
       }
 .Corporate__main--profile {
       background-image: url(../../asset/corporate/main-profile.png);
-      -webkit-background-size: cover;
-              background-size: cover;
     }
 .Corporate__main--profile:before {
         background-color: rgba(0, 49, 115, .07)
       }
 .Corporate__main--welfare {
       background-image: url(../../asset/corporate/main-welfare.png);
-      -webkit-background-size: cover;
-              background-size: cover;
     }
 .Corporate__main--welfare:before {
         background-color: rgba(0, 49, 115, .4)
       }
 .Corporate__main--recruit {
       background-image: url(../../asset/corporate/main-require.png);
-      -webkit-background-size: cover;
-              background-size: cover;
     }
 .Corporate__main--recruit:before {
         background-color: rgba(0, 49, 115, .4)
       }
 .Corporate__main--career {
       background-image: url(../../asset/corporate/main-career.png);
-      -webkit-background-size: cover;
-              background-size: cover;
     }
 @media screen and (max-width: 767px) {
   .Corporate__main--career {
@@ -4650,8 +4635,6 @@ button {
 }
 .Corporate__main--dispatch {
       background-image: url(../../asset/corporate/main-dispatch.png);
-      -webkit-background-size: cover;
-              background-size: cover;
     }
 @media screen and (max-width: 767px) {
   .Corporate__main--dispatch {
@@ -4678,7 +4661,7 @@ button {
   }
 }
 .Corporate__container {
-    background-color: #003173;
+    background-color: #E6EAF2;
     padding: 100px 0;
   }
 @media screen and (max-width: 767px) {
