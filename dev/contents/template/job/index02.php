@@ -24,16 +24,43 @@ $staticPath = '../../../src/dist/';
               <p>職種別に求人情報を表示</p>
             </div>
             <div class="Job__menuBody">
-              <a class="Job__menuItem" href="#">
+              <a class="Job__menuItem" href="./index02.php">
+                <div class="FlexBox FlexBox--middle">
+                  <div class="Job__icoWrapper FlexBox FlexBox--center">
+                    <img src="/src/asset/job/ico-pm.png" />
+                  </div>
+                  <p class="Job__menuText">PM</p>
+                  <p class="Job__menuNumber">（2）</p>
+                </div>
+              </a>
+              <a class="Job__menuItem" href="index02.php">
+                <div class="FlexBox FlexBox--middle">
+                  <div class="Job__icoWrapper FlexBox FlexBox--center">
+                    <img src="/src/asset/job/ico-pmo.png" />
+                  </div>
+                  <p class="Job__menuText">PMO</p>
+                  <p class="Job__menuNumber">（2）</p>
+                </div>
+              </a>
+              <a class="Job__menuItem" href="index02.php">
+                <div class="FlexBox FlexBox--middle">
+                  <div class="Job__icoWrapper FlexBox FlexBox--center">
+                    <img src="/src/asset/job/ico-se.png" />
+                  </div>
+                  <p class="Job__menuText">開発 SE</p>
+                  <p class="Job__menuNumber">（2）</p>
+                </div>
+              </a>
+              <a class="Job__menuItem" href="index02.php">
                 <div class="FlexBox FlexBox--middle">
                   <div class="Job__icoWrapper FlexBox FlexBox--center">
                     <img src="/src/asset/job/ico-dev.png" />
                   </div>
-                  <p class="Job__menuText">開発エンジニア</p>
+                  <p class="Job__menuText">開発プログラマー</p>
                   <p class="Job__menuNumber">（2）</p>
                 </div>
               </a>
-              <a class="Job__menuItem" href="#">
+              <a class="Job__menuItem" href="index02.php">
                 <div class="FlexBox FlexBox--middle">
                   <div class="Job__icoWrapper FlexBox FlexBox--center">
                     <img src="/src/asset/job/ico-network.png" />
@@ -42,48 +69,48 @@ $staticPath = '../../../src/dist/';
                   <p class="Job__menuNumber">（2）</p>
                 </div>
               </a>
-              <a class="Job__menuItem" href="#">
+              <a class="Job__menuItem" href="index02.php">
                 <div class="FlexBox FlexBox--middle">
                   <div class="Job__icoWrapper FlexBox FlexBox--center">
                     <img src="/src/asset/job/ico-server.png" />
                   </div>
-                  <p class="Job__menuText">サーバエンジニア</p>
+                  <p class="Job__menuText">サーバーエンジニア</p>
                   <p class="Job__menuNumber">（2）</p>
                 </div>
               </a>
-              <a class="Job__menuItem" href="#">
+              <a class="Job__menuItem" href="index02.php">
                 <div class="FlexBox FlexBox--middle">
                   <div class="Job__icoWrapper FlexBox FlexBox--center">
-                    <img src="/src/asset/job/ico-maintein.png" />
+                    <img src="/src/asset/job/ico-help.png" />
                   </div>
-                  <p class="Job__menuText">運用保守</p>
+                  <p class="Job__menuText">ヘルプデスク</p>
                   <p class="Job__menuNumber">（2）</p>
                 </div>
               </a>
-              <a class="Job__menuItem" href="#">
+              <a class="Job__menuItem" href="index02.php">
                 <div class="FlexBox FlexBox--middle">
                   <div class="Job__icoWrapper FlexBox FlexBox--center">
-                    <img src="/src/asset/job/ico-support.png" />
+                    <img src="/src/asset/job/ico-marketing.png" />
                   </div>
-                  <p class="Job__menuText">サポート</p>
+                  <p class="Job__menuText">マーケティング</p>
                   <p class="Job__menuNumber">（2）</p>
                 </div>
               </a>
-              <a class="Job__menuItem" href="#">
+              <a class="Job__menuItem" href="index02.php">
                 <div class="FlexBox FlexBox--middle">
                   <div class="Job__icoWrapper FlexBox FlexBox--center">
-                    <img src="/src/asset/job/ico-translate.png" />
+                    <img src="/src/asset/job/ico-office.png" />
                   </div>
-                  <p class="Job__menuText">IT事務翻訳系</p>
+                  <p class="Job__menuText">事務</p>
                   <p class="Job__menuNumber">（2）</p>
                 </div>
               </a>
-              <a class="Job__menuItem" href="#">
+              <a class="Job__menuItem" href="index02.php">
                 <div class="FlexBox FlexBox--middle">
                   <div class="Job__icoWrapper FlexBox FlexBox--center">
-                    <img src="/src/asset/job/ico-ohter.png" />
+                    <img src="/src/asset/job/ico-other.png" />
                   </div>
-                  <p class="Job__menuText">その他IT系</p>
+                  <p class="Job__menuText">その他</p>
                   <p class="Job__menuNumber">（2）</p>
                 </div>
               </a>
@@ -125,11 +152,11 @@ $staticPath = '../../../src/dist/';
             </div>
 
             <div class="Job__item">
-              <div class="Job__itemHeader Job__itemHeader--dev FlexBox FlexBox--middle">
+              <div class="Job__itemHeader Job__itemHeader--navy FlexBox FlexBox--middle">
                 <div class="Job__itemCategory FlexBox">
-                  <div><img src="/src/asset/job/ico-dev-w.png" /></div>
+                  <div><img src="/src/asset/job/ico-pm-w.png" /></div>
                   <p class="Job__itemCategoryTitle">
-                    開発エンジニア
+                    PM
                   </p>
                 </div>
                 <p class="Job__itemDate">
@@ -172,7 +199,148 @@ $staticPath = '../../../src/dist/';
             </div>
 
             <div class="Job__item">
-              <div class="Job__itemHeader Job__itemHeader--network FlexBox FlexBox--middle">
+              <div class="Job__itemHeader Job__itemHeader--navy FlexBox FlexBox--middle">
+                <div class="Job__itemCategory FlexBox">
+                  <div><img src="/src/asset/job/ico-pmo-w.png" /></div>
+                  <p class="Job__itemCategoryTitle">
+                    PMO
+                  </p>
+                </div>
+                <p class="Job__itemDate">
+                  登録日：2020.3.18｜お仕事No. 200313NT2
+                </p>
+              </div>
+              <div class="Job__itemBody">
+                <h3 class="Job__itemTitle">
+                  <a href="#">【東京】インフラ部署での内勤業務（議事録・資料作成メイン）</a>
+                </h3>
+                <div class="Job__itemInfo">
+                  <div class="Job__itemInfoTitle FlexBox">
+                    <p class="Job__itemInfoTitleText Job__itemInfoTitleText--salary">給与</p>
+                    <div class="Job__itemInfoText">
+                      月額40万円～　※スキル・経験により考慮
+                    </div>
+                  </div>
+                  <div class="Job__itemInfoTitle FlexBox">
+                    <p class="Job__itemInfoTitleText Job__itemInfoTitleText--period">期間</p>
+                    <div class="Job__itemInfoText">
+                      即日～長期　※勤務開始時期はご相談下さい
+                    </div>
+                  </div>
+                  <div class="Job__itemInfoTitle FlexBox">
+                    <p class="Job__itemInfoTitleText Job__itemInfoTitleText--place">場所</p>
+                    <div class="Job__itemInfoText">
+                      丸ノ内線東京駅より地下直結、JR東京駅より徒歩1分、JR京葉線東京駅より徒歩3分（大手町駅や有楽町駅からも通勤可！）
+                    </div>
+                  </div>
+                </div>
+                <div class="Job__itemBtnWrapper FlexBox FlexBox--center">
+                  <div class="Job__itemBtn Job__itemBtn--detail">
+                    <a href="job_01.php">詳細を見る</a>
+                  </div>
+                  <div class="Job__itemBtn Job__itemBtn--entry">
+                    <a href="../corporate/recruit/entry_engineer_dispatch.php">エントリー</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="Job__item">
+              <div class="Job__itemHeader Job__itemHeader--blue FlexBox FlexBox--middle">
+                <div class="Job__itemCategory FlexBox">
+                  <div><img src="/src/asset/job/ico-se-w.png" /></div>
+                  <p class="Job__itemCategoryTitle">
+                    開発 SE
+                  </p>
+                </div>
+                <p class="Job__itemDate">
+                  登録日：2020.3.18｜お仕事No. 200313NT2
+                </p>
+              </div>
+              <div class="Job__itemBody">
+                <h3 class="Job__itemTitle">
+                  <a href="#">【東京】インフラ部署での内勤業務（議事録・資料作成メイン）</a>
+                </h3>
+                <div class="Job__itemInfo">
+                  <div class="Job__itemInfoTitle FlexBox">
+                    <p class="Job__itemInfoTitleText Job__itemInfoTitleText--salary">給与</p>
+                    <div class="Job__itemInfoText">
+                      月額40万円～　※スキル・経験により考慮
+                    </div>
+                  </div>
+                  <div class="Job__itemInfoTitle FlexBox">
+                    <p class="Job__itemInfoTitleText Job__itemInfoTitleText--period">期間</p>
+                    <div class="Job__itemInfoText">
+                      即日～長期　※勤務開始時期はご相談下さい
+                    </div>
+                  </div>
+                  <div class="Job__itemInfoTitle FlexBox">
+                    <p class="Job__itemInfoTitleText Job__itemInfoTitleText--place">場所</p>
+                    <div class="Job__itemInfoText">
+                      丸ノ内線東京駅より地下直結、JR東京駅より徒歩1分、JR京葉線東京駅より徒歩3分（大手町駅や有楽町駅からも通勤可！）
+                    </div>
+                  </div>
+                </div>
+                <div class="Job__itemBtnWrapper FlexBox FlexBox--center">
+                  <div class="Job__itemBtn Job__itemBtn--detail">
+                    <a href="job_01.php">詳細を見る</a>
+                  </div>
+                  <div class="Job__itemBtn Job__itemBtn--entry">
+                    <a href="../corporate/recruit/entry_engineer_dispatch.php">エントリー</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="Job__item">
+              <div class="Job__itemHeader Job__itemHeader--blue FlexBox FlexBox--middle">
+                <div class="Job__itemCategory FlexBox">
+                  <div><img src="/src/asset/job/ico-dev-w.png" /></div>
+                  <p class="Job__itemCategoryTitle">
+                    開発プログラマー
+                  </p>
+                </div>
+                <p class="Job__itemDate">
+                  登録日：2020.3.18｜お仕事No. 200313NT2
+                </p>
+              </div>
+              <div class="Job__itemBody">
+                <h3 class="Job__itemTitle">
+                  <a href="#">【東京】インフラ部署での内勤業務（議事録・資料作成メイン）</a>
+                </h3>
+                <div class="Job__itemInfo">
+                  <div class="Job__itemInfoTitle FlexBox">
+                    <p class="Job__itemInfoTitleText Job__itemInfoTitleText--salary">給与</p>
+                    <div class="Job__itemInfoText">
+                      月額40万円～　※スキル・経験により考慮
+                    </div>
+                  </div>
+                  <div class="Job__itemInfoTitle FlexBox">
+                    <p class="Job__itemInfoTitleText Job__itemInfoTitleText--period">期間</p>
+                    <div class="Job__itemInfoText">
+                      即日～長期　※勤務開始時期はご相談下さい
+                    </div>
+                  </div>
+                  <div class="Job__itemInfoTitle FlexBox">
+                    <p class="Job__itemInfoTitleText Job__itemInfoTitleText--place">場所</p>
+                    <div class="Job__itemInfoText">
+                      丸ノ内線東京駅より地下直結、JR東京駅より徒歩1分、JR京葉線東京駅より徒歩3分（大手町駅や有楽町駅からも通勤可！）
+                    </div>
+                  </div>
+                </div>
+                <div class="Job__itemBtnWrapper FlexBox FlexBox--center">
+                  <div class="Job__itemBtn Job__itemBtn--detail">
+                    <a href="job_01.php">詳細を見る</a>
+                  </div>
+                  <div class="Job__itemBtn Job__itemBtn--entry">
+                    <a href="../corporate/recruit/entry_engineer_dispatch.php">エントリー</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="Job__item">
+              <div class="Job__itemHeader Job__itemHeader--green FlexBox FlexBox--middle">
                 <div class="Job__itemCategory FlexBox">
                   <div><img src="/src/asset/job/ico-network-w.png" /></div>
                   <p class="Job__itemCategoryTitle">
@@ -219,7 +387,7 @@ $staticPath = '../../../src/dist/';
             </div>
 
             <div class="Job__item">
-              <div class="Job__itemHeader Job__itemHeader--server FlexBox FlexBox--middle">
+              <div class="Job__itemHeader Job__itemHeader--lightgreen FlexBox FlexBox--middle">
                 <div class="Job__itemCategory FlexBox">
                   <div><img src="/src/asset/job/ico-server-w.png" /></div>
                   <p class="Job__itemCategoryTitle">
@@ -266,11 +434,11 @@ $staticPath = '../../../src/dist/';
             </div>
 
             <div class="Job__item">
-              <div class="Job__itemHeader Job__itemHeader--maintain FlexBox FlexBox--middle">
+              <div class="Job__itemHeader Job__itemHeader--purple FlexBox FlexBox--middle">
                 <div class="Job__itemCategory FlexBox">
-                  <div><img src="/src/asset/job/ico-maintain-w.png" /></div>
+                  <div><img src="/src/asset/job/ico-help-w.png" /></div>
                   <p class="Job__itemCategoryTitle">
-                    運用保守
+                    ヘルプデスク
                   </p>
                 </div>
                 <p class="Job__itemDate">
@@ -313,11 +481,11 @@ $staticPath = '../../../src/dist/';
             </div>
 
             <div class="Job__item">
-              <div class="Job__itemHeader Job__itemHeader--support FlexBox FlexBox--middle">
+              <div class="Job__itemHeader Job__itemHeader--orange FlexBox FlexBox--middle">
                 <div class="Job__itemCategory FlexBox">
-                  <div><img src="/src/asset/job/ico-support-w.png" /></div>
+                  <div><img src="/src/asset/job/ico-marketing-w.png" /></div>
                   <p class="Job__itemCategoryTitle">
-                    サポート
+                    マーケティング
                   </p>
                 </div>
                 <p class="Job__itemDate">
@@ -360,11 +528,11 @@ $staticPath = '../../../src/dist/';
             </div>
 
             <div class="Job__item">
-              <div class="Job__itemHeader Job__itemHeader--translate FlexBox FlexBox--middle">
+              <div class="Job__itemHeader Job__itemHeader--red FlexBox FlexBox--middle">
                 <div class="Job__itemCategory FlexBox">
-                  <div><img src="/src/asset/job/ico-translate-w.png" /></div>
+                  <div><img src="/src/asset/job/ico-office-w.png" /></div>
                   <p class="Job__itemCategoryTitle">
-                    IT事務翻訳系
+                    事務
                   </p>
                 </div>
                 <p class="Job__itemDate">
@@ -407,11 +575,11 @@ $staticPath = '../../../src/dist/';
             </div>
 
             <div class="Job__item">
-              <div class="Job__itemHeader Job__itemHeader--other FlexBox FlexBox--middle">
+              <div class="Job__itemHeader Job__itemHeader--gray FlexBox FlexBox--middle">
                 <div class="Job__itemCategory FlexBox">
                   <div><img src="/src/asset/job/ico-other-w.png" /></div>
                   <p class="Job__itemCategoryTitle">
-                    その他IT系
+                    その他
                   </p>
                 </div>
                 <p class="Job__itemDate">

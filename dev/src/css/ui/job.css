@@ -325,25 +325,28 @@
       padding: 20px 20px 10px;
     }
 
-    &--network {
-      background-color: #23b1e8;
+    &--navy {
+      background-color: col-primary-navy;
     }
-    &--dev {
+    &--blue {
       background-color: #006bb7;
     }
-    &--server {
-      background-color: #85c26e;
-    }
-    &--maintain {
+    &--green {
       background-color: #009b42;
     }
-    &--support {
+    &--lightgreen {
+      background-color: #85c26e;
+    }
+    &--purple {
       background-color: #6968ae;
     }
-    &--translate {
-      background-color: #f08712;
+    &--orange {
+      background-color: #f98332;
     }
-    &--other {
+    &--red {
+      background-color: #ff0000;
+    }
+    &--gray {
       background-color: #868687;
     }
 
