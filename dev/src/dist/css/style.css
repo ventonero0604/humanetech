@@ -1,9 +1,9 @@
 :import("../colors/_colors.css"){
-  i__const_col_text_common_39: col-text-common;
-  i__const_col_text_placeholder_common_40: col-text-placeholder-common;
+  i__const_col_text_common_66: col-text-common;
+  i__const_col_text_placeholder_common_67: col-text-placeholder-common;
 }
 :import("../variables/_variables.css"){
-  i__const_hover_time_transition_common_41: hover-time-transition-common;
+  i__const_hover_time_transition_common_68: hover-time-transition-common;
 }
 :export{
   values: "../variables/_variables.css";
@@ -2293,6 +2293,12 @@ button {
 @media screen and (max-width: 1023px) {
   .Top__infoImageText {
     margin: 90px auto 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .Top__infoImage--red .Top__infoImageText {
+    width: 200px;
+    margin-left: 62px;
   }
 }
 .Top__infoImageText p {

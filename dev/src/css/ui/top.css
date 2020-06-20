@@ -455,6 +455,13 @@
     line-height: 1.8;
     text-align: center;
 
+    .Top__infoImage--red & {
+      @mixin PC {
+        width: 200px;
+        margin-left: 62px;
+      }
+    }
+
     @mixin notPC {
       margin: 90px auto 0;
     }
