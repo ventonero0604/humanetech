@@ -28,6 +28,12 @@ a {
   &:hover img {
     transition: hover-time-transition-common;
   }
+
+
+  &:hover {
+    opacity: .8;
+    transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  }
 }
 
 button {

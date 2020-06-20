@@ -13,12 +13,6 @@
     background-color: col-primary-navy;
   }
 
-  a {
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
   &__wrapper {
     max-width: 1159px;
     margin: 0 auto;
@@ -123,10 +117,6 @@
     line-height: 40px;
     width: 100%;
     text-align: center;
-
-    &:hover {
-      opacity: .8;
-    }
 
     &--red {
       background-color: col-primary-red;

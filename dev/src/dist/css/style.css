@@ -1,9 +1,9 @@
 :import("../colors/_colors.css"){
-  i__const_col_text_common_171: col-text-common;
-  i__const_col_text_placeholder_common_172: col-text-placeholder-common;
+  i__const_col_text_common_342: col-text-common;
+  i__const_col_text_placeholder_common_343: col-text-placeholder-common;
 }
 :import("../variables/_variables.css"){
-  i__const_hover_time_transition_common_173: hover-time-transition-common;
+  i__const_hover_time_transition_common_344: hover-time-transition-common;
 }
 :export{
   values: "../variables/_variables.css";
@@ -560,6 +560,11 @@ a:hover img {
     -webkit-transition: 0.2s;
     transition: 0.2s;
   }
+a:hover {
+    opacity: .8;
+    -webkit-transition-timing-function: cubic-bezier(.215,.61,.355,1);
+            transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  }
 button > span {
     pointer-events: none;
   }
@@ -796,6 +801,14 @@ button {
     line-height: 60px;
     padding-left: 20px;
   }
+.Button .button:hover {
+      border-color: #fff;
+      color: #fff;
+      background-color: #000;
+    }
+.Button .button:hover:before {
+        background-image: url(../../asset/img-arrow-w.png);
+      }
 .Button .button--bold {
       font-weight: bold;
     }
@@ -818,6 +831,14 @@ button {
       background-color: #434343;
       color: #fff;
     }
+.Button .button--gray:hover {
+        color: #434343;
+        border: 1px solid #434343;
+        background-color: #fff;
+      }
+.Button .button--gray:hover:before {
+          background-image: url(../../asset/img-arrow-g.png);
+        }
 .Button .button--gray:before {
         background-image: url(../../asset/img-arrow-w.png);
       }
@@ -825,6 +846,14 @@ button {
       border-color: #fff;
       color: #fff;
     }
+.Button .button--white:hover {
+        color: #003173;
+        border: 1px solid #fff;
+        background-color: #fff;
+      }
+.Button .button--white:hover:before {
+          background-image: url(../../asset/img-arrow-n.png);
+        }
 .Button .button--white:before {
         background-image: url(../../asset/img-arrow-w.png);
       }
@@ -832,6 +861,14 @@ button {
       border-color: #003173;
       color: #003173;
     }
+.Button .button--navy:hover {
+        color: #fff;
+        border: 1px solid #003173;
+        background-color: #003173;
+      }
+.Button .button--navy:hover:before {
+          background-image: url(../../asset/img-arrow-w.png);
+        }
 .Button .button--navy:before {
         background-image: url(../../asset/img-arrow-n.png);
       }
@@ -910,9 +947,6 @@ button {
     height: 2px;
     background-color: #003173;
   }
-.Header a:hover {
-      text-decoration: underline;
-    }
 .Header__wrapper {
     max-width: 1159px;
     margin: 0 auto;
@@ -1015,9 +1049,6 @@ button {
     width: 100%;
     text-align: center;
   }
-.Header__naviListItemLink:hover {
-      opacity: .8;
-    }
 .Header__naviListItemLink--red {
       background-color: #a52224;
     }
@@ -4661,7 +4692,7 @@ button {
   }
 }
 .Corporate__container {
-    background-color: #E6EAF2;
+    background-color: #003173;
     padding: 100px 0;
   }
 @media screen and (max-width: 767px) {
@@ -4669,6 +4700,9 @@ button {
     padding: 60px 0;
   }
 }
+.Corporate__container--top {
+      background-color: #E6EAF2;
+    }
 .Corporate__container--text {
       padding: 100px 0 0;
     }
