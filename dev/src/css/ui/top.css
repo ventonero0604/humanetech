@@ -153,7 +153,8 @@
   &__engineerWrapper {
     position: relative;
     z-index: 1;
-    max-width: 1920px;
+    max-width: 1472px;
+    margin: 0 auto;
 
     @mixin notPC {
       flex-direction: column;

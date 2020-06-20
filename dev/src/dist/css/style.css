@@ -1,9 +1,9 @@
 :import("../colors/_colors.css"){
-  i__const_col_text_common_30: col-text-common;
-  i__const_col_text_placeholder_common_31: col-text-placeholder-common;
+  i__const_col_text_common_39: col-text-common;
+  i__const_col_text_placeholder_common_40: col-text-placeholder-common;
 }
 :import("../variables/_variables.css"){
-  i__const_hover_time_transition_common_32: hover-time-transition-common;
+  i__const_hover_time_transition_common_41: hover-time-transition-common;
 }
 :export{
   values: "../variables/_variables.css";
@@ -1621,6 +1621,14 @@ button {
             justify-content: left;
   }
 }
+.LocalNavi.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: #fff;
+  }
 .LocalNavi__list {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1980,7 +1988,8 @@ button {
 .Top__engineerWrapper {
     position: relative;
     z-index: 1;
-    max-width: 1920px;
+    max-width: 1472px;
+    margin: 0 auto;
   }
 @media screen and (max-width: 1023px) {
   .Top__engineerWrapper {
