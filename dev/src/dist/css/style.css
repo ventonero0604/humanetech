@@ -1,9 +1,9 @@
 :import("../colors/_colors.css"){
-  i__const_col_text_common_1977: col-text-common;
-  i__const_col_text_placeholder_common_1978: col-text-placeholder-common;
+  i__const_col_text_common_30: col-text-common;
+  i__const_col_text_placeholder_common_31: col-text-placeholder-common;
 }
 :import("../variables/_variables.css"){
-  i__const_hover_time_transition_common_1979: hover-time-transition-common;
+  i__const_hover_time_transition_common_32: hover-time-transition-common;
 }
 :export{
   values: "../variables/_variables.css";
@@ -901,6 +901,15 @@ button {
   position: relative;
   z-index: 100;
 }
+.Header:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #003173;
+  }
 .Header a:hover {
       text-decoration: underline;
     }
@@ -977,6 +986,10 @@ button {
     font-size: 1.3rem;
     text-align: center;
     margin-left: 6px;
+  }
+.Header__navi {
+    position: relative;
+    z-index: 2;
   }
 @media screen and (max-width: 1023px) {
   .Header__navi {
