@@ -1,9 +1,9 @@
 :import("../colors/_colors.css"){
-  i__const_col_text_common_66: col-text-common;
-  i__const_col_text_placeholder_common_67: col-text-placeholder-common;
+  i__const_col_text_common_81: col-text-common;
+  i__const_col_text_placeholder_common_82: col-text-placeholder-common;
 }
 :import("../variables/_variables.css"){
-  i__const_hover_time_transition_common_68: hover-time-transition-common;
+  i__const_hover_time_transition_common_83: hover-time-transition-common;
 }
 :export{
   values: "../variables/_variables.css";
@@ -3715,13 +3715,18 @@ button {
     background-image: repeating-linear-gradient(-45deg, transparent, transparent 6px, rgba(33, 68, 124, 1) 6px, rgba(33, 68, 124, 1) 8px );
     color: #fff;
   }
-.Consultant__itemFooterWrapper > .FlexBox {
-      -webkit-flex-wrap: wrap;
-              flex-wrap: wrap;
-      -webkit-box-pack: start;
-      -webkit-justify-content: flex-start;
-              justify-content: flex-start;
-    }
+@media screen and (max-width: 767px) {
+  .Consultant__itemFooterWrapper > .FlexBox {
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+  }
+}
+.Consultant__itemFooter {
+    min-width: 120px;
+  }
 .Consultant__itemFooter + .Consultant__itemFooter {
       margin-left: 40px;
       padding-left: 40px;
@@ -3757,7 +3762,7 @@ button {
         line-height: 1;
       }
 .Consultant__itemFooterText--fixed {
-      max-width: 380px;
+      max-width: 600px;
     }
 .About__text--red {
       color: #a52224;

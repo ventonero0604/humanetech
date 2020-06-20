@@ -86,16 +86,6 @@ $staticPath = '../../../src/dist/';
               </div>
               <div class="Consultant__itemFooter">
                 <p class="Consultant__itemFooterTitle">
-                  業界経験年数
-                </p>
-                <div class="Consultant__itemFooterText">
-                  <p>株式会社〇〇〇〇〇〇</p>
-                  <p>株式会社〇〇〇〇〇〇</p>
-                  <p>株式会社〇〇〇〇〇〇</p>
-                </div>
-              </div>
-              <div class="Consultant__itemFooter">
-                <p class="Consultant__itemFooterTitle">
                   エンジニアの声
                 </p>
                 <div class="Consultant__itemFooterText Consultant__itemFooterText--fixed">
@@ -135,16 +125,6 @@ $staticPath = '../../../src/dist/';
                 <p class="Consultant__itemFooterText--large">
                   <b>00</b>年
                 </p>
-              </div>
-              <div class="Consultant__itemFooter">
-                <p class="Consultant__itemFooterTitle">
-                  業界経験年数
-                </p>
-                <div class="Consultant__itemFooterText">
-                  <p>株式会社〇〇〇〇〇〇</p>
-                  <p>株式会社〇〇〇〇〇〇</p>
-                  <p>株式会社〇〇〇〇〇〇</p>
-                </div>
               </div>
               <div class="Consultant__itemFooter">
                 <p class="Consultant__itemFooterTitle">
@@ -190,16 +170,6 @@ $staticPath = '../../../src/dist/';
               </div>
               <div class="Consultant__itemFooter">
                 <p class="Consultant__itemFooterTitle">
-                  業界経験年数
-                </p>
-                <div class="Consultant__itemFooterText">
-                  <p>株式会社〇〇〇〇〇〇</p>
-                  <p>株式会社〇〇〇〇〇〇</p>
-                  <p>株式会社〇〇〇〇〇〇</p>
-                </div>
-              </div>
-              <div class="Consultant__itemFooter">
-                <p class="Consultant__itemFooterTitle">
                   エンジニアの声
                 </p>
                 <div class="Consultant__itemFooterText Consultant__itemFooterText--fixed">
@@ -239,16 +209,6 @@ $staticPath = '../../../src/dist/';
                 <p class="Consultant__itemFooterText--large">
                   <b>00</b>年
                 </p>
-              </div>
-              <div class="Consultant__itemFooter">
-                <p class="Consultant__itemFooterTitle">
-                  業界経験年数
-                </p>
-                <div class="Consultant__itemFooterText">
-                  <p>株式会社〇〇〇〇〇〇</p>
-                  <p>株式会社〇〇〇〇〇〇</p>
-                  <p>株式会社〇〇〇〇〇〇</p>
-                </div>
               </div>
               <div class="Consultant__itemFooter">
                 <p class="Consultant__itemFooterTitle">
