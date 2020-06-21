@@ -1,0 +1,10 @@
+.Slider {
+  height: 1050px;
+
+  @mixin notPC {
+    height: 850px;
+  }
+  @mixin sp {
+    height: 525px;
+  }
+}

@@ -73,5 +73,10 @@ $(function () {
 				$(this).addClass('scrollin');
 			}
 		});
-	});
+  });
+
+  $('.Slider').slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+  });
 })
