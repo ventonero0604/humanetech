@@ -25,6 +25,12 @@
     overflow: hidden; 
     background-position: center center;
     padding: 20px;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
 
     @mixin sp {
       height: 500px;

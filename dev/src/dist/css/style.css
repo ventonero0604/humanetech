@@ -1,9 +1,9 @@
 :import("../colors/_colors.css"){
-  i__const_col_text_common_342: col-text-common;
-  i__const_col_text_placeholder_common_343: col-text-placeholder-common;
+  i__const_col_text_common_498: col-text-common;
+  i__const_col_text_placeholder_common_499: col-text-placeholder-common;
 }
 :import("../variables/_variables.css"){
-  i__const_hover_time_transition_common_344: hover-time-transition-common;
+  i__const_hover_time_transition_common_500: hover-time-transition-common;
 }
 :export{
   values: "../variables/_variables.css";
@@ -675,6 +675,22 @@ button {
       background-color: #eee;
       content: "";
     }
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* tool */
 /* UTIL */
 .Util-displayHiddenVisually {
@@ -1870,6 +1886,17 @@ button {
     -webkit-background-size: cover;
             background-size: cover;
     background-repeat: no-repeat;
+    opacity: 0;
+    -webkit-animation-name: fade-in;
+            animation-name: fade-in;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
 @media screen and (max-width: 1023px) {
   .Top__main {
@@ -2570,6 +2597,17 @@ button {
     overflow: hidden; 
     background-position: center center;
     padding: 0 20px;
+    opacity: 0;
+    -webkit-animation-name: fade-in;
+            animation-name: fade-in;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
 @media screen and (max-width: 767px) {
   .Future__main {
@@ -3324,6 +3362,17 @@ button {
     overflow: hidden; 
     background-position: center center;
     padding: 20px;
+    opacity: 0;
+    -webkit-animation-name: fade-in;
+            animation-name: fade-in;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
 @media screen and (max-width: 767px) {
   .Dispatch__main {
@@ -4023,7 +4072,18 @@ button {
     -webkit-background-size: cover;
             background-size: cover;
     background-repeat: no-repeat;
-    overflow: hidden;
+    overflow: hidden; 
+    opacity: 0;
+    -webkit-animation-name: fade-in;
+            animation-name: fade-in;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
 @media screen and (max-width: 1023px) {
   .Solution__main {
@@ -4590,6 +4650,17 @@ button {
             background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    opacity: 0;
+    -webkit-animation-name: fade-in;
+            animation-name: fade-in;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
 @media screen and (max-width: 767px) {
   .Corporate__main {

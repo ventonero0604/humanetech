@@ -7,6 +7,7 @@ $(function () {
   var localNavi = $('.LocalNavi');
   var localNaviCurrent = $('.LocalNavi .is-current');
   var smp = $(window).width() < 768;
+  var lazyLoading = $('.lazyload');
 
   // グローバルナビ（PC）
   navi.hover(function () {
