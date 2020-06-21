@@ -1,9 +1,9 @@
 :import("../colors/_colors.css"){
-  i__const_col_text_common_753: col-text-common;
-  i__const_col_text_placeholder_common_754: col-text-placeholder-common;
+  i__const_col_text_common_756: col-text-common;
+  i__const_col_text_placeholder_common_757: col-text-placeholder-common;
 }
 :import("../variables/_variables.css"){
-  i__const_hover_time_transition_common_755: hover-time-transition-common;
+  i__const_hover_time_transition_common_758: hover-time-transition-common;
 }
 :export{
   values: "../variables/_variables.css";
@@ -963,6 +963,11 @@ button {
     height: 2px;
     background-color: #003173;
   }
+@media screen and (max-width: 1023px) {
+  .Header:before {
+    display: none;
+  }
+}
 .Header__wrapper {
     max-width: 1159px;
     margin: 0 auto;
