@@ -1,17 +1,9 @@
 :import("../colors/_colors.css"){
-<<<<<<< HEAD
-  i__const_col_text_common_969: col-text-common;
-  i__const_col_text_placeholder_common_970: col-text-placeholder-common;
+  i__const_col_text_common_972: col-text-common;
+  i__const_col_text_placeholder_common_973: col-text-placeholder-common;
 }
 :import("../variables/_variables.css"){
-  i__const_hover_time_transition_common_971: hover-time-transition-common;
-=======
-  i__const_col_text_common_957: col-text-common;
-  i__const_col_text_placeholder_common_958: col-text-placeholder-common;
-}
-:import("../variables/_variables.css"){
-  i__const_hover_time_transition_common_959: hover-time-transition-common;
->>>>>>> ed756ff8b7d2a80c66441bb6f596d6367ba4f46a
+  i__const_hover_time_transition_common_974: hover-time-transition-common;
 }
 :export{
   values: "../variables/_variables.css";
