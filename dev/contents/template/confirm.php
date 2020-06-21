@@ -18,13 +18,13 @@ $staticPath = '../../src/dist/';
   <main>
     <section class="Confirm">
       <div class="Confirm__main FlexBox FlexBox--center FlexBox--middle">
-        <!-- 中途採用エントリー確認画面　タイトル ↓ -->
+        <!-- 中途採用エントリー　タイトル ↓ -->
         <h1><img src="/src/asset/title-confirm-career.png" alt="キャリア採用・中途採用 採用エントリー" /></h1>
 
-        <!-- 未来のエンジニア採用エントリー確認画面　タイトル ↓ -->
+        <!-- 未来のエンジニア採用エントリー　タイトル ↓ -->
         <!-- <h1><img src="/src/asset/title-confirm-future.png" alt="未来のエンジニア採用 採用エントリー" /></h1> -->
 
-        <!-- エンジニア派遣 エントリー確認画面　タイトル ↓ -->
+        <!-- エンジニア派遣 エントリー　タイトル ↓ -->
         <!-- <h1><img src="/src/asset/title-confirm-dispatch.png" alt="エンジニア派遣 エントリー" /></h1> -->
       </div>
 

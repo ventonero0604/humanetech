@@ -507,4 +507,8 @@
       }
     }
   }
+
+  .Contact__info {
+    margin-top: 60px;
+  }
 }
