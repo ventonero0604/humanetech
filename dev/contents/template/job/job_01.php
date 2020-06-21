@@ -22,11 +22,11 @@ $staticPath = '../../../src/dist/';
           <div class="FlexBox">
             <div class="Job__contents">
               <div class="Job__item">
-                <div class="Job__itemHeader Job__itemHeader--full Job__itemHeader--dev FlexBox FlexBox--middle">
+                <div class="Job__itemHeader Job__itemHeader--full Job__itemHeader--green FlexBox FlexBox--middle">
                   <div class="Job__itemCategory FlexBox">
-                    <div><img src="/src/asset/job/ico-dev-w.png" /></div>
+                    <div><img src="/src/asset/job/ico-network-w.png" /></div>
                     <p class="Job__itemCategoryTitle">
-                      開発エンジニア
+                      ネットワークエンジニア
                     </p>
                   </div>
                   <p class="Job__itemDate">

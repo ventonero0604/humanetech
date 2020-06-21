@@ -1,9 +1,9 @@
 :import("../colors/_colors.css"){
-  i__const_col_text_common_957: col-text-common;
-  i__const_col_text_placeholder_common_958: col-text-placeholder-common;
+  i__const_col_text_common_972: col-text-common;
+  i__const_col_text_placeholder_common_973: col-text-placeholder-common;
 }
 :import("../variables/_variables.css"){
-  i__const_hover_time_transition_common_959: hover-time-transition-common;
+  i__const_hover_time_transition_common_974: hover-time-transition-common;
 }
 :export{
   values: "../variables/_variables.css";
@@ -1221,6 +1221,9 @@ $slick-opacity-not-active: 0.25 !default;
   position: relative;
   z-index: 100;
 }
+.Header a:hover {
+    text-decoration: underline;
+  }
 .Header:before {
     content: "";
     display: block;
@@ -1367,24 +1370,25 @@ $slick-opacity-not-active: 0.25 !default;
     margin: 0 auto;
     padding: 20px 0;
   }
-.Header__naviJob {
+.Header__naviListJob {
+    margin-left: 30px;
+  }
+.Header__naviListJobItem {
+    margin-top: 10px;
+  }
+.Header__naviJobIcon {
+    background-color: #003173;
+    width: 166px;
+    height: 116px;
     text-align: center;
-    line-height: 1.3;
-    margin: 10px 0;
+    background-image: url(/src/asset/job/ico-search.png);
+    background-repeat: no-repeat;
+    background-position: center 26px;
   }
-.Header__naviJobItem {
-    color: #003173;
-    display: block;
-  }
-.Header__naviJobItem:before {
-      content: "";
+.Header__naviJobIcon span {
+      color: #fff;
+      padding-top: 70px;
       display: block;
-      width: 100%;
-      height: 30px;
-      background-position: 50% 50%;
-      -webkit-background-size: contain;
-              background-size: contain;
-      background-repeat: no-repeat;
     }
 .Header__naviJobItem--dev:before {
         background-image: url(../../asset/ico-gear.png);
@@ -1404,12 +1408,6 @@ $slick-opacity-not-active: 0.25 !default;
 .Header__naviJobItem--office:before {
         background-image: url(../../asset/ico-note.png);
       }
-.Header__naviJobItemText {
-    margin-top: 16px;
-  }
-.Header__naviJobItemText--1line {
-      padding-top: 1rem;
-    }
 .Header__naviList1col {
     padding-left: 20px;
   }
@@ -1448,6 +1446,45 @@ $slick-opacity-not-active: 0.25 !default;
   }
 .Header__naviList2colLink--red {
       color: #a52224;
+    }
+.Header__naviListJobLinkIcon {
+    display: block;
+    color: #003173;
+    padding-left: 36px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+.Header__naviListJobLinkIcon--pm {
+      background-image: url(/src/asset/job/ico-pm.png);
+    }
+.Header__naviListJobLinkIcon--pmo {
+      background-image: url(/src/asset/job/ico-pmo.png);
+      background-position: 0 2px;
+    }
+.Header__naviListJobLinkIcon--se {
+      background-image: url(/src/asset/job/ico-se.png);
+    }
+.Header__naviListJobLinkIcon--dev {
+      background-image: url(/src/asset/job/ico-dev.png);
+    }
+.Header__naviListJobLinkIcon--network {
+      background-image: url(/src/asset/job/ico-network.png);
+    }
+.Header__naviListJobLinkIcon--server {
+      background-image: url(/src/asset/job/ico-server.png);
+      background-position: 4px 0;
+    }
+.Header__naviListJobLinkIcon--help {
+      background-image: url(/src/asset/job/ico-help.png);
+    }
+.Header__naviListJobLinkIcon--marketing {
+      background-image: url(/src/asset/job/ico-marketing.png);
+    }
+.Header__naviListJobLinkIcon--office {
+      background-image: url(/src/asset/job/ico-office.png);
+    }
+.Header__naviListJobLinkIcon--other {
+      background-image: url(/src/asset/job/ico-other.png);
     }
 .Header__menuContent {
     position: absolute;
@@ -5992,25 +6029,28 @@ $slick-opacity-not-active: 0.25 !default;
     padding: 20px 20px 10px;
   }
 }
-.Job__itemHeader--network {
-      background-color: #23b1e8;
+.Job__itemHeader--navy {
+      background-color: #003173;
     }
-.Job__itemHeader--dev {
+.Job__itemHeader--blue {
       background-color: #006bb7;
     }
-.Job__itemHeader--server {
-      background-color: #85c26e;
-    }
-.Job__itemHeader--maintain {
+.Job__itemHeader--green {
       background-color: #009b42;
     }
-.Job__itemHeader--support {
+.Job__itemHeader--lightgreen {
+      background-color: #85c26e;
+    }
+.Job__itemHeader--purple {
       background-color: #6968ae;
     }
-.Job__itemHeader--translate {
-      background-color: #f08712;
+.Job__itemHeader--orange {
+      background-color: #f98332;
     }
-.Job__itemHeader--other {
+.Job__itemHeader--red {
+      background-color: #ff0000;
+    }
+.Job__itemHeader--gray {
       background-color: #868687;
     }
 .Job__itemHeader--full {

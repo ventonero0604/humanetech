@@ -3,6 +3,10 @@
   position: relative;
   z-index: 100;
 
+  a:hover {
+    text-decoration: underline;
+  }
+
   &:before {
     content: "";
     display: block;
@@ -158,25 +162,31 @@
     padding: 20px 0;
   }
 
-  &__naviJob {
+  &__naviListJob {
+    margin-left: 30px;
+  }
+
+  &__naviListJobItem {
+    margin-top: 10px;
+  }
+
+  &__naviJobIcon {
+    background-color: col-primary-navy;
+    width: 166px;
+    height: 116px;
     text-align: center;
-    line-height: 1.3;
-    margin: 10px 0;
+    background-image: url(/src/asset/job/ico-search.png);
+    background-repeat: no-repeat;
+    background-position: center 26px;
+
+    span {
+      color: #fff;
+      padding-top: 70px;
+      display: block;
+    }
   }
 
   &__naviJobItem {
-    color: col-primary-navy;
-    display: block;
-
-    &:before {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 30px;
-      background-position: 50% 50%;
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
 
     &--dev {
       &:before {
@@ -210,14 +220,6 @@
     }
   }
 
-  &__naviJobItemText {
-    margin-top: 16px;
-
-    &--1line {
-      padding-top: 1rem;
-    }
-  }
-  
   &__naviList1col {
     padding-left: 20px;
   }
@@ -262,6 +264,47 @@
 
     &--red {
       color: col-primary-red;
+    }
+  }
+
+  &__naviListJobLinkIcon {
+    display: block;
+    color: col-primary-navy;
+    padding-left: 36px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    &--pm {
+      background-image: url(/src/asset/job/ico-pm.png);
+    }
+    &--pmo {
+      background-image: url(/src/asset/job/ico-pmo.png);
+      background-position: 0 2px;
+    }
+    &--se {
+      background-image: url(/src/asset/job/ico-se.png);
+    }
+    &--dev {
+      background-image: url(/src/asset/job/ico-dev.png);
+    }
+    &--network {
+      background-image: url(/src/asset/job/ico-network.png);
+    }
+    &--server {
+      background-image: url(/src/asset/job/ico-server.png);
+      background-position: 4px 0;
+    }
+    &--help {
+      background-image: url(/src/asset/job/ico-help.png);
+    }
+    &--marketing {
+      background-image: url(/src/asset/job/ico-marketing.png);
+    }
+    &--office {
+      background-image: url(/src/asset/job/ico-office.png);
+    }
+    &--other {
+      background-image: url(/src/asset/job/ico-other.png);
     }
   }
 
