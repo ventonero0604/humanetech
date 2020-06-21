@@ -1,9 +1,9 @@
 :import("../colors/_colors.css"){
-  i__const_col_text_common_756: col-text-common;
-  i__const_col_text_placeholder_common_757: col-text-placeholder-common;
+  i__const_col_text_common_903: col-text-common;
+  i__const_col_text_placeholder_common_904: col-text-placeholder-common;
 }
 :import("../variables/_variables.css"){
-  i__const_hover_time_transition_common_758: hover-time-transition-common;
+  i__const_hover_time_transition_common_905: hover-time-transition-common;
 }
 :export{
   values: "../variables/_variables.css";
@@ -691,6 +691,18 @@ button {
     opacity: 1;
   }
 }
+.fadein {
+	opacity : 0.1;
+	-webkit-transform : translate(0, 50px);
+	        transform : translate(0, 50px);
+	-webkit-transition : all 500ms;
+	transition : all 500ms;
+	}
+.fadein.scrollin {
+	opacity : 1;
+	-webkit-transform : translate(0, 0);
+	        transform : translate(0, 0);
+	}
 /* tool */
 /* UTIL */
 .Util-displayHiddenVisually {
