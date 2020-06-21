@@ -31,7 +31,7 @@ $staticPath = '/src/dist/';
           <li class="LocalNavi__listItem"><a class="LocalNavi__listLink" href="../corporate/recruit/">採用情報</a></li>
         </ul>
       </div>
-      <div class="Corporate__container">
+      <div class="Corporate__container Corporate__container--top">
         <div class="Corporate__links FlexBox FlexBox--center">
           <a class="Corporate__link" href="./philosophy.php#message">
             <img class="is-pc" src="/src/asset/corporate/img-message.png" alt="MESSAGE" />

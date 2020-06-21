@@ -22,6 +22,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
 
     @mixin sp {
       height: 350px;
@@ -130,8 +136,12 @@
   }
 
   &__container {
-    background-color: #E6EAF2;
+    background-color: col-primary-navy;
     padding: 100px 0;
+
+    &--top {
+      background-color: #E6EAF2;
+    }
 
     @mixin sp {
       padding: 60px 0;

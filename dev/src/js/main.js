@@ -7,6 +7,7 @@ $(function () {
   var localNavi = $('.LocalNavi');
   var localNaviCurrent = $('.LocalNavi .is-current');
   var smp = $(window).width() < 768;
+  var lazyLoading = $('.lazyload');
 
   // グローバルナビ（PC）
   navi.hover(function () {
@@ -62,4 +63,20 @@ $(function () {
       localNavi.scrollLeft(positionMiddle);
     }
   }
+
+  $(window).scroll(function (){
+		$('.fadein').each(function(){
+			var elemPos = $(this).offset().top;
+			var scroll = $(window).scrollTop();
+			var windowHeight = $(window).height();
+			if (scroll > elemPos - windowHeight + 200){
+				$(this).addClass('scrollin');
+			}
+		});
+  });
+
+  $('.Slider').slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+  });
 })

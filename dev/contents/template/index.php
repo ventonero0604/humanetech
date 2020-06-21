@@ -17,10 +17,28 @@ $staticPath = '../../src/dist/';
 
   <main>
     <section class="Top">
-      <div class="Top__main">
-        <h1 class="Top__mainTitle FlexBox FlexBox--middle FlexBox--center"><img src="../../src/asset/top/title-main.png" alt="人と技術と教育で未来へつなぐヒューマネテック。" /></h1>
+      <div class="Slider">
+        <!-- styleにbackground-imageつける -->
+        <div class="Top__main" style="background-image: url(/src/asset/top/img-main.png);">
+          <h1 class="Top__mainTitle FlexBox FlexBox--middle FlexBox--center">
+            <img src="../../src/asset/top/title-main.png" alt="人と技術と教育で未来へつなぐヒューマネテック。" />
+          </h1>
+        </div>
+        <!-- styleにbackground-imageつける -->
+        <div class="Top__main" style="background-image: url(/src/asset/top/img-pride.png);">
+          <h1 class="Top__mainTitle FlexBox FlexBox--middle FlexBox--center">
+            <img src="../../src/asset/top/title-main.png" alt="人と技術と教育で未来へつなぐヒューマネテック。" />
+          </h1>
+        </div>
+        <!-- styleにbackground-imageつける -->
+        <div class="Top__main" style="background-image: url(/src/asset/top/img-future.png);">
+          <h1 class="Top__mainTitle FlexBox FlexBox--middle FlexBox--center">
+            <img src="../../src/asset/top/title-main.png" alt="人と技術と教育で未来へつなぐヒューマネテック。" />
+          </h1>
+        </div>
       </div>
-      <div class="Top__lead">
+
+      <div class="Top__lead fadein">
         <div class="Top__leadWrapper FlexBox FlexBox--center FlexBox--middle">
           <div class="Top__leadLogo"><img src="../../src/asset/top/logo.png" alt="Human education Technology" /></div>
           <div>
@@ -36,7 +54,7 @@ $staticPath = '../../src/dist/';
           </div>
         </div>
       </div>
-      <div class="Top__job">
+      <div class="Top__job fadein">
         <div class="FlexBox FlexBox--column FlexBox--middle">
           <div class="Top__jobTitle"><img src="../../src/asset/top/title-job.png" alt="Humanetechならエンジニアとして更なる高みを目指せる。ハイレベルなクライアントの元で活躍できる。" /></div>
           <p class="Top__jobText">

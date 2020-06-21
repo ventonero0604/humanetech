@@ -21,7 +21,7 @@
 
   &__wrapper {
     background-color: rgba(0,49,115,.05);
-    padding: 60px 0 100px;
+    padding: 60px 10px 100px;
   }
 
 }
@@ -191,6 +191,98 @@
   }
 }
 
+.NewsDetail {
+  padding: 60px 90px 100px;
+
+  @mixin notPC {
+    padding: 60px 10px 100px;
+  }
+  @mixin sp {
+    flex-direction: column;
+    padding: 10px 0 30px;
+  }
+
+  &__date {
+    color: col-primary-navy;
+    margin-bottom: 60px;
+
+    @mixin sp {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 3rem;
+    border-bottom: 2px solid rgba(0,49,115,.21);
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+
+  }
+
+  &__text {
+    line-height: 2.2;
+
+    p + p {
+      margin-top: 40px;
+    }
+  }
+
+  &__btnWrapper {
+    margin-top: 150px;
+
+    @mixin sp {
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+
+    a {
+      display: block;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      color: col-primary-navy;
+      border: 1px solid col-primary-navy;
+      width: 200px;
+    }
+
+    a + a {
+      margin-left: 10px;
+    }
+  }
+
+  &__menu {
+    min-width: 260px;
+    margin-left: 60px;
+
+    @mixin sp {
+      margin-left: 0;
+    }
+  }
+
+  &__menuTitle {
+    background-color: col-primary-navy;
+    color: #fff;
+    font-size: 1.8rem;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__list {
+    margin-bottom: 20px;
+
+    li + li { 
+      border-top: 1px solid #e9e6e6;
+    }
+    a {
+      display: block;
+      padding: 14px 0;
+    }
+  }
+}
+
 .Sitemap {
 
   &__list {
@@ -349,5 +441,74 @@
   &__small {
     font-size: 1.5rem;
     margin-bottom: 50px;
+  }
+}
+
+.Confirm {
+
+  &__main {
+    height: 332px;
+  }
+  
+  .RoundWrapper__text {
+    text-align: center;
+  }
+
+  &__listItem {
+    padding: 20px;
+    background-color: rgba(0,49,115,.02);
+
+    &:nth-of-type(odd) {
+      background-color: rgba(0,49,115,.05);
+    }
+
+    @mixin sp {
+      flex-direction: column;
+    }
+  }
+
+  &__listTitle {
+    font-weight: bold;
+    min-width: 187px;
+
+    @mixin sp {
+      margin-bottom: 10px;
+    }
+
+    &--kana {
+      margin-left: 80px;
+      min-width: 100px;
+
+      @mixin sp {
+        margin-top: 20px;
+        margin-left: 0;
+      }
+    }
+
+    b {
+      color: col-primary-red;
+      padding-left: 2px;
+    }
+
+    br {
+      @mixin sp {
+        display: none;
+      }
+    }
+  }
+
+  &__listText {
+    span {
+      margin-left: 60px;
+
+      @mixin sp {
+        margin-left: 0;
+        display: block;
+      }
+    }
+  }
+
+  .Contact__info {
+    margin-top: 60px;
   }
 }

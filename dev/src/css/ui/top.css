@@ -4,27 +4,20 @@
     position: relative;
     height: 1050px;
     width: 100%;
-    background-image: url(../../asset/top/img-main.png);
     background-size: cover;
     background-repeat: no-repeat;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
 
     @mixin notPC {
       height: 850px;
     }
     @mixin sp {
       height: 525px;
-    }
-
-    &:before {
-      content: "";
-      position: absolute;
-      display: block;
-      background-color: #003173;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      opacity: .69;;
     }
   }
 

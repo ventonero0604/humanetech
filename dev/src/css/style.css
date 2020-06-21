@@ -9,6 +9,7 @@
 @import './tool/util.css';
 @import './tool/breakPoint.css';
 @import './tool/sprite.css';
+@import './tool/slick.css';
 
 /* component */
 @import './component/button.css';
@@ -29,3 +30,4 @@
 @import './ui/corporate.css';
 @import './ui/job.css';
 @import './ui/others.css';
+@import './ui/override.css';

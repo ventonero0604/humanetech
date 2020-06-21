@@ -23,6 +23,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden; 
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
 
     &:before {
       content: "";
