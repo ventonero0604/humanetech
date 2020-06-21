@@ -1,9 +1,9 @@
 :import("../colors/_colors.css"){
-  i__const_col_text_common_663: col-text-common;
-  i__const_col_text_placeholder_common_664: col-text-placeholder-common;
+  i__const_col_text_common_741: col-text-common;
+  i__const_col_text_placeholder_common_742: col-text-placeholder-common;
 }
 :import("../variables/_variables.css"){
-  i__const_hover_time_transition_common_665: hover-time-transition-common;
+  i__const_hover_time_transition_common_743: hover-time-transition-common;
 }
 :export{
   values: "../variables/_variables.css";
@@ -6511,3 +6511,61 @@ button {
     font-size: 1.5rem;
     margin-bottom: 50px;
   }
+.Confirm__main {
+    height: 332px;
+  }
+.Confirm .RoundWrapper__text {
+    text-align: center;
+  }
+.Confirm__listItem {
+    padding: 20px;
+    background-color: rgba(0, 49, 115, .02);
+  }
+@media screen and (max-width: 767px) {
+  .Confirm__listItem {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.Confirm__listItem:nth-of-type(odd) {
+      background-color: rgba(0, 49, 115, .05);
+    }
+.Confirm__listTitle {
+    font-weight: bold;
+    min-width: 187px;
+  }
+@media screen and (max-width: 767px) {
+  .Confirm__listTitle {
+    margin-bottom: 10px;
+  }
+}
+.Confirm__listTitle--kana {
+      margin-left: 80px;
+      min-width: 100px;
+    }
+@media screen and (max-width: 767px) {
+  .Confirm__listTitle--kana {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
+.Confirm__listTitle b {
+      color: #a52224;
+      padding-left: 2px;
+    }
+@media screen and (max-width: 767px) {
+  .Confirm__listTitle br {
+    display: none;
+  }
+}
+.Confirm__listText span {
+      margin-left: 60px;
+    }
+@media screen and (max-width: 767px) {
+  .Confirm__listText span {
+    margin-left: 0;
+    display: block;
+  }
+}
