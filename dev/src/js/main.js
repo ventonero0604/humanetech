@@ -34,19 +34,23 @@ $(function () {
   })
 
   // ローカルナビ（スマホ）
-  if (localNavi.length && smp) {
+  if (localNavi.length) {
     var position = localNaviCurrent.offset().left;
     var contentWidth = localNaviCurrent.width();
     var windowWidth = $(window).width();
     var isScrollable = (position + contentWidth) > windowWidth 
     var positionMiddle = position + (windowWidth / 2) - (contentWidth / 2);
 
+    if (smp && isScrollable) {
+      localNavi.scrollLeft(positionMiddle);
+    }
+
     var $win = $(window),
-      $main = $('main'),
-      $nav = localNavi,
-      navHeight = $nav.outerHeight(),
-      navPos = $nav.offset().top,
-      fixedClass = 'is-fixed';
+    $main = $('main'),
+    $nav = localNavi,
+    navHeight = $nav.outerHeight(),
+    navPos = $nav.offset().top,
+    fixedClass = 'is-fixed';
 
     $win.on('load scroll', function() {
       var value = $(this).scrollTop();
@@ -58,10 +62,6 @@ $(function () {
         $main.css('margin-top', '0');
       }
     });
-
-    if (isScrollable) {
-      localNavi.scrollLeft(positionMiddle);
-    }
   }
 
   $(window).scroll(function (){

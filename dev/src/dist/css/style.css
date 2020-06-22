@@ -1,9 +1,9 @@
 :import("../colors/_colors.css"){
-  i__const_col_text_common_972: col-text-common;
-  i__const_col_text_placeholder_common_973: col-text-placeholder-common;
+  i__const_col_text_common_1005: col-text-common;
+  i__const_col_text_placeholder_common_1006: col-text-placeholder-common;
 }
 :import("../variables/_variables.css"){
-  i__const_hover_time_transition_common_974: hover-time-transition-common;
+  i__const_hover_time_transition_common_1007: hover-time-transition-common;
 }
 :export{
   values: "../variables/_variables.css";
@@ -1984,6 +1984,8 @@ $slick-opacity-not-active: 0.25 !default;
     z-index: 2;
     width: 100%;
     background-color: #fff;
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);;
   }
 .LocalNavi__list {
     display: -webkit-box;
