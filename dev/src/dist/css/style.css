@@ -1,9 +1,9 @@
 :import("../colors/_colors.css"){
-  i__const_col_text_common_1224: col-text-common;
-  i__const_col_text_placeholder_common_1225: col-text-placeholder-common;
+  i__const_col_text_common_1227: col-text-common;
+  i__const_col_text_placeholder_common_1228: col-text-placeholder-common;
 }
 :import("../variables/_variables.css"){
-  i__const_hover_time_transition_common_1226: hover-time-transition-common;
+  i__const_hover_time_transition_common_1229: hover-time-transition-common;
 }
 :export{
   values: "../variables/_variables.css";
@@ -2057,6 +2057,7 @@ $slick-opacity-not-active: 0.25 !default;
 .Footer__wrapper {
     max-width: 1040px;
     margin: 0 auto;
+    overflow: hidden;
   }
 @media screen and (max-width: 1023px) {
   .Footer__wrapper {
