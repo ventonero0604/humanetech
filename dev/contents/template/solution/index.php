@@ -172,8 +172,8 @@ $staticPath = '../../../src/dist/';
             平均年齢と派遣継続期間
           </div>
           <div class="FlexBox FlexBox--center">
-            <img class="is-pc" src="/src/asset/solution/img-human3.png" />
-            <img class="is-sp" src="/src/asset/solution/img-human3-sp.png" />
+            <div><img class="is-pc" src="/src/asset/solution/img-human3.png" /></div>
+            <div><img class="is-sp" src="/src/asset/solution/img-human3-sp.png" /></div>
           </div>
           <div class="RoundWrapper__text RoundWrapper__text--mt">
             弊社に登録しているエンジニアは、上流工程経験者が半数います。また経験の少ないエンジニアには、徹底した社内教育、研修を行い、派遣先を選定します。貴社の要望にマッチした人材を弊社コンサルタントがアサインします。
