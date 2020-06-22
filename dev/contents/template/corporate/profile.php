@@ -35,7 +35,8 @@ $staticPath = '/src/dist/';
       <div class="Corporate__wrapper">
         <div class="RoundWrapper Profile__container--0padding">
           <div class="FlexBox FlexBox--center">
-            <img src="/src/asset/corporate/text-profile.png" alt="COMPANY PROFILE" />
+            <div><img class="is-pc" src="/src/asset/corporate/text-profile.png" alt="COMPANY PROFILE" /></div>
+            <div><img class="is-sp" src="/src/asset/corporate/text-profile-sp.png" alt="COMPANY PROFILE" /></div>
           </div>
           <h3 class="Profile__contentsTitle">
             会社概要
@@ -190,7 +191,7 @@ $staticPath = '/src/dist/';
               </tr>
             </table>
             <div class="FlexBox FlexBox--center" id="access">
-              <img src="/src/asset/corporate/text-access.png" alt="ACCESS" />
+              <div><img src="/src/asset/corporate/text-access.png" alt="ACCESS" /></div>
             </div>
           </div>
         </div>
@@ -203,7 +204,7 @@ $staticPath = '/src/dist/';
       <div class="Corporate__wrapper">
         <div class="RoundWrapper Profile__container--0padding">
           <div class="FlexBox FlexBox--center">
-            <img src="/src/asset/corporate/text-history.png" alt="HISTORY" />
+            <div><img src="/src/asset/corporate/text-history.png" alt="HISTORY" /></div>
           </div>
           <h3 class="Profile__contentsTitle">
             沿革
@@ -546,7 +547,7 @@ $staticPath = '/src/dist/';
 
         <div class="RoundWrapper Profile__container" id="client">
           <div class="FlexBox FlexBox--center">
-            <img src="/src/asset/corporate/text-client.png" alt="MAIN CLIENT" />
+            <div><img src="/src/asset/corporate/text-client.png" alt="MAIN CLIENT" /></div>
           </div>
           <h3 class="Profile__contentsTitle">
             主要取引先

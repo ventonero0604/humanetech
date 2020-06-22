@@ -40,11 +40,17 @@ $staticPath = '../../../src/dist/';
 
       <div class="Solution__lead Solution__lead--system">
         <div class="FlexBox FlexBox--column FlexBox--middle">
-          <h2 class="Solution__leadTitle"><img src="/src/asset/solution/lead-system.png" alt="新しい時代を見据えたIT戦略のお手伝いをします。" /></h2>
+          <h2 class="Solution__leadTitle">
+            <img class="is-pc" src="/src/asset/solution/lead-system.png" alt="新しい時代を見据えたIT戦略のお手伝いをします。" />
+            <img class="is-sp" src="/src/asset/solution/lead-system-sp.png" alt="新しい時代を見据えたIT戦略のお手伝いをします。" />
+          </h2>
           <p class="Solution__leadText">
             新時代に向けてビジネス戦略に必要なビジネスモデル・システム構築に関するコンサルティング、調査・分析、設計、開発、導入、運用保守のシステムソリューションサービスを提供します。
           </p>
-          <div class="Solution__leadImage"><img src="/src/asset/solution/text-system.png" alt="SYSTEM SOLUTION" /></div>
+          <div class="Solution__leadImage">
+            <img class="is-pc" src="/src/asset/solution/text-system.png" alt="SYSTEM SOLUTION" />
+            <img class="is-sp" src="/src/asset/solution/text-system-sp.png" alt="SYSTEM SOLUTION" />
+          </div>
         </div>
       </div>
 
