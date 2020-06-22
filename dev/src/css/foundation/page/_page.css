@@ -35,6 +35,10 @@ button {
   }
 }
 
+main {
+  overflow: hidden;
+}
+
 @keyframes fade-in {
   0% {
     opacity: 0;

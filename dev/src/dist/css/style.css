@@ -1,9 +1,9 @@
 :import("../colors/_colors.css"){
-  i__const_col_text_common_1284: col-text-common;
-  i__const_col_text_placeholder_common_1285: col-text-placeholder-common;
+  i__const_col_text_common_1287: col-text-common;
+  i__const_col_text_placeholder_common_1288: col-text-placeholder-common;
 }
 :import("../variables/_variables.css"){
-  i__const_hover_time_transition_common_1286: hover-time-transition-common;
+  i__const_hover_time_transition_common_1289: hover-time-transition-common;
 }
 :export{
   values: "../variables/_variables.css";
@@ -675,6 +675,9 @@ button {
       background-color: #eee;
       content: "";
     }
+main {
+  overflow: hidden;
+}
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0;
