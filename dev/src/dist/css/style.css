@@ -1,9 +1,9 @@
 :import("../colors/_colors.css"){
-  i__const_col_text_common_1236: col-text-common;
-  i__const_col_text_placeholder_common_1237: col-text-placeholder-common;
+  i__const_col_text_common_1239: col-text-common;
+  i__const_col_text_placeholder_common_1240: col-text-placeholder-common;
 }
 :import("../variables/_variables.css"){
-  i__const_hover_time_transition_common_1238: hover-time-transition-common;
+  i__const_hover_time_transition_common_1241: hover-time-transition-common;
 }
 :export{
   values: "../variables/_variables.css";
@@ -3841,8 +3841,8 @@ $slick-opacity-not-active: 0.25 !default;
   .Dispatch__mainBadge img {
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
-    -webkit-transform-origin: right center;
-            transform-origin: right center;
+    -webkit-transform-origin: right bottom;
+            transform-origin: right bottom;
   }
 }
 .Dispatch__lead {

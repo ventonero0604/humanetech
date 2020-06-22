@@ -144,7 +144,7 @@
     img {
       @mixin sp {
         transform: scale(0.6);
-        transform-origin: right center; 
+        transform-origin: right bottom; 
       }
     }
   }
