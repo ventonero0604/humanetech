@@ -134,35 +134,59 @@
   &__bottom {
     position: relative;
     background-color: #f3f3f4;
-    height: 118px;
     margin-top: 100px;
+    height: 118px;
 
     @mixin notPC {
       margin-top: 50px;
+      height: 180px;
+      padding: 0 10px;
+    }
+  }
+
+  &__privacyWrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-top: 28px;
+
+    @mixin notPC {
+      justify-content: center;
+    }
+  }
+
+  &__globalSign {
+    img {
+      height: 59px;
     }
   }
 
   &__privacy {
-    position: absolute;
-    left: 4%;
-    top: 10px;
+    margin-left: 20px;
+    align-items: flex-end;
 
     @mixin notPC {
-      left: auto;
-      right: 10px;
+      width: auto;
     }
+  }
+
+  &__privacyText {
+    margin-left: 5px;
+    font-size: 1.2rem;
   }
 
   &__copyright {
     color: col-primary-navy;
     text-align: center;
-    line-height: 118px;
     width: 100%;
     display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 
     @mixin notPC {
-      padding-top: 60px;
       background-color: #f3f3f4;
+      top: 70%;
     }
   }
 }
