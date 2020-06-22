@@ -1,9 +1,9 @@
 :import("../colors/_colors.css"){
-  i__const_col_text_common_1182: col-text-common;
-  i__const_col_text_placeholder_common_1183: col-text-placeholder-common;
+  i__const_col_text_common_1224: col-text-common;
+  i__const_col_text_placeholder_common_1225: col-text-placeholder-common;
 }
 :import("../variables/_variables.css"){
-  i__const_hover_time_transition_common_1184: hover-time-transition-common;
+  i__const_hover_time_transition_common_1226: hover-time-transition-common;
 }
 :export{
   values: "../variables/_variables.css";
@@ -1221,6 +1221,11 @@ $slick-opacity-not-active: 0.25 !default;
   position: relative;
   z-index: 100;
 }
+@media screen and (max-width: 1023px) {
+  .Header {
+    height: 70px;
+  }
+}
 .Header a:hover {
     text-decoration: underline;
   }
@@ -1255,6 +1260,14 @@ $slick-opacity-not-active: 0.25 !default;
     margin-left: 20px;
     margin-right: 10px;
   }
+@media screen and (max-width: 1023px) {
+  .Header__logoImage img {
+    -webkit-transform: scale(.8);
+            transform: scale(.8);
+    -webkit-transform-origin: center left;
+            transform-origin: center left;
+  }
+}
 .Header__logoText {
     font-size: 1.2rem;
     font-weight: normal;
@@ -1274,6 +1287,10 @@ $slick-opacity-not-active: 0.25 !default;
     display: none;
   }
 }
+.Header__menu img {
+      -webkit-transform: scale(.7);
+              transform: scale(.7);
+    }
 .Header__linkItems {
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
@@ -1488,7 +1505,7 @@ $slick-opacity-not-active: 0.25 !default;
     }
 .Header__menuContent {
     position: absolute;
-    top: 139px;
+    top: 70px;
     width: 100%;
     background-color: #F2F2F2;
     display: none;
