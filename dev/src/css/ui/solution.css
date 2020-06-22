@@ -78,7 +78,8 @@
 
     img {
       @mixin notPC {
-        height: 50%;
+        transform: scale(.5);
+        transform-origin: top center;
       }
     }
 

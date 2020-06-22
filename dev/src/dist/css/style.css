@@ -1,9 +1,9 @@
 :import("../colors/_colors.css"){
-  i__const_col_text_common_1239: col-text-common;
-  i__const_col_text_placeholder_common_1240: col-text-placeholder-common;
+  i__const_col_text_common_1284: col-text-common;
+  i__const_col_text_placeholder_common_1285: col-text-placeholder-common;
 }
 :import("../variables/_variables.css"){
-  i__const_hover_time_transition_common_1241: hover-time-transition-common;
+  i__const_hover_time_transition_common_1286: hover-time-transition-common;
 }
 :export{
   values: "../variables/_variables.css";
@@ -4478,7 +4478,10 @@ $slick-opacity-not-active: 0.25 !default;
 }
 @media screen and (max-width: 1023px) {
   .Solution__mainWrapper img {
-    height: 50%;
+    -webkit-transform: scale(.5);
+            transform: scale(.5);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
   }
 }
 .Solution__mainWrapper--system,
