@@ -1,9 +1,9 @@
 :import("../colors/_colors.css"){
-  i__const_col_text_common_1155: col-text-common;
-  i__const_col_text_placeholder_common_1156: col-text-placeholder-common;
+  i__const_col_text_common_1167: col-text-common;
+  i__const_col_text_placeholder_common_1168: col-text-placeholder-common;
 }
 :import("../variables/_variables.css"){
-  i__const_hover_time_transition_common_1157: hover-time-transition-common;
+  i__const_hover_time_transition_common_1169: hover-time-transition-common;
 }
 :export{
   values: "../variables/_variables.css";
@@ -4218,7 +4218,7 @@ $slick-opacity-not-active: 0.25 !default;
       color: #a52224;
     }
 .About__tableText {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     padding-right: 220px;
   }
@@ -4229,7 +4229,7 @@ $slick-opacity-not-active: 0.25 !default;
   }
 }
 .About__tableText b {
-      font-size: 3.8rem;
+      font-size: 2.4rem;
       font-weight: normal;
     }
 .About__infoText {

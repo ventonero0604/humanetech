@@ -541,7 +541,7 @@
   }
 
   &__tableText {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     padding-right: 220px;
 
@@ -551,7 +551,7 @@
     }
 
     b {
-      font-size: 3.8rem;
+      font-size: 2.4rem;
       font-weight: normal;
     }
   }
