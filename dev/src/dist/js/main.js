@@ -578,8 +578,12 @@ $(function () {
   var menuContent = $('.js-Header__menuContent');
   var localNavi = $('.LocalNavi');
   var localNaviCurrent = $('.LocalNavi .is-current');
-  var smp = $(window).width() < 768;
-  var lazyLoading = $('.lazyload'); // グローバルナビ（PC）
+  var smp = $(window).width() < 768; // ハンバーガーメニューの黒いマスク挿入
+
+  if (smp) {
+    $('body').append('<div class="Header__menuClose"></div>');
+  } // グローバルナビ（PC）
+
 
   navi.hover(function () {
     var index = navi.index(this);
@@ -595,22 +599,30 @@ $(function () {
     targetContent.mouseleave(function () {
       naviContent.removeClass("is-show");
     });
-  }
+  } // ハンバーガーメニュー 表示
 
-  menu.click(function () {
+
+  menu.on("click", function () {
     menuContent.toggleClass("is-show");
-  }); // ローカルナビ（スマホ）
+    $('.Header__menuClose').toggleClass("is-show");
+  }); // ハンバーガーメニュー 閉じる
+
+  $(document).on("click", ".Header__menuClose", function () {
+    menuContent.toggleClass("is-show");
+    $('.Header__menuClose').toggleClass("is-show");
+  });
 
   if (localNavi.length) {
     var position = localNaviCurrent.offset().left;
     var contentWidth = localNaviCurrent.width();
     var windowWidth = $(window).width();
     var isScrollable = position + contentWidth > windowWidth;
-    var positionMiddle = position + windowWidth / 2 - contentWidth / 2;
+    var positionMiddle = position + windowWidth / 2 - contentWidth / 2; // localナビのカレント位置調整
 
     if (smp && isScrollable) {
       localNavi.scrollLeft(positionMiddle);
-    }
+    } // localナビ固定
+
 
     var $win = $(window),
         $main = $('main'),
@@ -629,7 +641,8 @@ $(function () {
         $main.css('margin-top', '0');
       }
     });
-  }
+  } // viewinでコンテンツfadein
+
 
   $(window).scroll(function () {
     $('.fadein').each(function () {
@@ -641,10 +654,16 @@ $(function () {
         $(this).addClass('scrollin');
       }
     });
-  });
+  }); // スライドショー
+
   $('.Slider').slick({
     autoplay: true,
     autoplaySpeed: 5000
+  }); // menuコンテンツのアコーディオン
+
+  $('.js-openMenuContents').on('click', function () {
+    $(this).toggleClass('is-open');
+    $(this).next().slideToggle();
   });
 });
 "use strict";

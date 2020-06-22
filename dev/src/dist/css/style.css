@@ -1,9 +1,9 @@
 :import("../colors/_colors.css"){
-  i__const_col_text_common_1287: col-text-common;
-  i__const_col_text_placeholder_common_1288: col-text-placeholder-common;
+  i__const_col_text_common_0: col-text-common;
+  i__const_col_text_placeholder_common_1: col-text-placeholder-common;
 }
 :import("../variables/_variables.css"){
-  i__const_hover_time_transition_common_1289: hover-time-transition-common;
+  i__const_hover_time_transition_common_2: hover-time-transition-common;
 }
 :export{
   values: "../variables/_variables.css";
@@ -655,6 +655,7 @@ button > span {
 body {
   font-family: -apple-system-subset, Helvetica, Hiragino Kaku Gothic ProN,
     sans-serif;
+  position: relative;
 }
 a {
   color: #4d4d4d;
@@ -1508,35 +1509,148 @@ $slick-opacity-not-active: 0.25 !default;
     }
 .Header__menuContent {
     position: absolute;
-    top: 70px;
+    top: 69px;
     width: 100%;
     background-color: #F2F2F2;
     display: none;
     -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
             box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
-    padding: 40px 20px;
+    padding: 20px 0;
     display: none;
   }
 .Header__menuContent.is-show {
       display: block;
     }
-.Header__menuContentList {
-      display: block;
-      width: 100%;
-      height: 200px;
-      background-color: #003173;
-      font-size: 36px;
-      text-align: center;
-
-    }
-.Header__menuContentItem {
+.Header__menuJob {
+    padding: 0 10px;
+  }
+.Header__menuJobItem {
+    display: block;
+    height: 100px;
+    width: 100%;
+    background-color: #003173;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+.Header__menuJobItem span {
       background-image: url(../../asset/ico-arrow-r.png);
       display: inline-block;
       background-repeat: no-repeat;
+      -webkit-background-size: 8px 12px;
+              background-size: 8px 12px;
       background-position: 0 50%;
-      padding-left: 40px;
+      padding-left: 20px;
       color: #fff;
-      margin-top: 70px;
+      line-height: 100px;
+    }
+.Header__menuItem {
+    margin-bottom: 20px;
+  }
+.Header__menuTitle {
+    background-color: #003173;
+    text-align: center;
+    padding: 20px 10px;
+  }
+.Header__menuTitle img {
+      -webkit-transform: scale(.7);
+              transform: scale(.7);
+    }
+.Header__menuTitle--read {
+      padding: 24px 10px;
+      font-size: 1.8rem;
+      color: #fff;
+    }
+.Header__menuTitle--read span {
+      background-image: url(../../asset/ico-arrow-r.png);
+      display: inline-block;
+      background-repeat: no-repeat;
+      -webkit-background-size: 8px 12px;
+              background-size: 8px 12px;
+      background-position: 0 50%;
+      padding-left: 20px;
+      color: #fff;
+
+      }
+.Header__menuList {
+    background-color: #1f3d66;
+    padding: 30px 20px;
+  }
+.Header__menuList--red {
+      background-color: #661f20;
+    }
+.Header__menuList a {
+      color: #fff;
+      display: block;
+      font-size: 1.2rem;
+    }
+.Header__menuList a.Header__menuButton {
+        font-size: 1.8rem;
+      }
+.Header__menuList a + a {
+      margin-top: 14px;
+    }
+.Header__menuList--other {
+      background-color: #f2f2f2;
+    }
+.Header__menuList--other a {
+        color: #003173;
+      }
+.Header__menuListRow {
+    -webkit-flex-basis: 50%;
+            flex-basis: 50%;
+  }
+.Header__menuListRow + .Header__menuListRow {
+      margin-left: 10px;
+    }
+.Header__hiddenList {
+    width: 100%;
+    display: none;
+  }
+.Header__menuButton {
+    display: block;
+    width: 100%;
+    background-color: #007fc6;
+    color: #fff;
+    height: 50px;
+    max-width: 340px;
+    margin-top: 30px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 25px;
+  }
+.Header__menuButton--red {
+      background-color: #ce1b24;
+    }
+.Header__menuImageMask {
+    position: relative;
+  }
+.Header__menuImageMask.is-open:before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .5);
+        position: absolute;
+        background-image: url(../../asset/img-menu-icon.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-background-size: 30px 30px;
+                background-size: 30px 30px;
+      }
+.Header__menuClose {
+    position: absolute;
+    top: 69px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 10;
+    display: none;
+  }
+.Header__menuClose.is-show {
+      display: block;
     }
 .BreadCrumb {
   font-size: 1.5rem;
