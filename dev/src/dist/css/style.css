@@ -1,9 +1,9 @@
 :import("../colors/_colors.css"){
-  i__const_col_text_common_1227: col-text-common;
-  i__const_col_text_placeholder_common_1228: col-text-placeholder-common;
+  i__const_col_text_common_1236: col-text-common;
+  i__const_col_text_placeholder_common_1237: col-text-placeholder-common;
 }
 :import("../variables/_variables.css"){
-  i__const_hover_time_transition_common_1229: hover-time-transition-common;
+  i__const_hover_time_transition_common_1238: hover-time-transition-common;
 }
 :export{
   values: "../variables/_variables.css";
@@ -2490,7 +2490,7 @@ $slick-opacity-not-active: 0.25 !default;
     padding: 30px 32px 0;
     background-color: #fff;
     max-width: 615px;
-    height: 350px;
+    height: 390px;
     position: relative;
   }
 @media screen and (max-width: 1023px) {
