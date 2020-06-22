@@ -290,7 +290,6 @@
   }
 
   &__flowItemText {
-    margin-top: 20px;
     margin-bottom: 40px;
 
     @mixin sp {
@@ -298,7 +297,7 @@
     }
 
     &--adjust {
-      margin-top: 40px;
+      margin-top: 20px;
     }
 
     p {
@@ -335,7 +334,7 @@
   }
 
   &__leadFlow {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 
     @mixin sp {
       width: 952px;
