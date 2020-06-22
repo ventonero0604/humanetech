@@ -63,7 +63,7 @@ $staticPath = '/src/dist/';
           </div>
         </div>
         <div class="FlexBox FlexBox--center">
-          <img class="Welfare__leadBottomText" src="/src/asset/corporate/text-humanetech.png" alt="EDUCATION" />
+          <div><img class="Welfare__leadBottomText" src="/src/asset/corporate/text-humanetech.png" alt="EDUCATION" /></div>
         </div>
       </div>
   
