@@ -1,9 +1,9 @@
 :import("../colors/_colors.css"){
-  i__const_col_text_common_171: col-text-common;
-  i__const_col_text_placeholder_common_172: col-text-placeholder-common;
+  i__const_col_text_common_0: col-text-common;
+  i__const_col_text_placeholder_common_1: col-text-placeholder-common;
 }
 :import("../variables/_variables.css"){
-  i__const_hover_time_transition_common_173: hover-time-transition-common;
+  i__const_hover_time_transition_common_2: hover-time-transition-common;
 }
 :export{
   values: "../variables/_variables.css";
