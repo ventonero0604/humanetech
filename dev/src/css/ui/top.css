@@ -2,7 +2,7 @@
 
   &__main {
     position: relative;
-    height: 1050px;
+    height: 100%;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,13 +12,6 @@
     animation-timing-function: ease-out;
     animation-delay: .5s;
     animation-fill-mode: forwards;
-
-    @mixin notPC {
-      height: 850px;
-    }
-    @mixin sp {
-      height: 525px;
-    }
   }
 
   &__mainTitle {

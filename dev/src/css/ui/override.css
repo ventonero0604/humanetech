@@ -1,10 +1,12 @@
 .Slider {
-  height: 1050px;
-
+  height: calc(100vh -139px);
+  
   @mixin notPC {
-    height: 850px;
+    height: calc(100vh -70px);
   }
-  @mixin sp {
-    height: 525px;
-  }
+}
+
+.slick-slider .slick-track, 
+.slick-slider .slick-list {
+  height: 100%;
 }

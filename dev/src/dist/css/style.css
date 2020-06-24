@@ -1,9 +1,9 @@
 :import("../colors/_colors.css"){
-  i__const_col_text_common_0: col-text-common;
-  i__const_col_text_placeholder_common_1: col-text-placeholder-common;
+  i__const_col_text_common_87: col-text-common;
+  i__const_col_text_placeholder_common_88: col-text-placeholder-common;
 }
 :import("../variables/_variables.css"){
-  i__const_hover_time_transition_common_2: hover-time-transition-common;
+  i__const_hover_time_transition_common_89: hover-time-transition-common;
 }
 :export{
   values: "../variables/_variables.css";
@@ -2361,7 +2361,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 .Top__main {
     position: relative;
-    height: 1050px;
+    height: 100%;
     width: 100%;
     -webkit-background-size: cover;
             background-size: cover;
@@ -2378,16 +2378,6 @@ $slick-opacity-not-active: 0.25 !default;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-@media screen and (max-width: 1023px) {
-  .Top__main {
-    height: 850px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .Top__main {
-    height: 525px;
-  }
-}
 .Top__mainTitle {
     position: relative;
     z-index: 1;
@@ -7047,15 +7037,16 @@ $slick-opacity-not-active: 0.25 !default;
     margin-top: 60px;
   }
 .Slider {
-  height: 1050px;
+  height: -webkit-calc(100vh - 139px);
+  height: calc(100vh - 139px);
 }
 @media screen and (max-width: 1023px) {
   .Slider {
-    height: 850px;
+    height: -webkit-calc(100vh - 70px);
+    height: calc(100vh - 70px);
   }
 }
-@media screen and (max-width: 767px) {
-  .Slider {
-    height: 525px;
-  }
+.slick-slider .slick-track, 
+.slick-slider .slick-list {
+  height: 100%;
 }
